@@ -1,0 +1,310 @@
+﻿<Project>
+  <ItemGroup>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\doctors\079ed1e5-5480-40f8-9832-cfe96019a33b_WhatsApp Image 2025-08-18 at 00.13.39 (2).jpeg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>SPEAK.Web</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/SPEAK.Web</BasePath>
+      <RelativePath>uploads/doctors/079ed1e5-5480-40f8-9832-cfe96019a33b_WhatsApp Image 2025-08-18 at 00.13.39 (2).jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>zzg4v9yo55</Fingerprint>
+      <Integrity>D5LMXbJDcWUhvRPmKWozyeSH/GhYCZCOIWJEyu0liVA=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\doctors\079ed1e5-5480-40f8-9832-cfe96019a33b_WhatsApp Image 2025-08-18 at 00.13.39 (2).jpeg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\doctors\38376cf7-24b1-49fd-8238-5dfd5557ab75_WhatsApp Image 2025-06-19 at 14.12.45 (1).jpeg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>SPEAK.Web</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/SPEAK.Web</BasePath>
+      <RelativePath>uploads/doctors/38376cf7-24b1-49fd-8238-5dfd5557ab75_WhatsApp Image 2025-06-19 at 14.12.45 (1).jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>x87aftjp6g</Fingerprint>
+      <Integrity>z0nr0CPYuzGiqiyFdcmfmj/masOjgJLzEGOypmY9/mE=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\doctors\38376cf7-24b1-49fd-8238-5dfd5557ab75_WhatsApp Image 2025-06-19 at 14.12.45 (1).jpeg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\doctors\3fee5357-5523-4dfa-8f8e-dab75b72dcab_WhatsApp Image 2025-08-18 at 00.13.39 (2).jpeg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>SPEAK.Web</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/SPEAK.Web</BasePath>
+      <RelativePath>uploads/doctors/3fee5357-5523-4dfa-8f8e-dab75b72dcab_WhatsApp Image 2025-08-18 at 00.13.39 (2).jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>zzg4v9yo55</Fingerprint>
+      <Integrity>D5LMXbJDcWUhvRPmKWozyeSH/GhYCZCOIWJEyu0liVA=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\doctors\3fee5357-5523-4dfa-8f8e-dab75b72dcab_WhatsApp Image 2025-08-18 at 00.13.39 (2).jpeg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\doctors\4661f140-fd38-4640-87a0-6da9d53df01d_WhatsApp Image 2025-08-18 at 00.13.39 (2).jpeg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>SPEAK.Web</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/SPEAK.Web</BasePath>
+      <RelativePath>uploads/doctors/4661f140-fd38-4640-87a0-6da9d53df01d_WhatsApp Image 2025-08-18 at 00.13.39 (2).jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>zzg4v9yo55</Fingerprint>
+      <Integrity>D5LMXbJDcWUhvRPmKWozyeSH/GhYCZCOIWJEyu0liVA=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\doctors\4661f140-fd38-4640-87a0-6da9d53df01d_WhatsApp Image 2025-08-18 at 00.13.39 (2).jpeg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\doctors\4b9542a5-f095-4356-ba3c-88ac7f9898e6_WhatsApp Image 2025-08-18 at 00.13.39 (2).jpeg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>SPEAK.Web</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/SPEAK.Web</BasePath>
+      <RelativePath>uploads/doctors/4b9542a5-f095-4356-ba3c-88ac7f9898e6_WhatsApp Image 2025-08-18 at 00.13.39 (2).jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>zzg4v9yo55</Fingerprint>
+      <Integrity>D5LMXbJDcWUhvRPmKWozyeSH/GhYCZCOIWJEyu0liVA=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\doctors\4b9542a5-f095-4356-ba3c-88ac7f9898e6_WhatsApp Image 2025-08-18 at 00.13.39 (2).jpeg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\doctors\6dc9eb4e-b0a6-44a0-9b85-edf5345cd8de_WhatsApp Image 2025-06-19 at 14.12.45 (1).jpeg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>SPEAK.Web</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/SPEAK.Web</BasePath>
+      <RelativePath>uploads/doctors/6dc9eb4e-b0a6-44a0-9b85-edf5345cd8de_WhatsApp Image 2025-06-19 at 14.12.45 (1).jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>x87aftjp6g</Fingerprint>
+      <Integrity>z0nr0CPYuzGiqiyFdcmfmj/masOjgJLzEGOypmY9/mE=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\doctors\6dc9eb4e-b0a6-44a0-9b85-edf5345cd8de_WhatsApp Image 2025-06-19 at 14.12.45 (1).jpeg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\doctors\7290de09-a616-46af-9cc5-ffb09b04cf11_WhatsApp Image 2025-06-19 at 14.12.45 (1).jpeg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>SPEAK.Web</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/SPEAK.Web</BasePath>
+      <RelativePath>uploads/doctors/7290de09-a616-46af-9cc5-ffb09b04cf11_WhatsApp Image 2025-06-19 at 14.12.45 (1).jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>x87aftjp6g</Fingerprint>
+      <Integrity>z0nr0CPYuzGiqiyFdcmfmj/masOjgJLzEGOypmY9/mE=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\doctors\7290de09-a616-46af-9cc5-ffb09b04cf11_WhatsApp Image 2025-06-19 at 14.12.45 (1).jpeg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\doctors\74055746-394e-49c9-b269-3165504d0bcb_WhatsApp Image 2025-08-18 at 00.13.39 (2).jpeg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>SPEAK.Web</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/SPEAK.Web</BasePath>
+      <RelativePath>uploads/doctors/74055746-394e-49c9-b269-3165504d0bcb_WhatsApp Image 2025-08-18 at 00.13.39 (2).jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>zzg4v9yo55</Fingerprint>
+      <Integrity>D5LMXbJDcWUhvRPmKWozyeSH/GhYCZCOIWJEyu0liVA=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\doctors\74055746-394e-49c9-b269-3165504d0bcb_WhatsApp Image 2025-08-18 at 00.13.39 (2).jpeg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\doctors\7cdbbb80-20ea-45f2-b2a3-d98451bc6339_WhatsApp Image 2025-08-18 at 00.13.39 (2).jpeg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>SPEAK.Web</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/SPEAK.Web</BasePath>
+      <RelativePath>uploads/doctors/7cdbbb80-20ea-45f2-b2a3-d98451bc6339_WhatsApp Image 2025-08-18 at 00.13.39 (2).jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>zzg4v9yo55</Fingerprint>
+      <Integrity>D5LMXbJDcWUhvRPmKWozyeSH/GhYCZCOIWJEyu0liVA=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\doctors\7cdbbb80-20ea-45f2-b2a3-d98451bc6339_WhatsApp Image 2025-08-18 at 00.13.39 (2).jpeg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\doctors\8536ade4-06f2-4bef-9fd2-7aa5ee790a69_WhatsApp Image 2025-06-19 at 14.12.45 (1).jpeg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>SPEAK.Web</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/SPEAK.Web</BasePath>
+      <RelativePath>uploads/doctors/8536ade4-06f2-4bef-9fd2-7aa5ee790a69_WhatsApp Image 2025-06-19 at 14.12.45 (1).jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>x87aftjp6g</Fingerprint>
+      <Integrity>z0nr0CPYuzGiqiyFdcmfmj/masOjgJLzEGOypmY9/mE=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\doctors\8536ade4-06f2-4bef-9fd2-7aa5ee790a69_WhatsApp Image 2025-06-19 at 14.12.45 (1).jpeg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\doctors\94614a2a-8a21-41bc-bae3-fe2f88d1f508_WhatsApp Image 2025-08-18 at 00.13.39 (2).jpeg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>SPEAK.Web</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/SPEAK.Web</BasePath>
+      <RelativePath>uploads/doctors/94614a2a-8a21-41bc-bae3-fe2f88d1f508_WhatsApp Image 2025-08-18 at 00.13.39 (2).jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>zzg4v9yo55</Fingerprint>
+      <Integrity>D5LMXbJDcWUhvRPmKWozyeSH/GhYCZCOIWJEyu0liVA=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\doctors\94614a2a-8a21-41bc-bae3-fe2f88d1f508_WhatsApp Image 2025-08-18 at 00.13.39 (2).jpeg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\doctors\ac8b2875-c6bb-4bfc-b969-9a7deb2718b6_WhatsApp Image 2025-06-19 at 14.12.45 (1).jpeg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>SPEAK.Web</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/SPEAK.Web</BasePath>
+      <RelativePath>uploads/doctors/ac8b2875-c6bb-4bfc-b969-9a7deb2718b6_WhatsApp Image 2025-06-19 at 14.12.45 (1).jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>x87aftjp6g</Fingerprint>
+      <Integrity>z0nr0CPYuzGiqiyFdcmfmj/masOjgJLzEGOypmY9/mE=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\doctors\ac8b2875-c6bb-4bfc-b969-9a7deb2718b6_WhatsApp Image 2025-06-19 at 14.12.45 (1).jpeg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\doctors\bb9895d4-ba7d-428f-9a02-cc29d5430dcd_WhatsApp Image 2025-06-19 at 14.12.45 (1).jpeg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>SPEAK.Web</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/SPEAK.Web</BasePath>
+      <RelativePath>uploads/doctors/bb9895d4-ba7d-428f-9a02-cc29d5430dcd_WhatsApp Image 2025-06-19 at 14.12.45 (1).jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>x87aftjp6g</Fingerprint>
+      <Integrity>z0nr0CPYuzGiqiyFdcmfmj/masOjgJLzEGOypmY9/mE=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\doctors\bb9895d4-ba7d-428f-9a02-cc29d5430dcd_WhatsApp Image 2025-06-19 at 14.12.45 (1).jpeg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\doctors\e7b9e38d-0ad1-4d86-91d4-5e3d820ffa52_WhatsApp Image 2025-06-19 at 14.12.45 (1).jpeg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>SPEAK.Web</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/SPEAK.Web</BasePath>
+      <RelativePath>uploads/doctors/e7b9e38d-0ad1-4d86-91d4-5e3d820ffa52_WhatsApp Image 2025-06-19 at 14.12.45 (1).jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>x87aftjp6g</Fingerprint>
+      <Integrity>z0nr0CPYuzGiqiyFdcmfmj/masOjgJLzEGOypmY9/mE=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\doctors\e7b9e38d-0ad1-4d86-91d4-5e3d820ffa52_WhatsApp Image 2025-06-19 at 14.12.45 (1).jpeg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\doctors\f5439fdb-dcb7-4c69-b873-a04808f5b957_WhatsApp Image 2025-06-19 at 14.12.45 (1).jpeg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>SPEAK.Web</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/SPEAK.Web</BasePath>
+      <RelativePath>uploads/doctors/f5439fdb-dcb7-4c69-b873-a04808f5b957_WhatsApp Image 2025-06-19 at 14.12.45 (1).jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>x87aftjp6g</Fingerprint>
+      <Integrity>z0nr0CPYuzGiqiyFdcmfmj/masOjgJLzEGOypmY9/mE=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\doctors\f5439fdb-dcb7-4c69-b873-a04808f5b957_WhatsApp Image 2025-06-19 at 14.12.45 (1).jpeg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\doctors\f5fc3b61-f3d7-4943-b731-24006ffd0a93_WhatsApp Image 2025-08-18 at 00.13.39 (2).jpeg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>SPEAK.Web</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/SPEAK.Web</BasePath>
+      <RelativePath>uploads/doctors/f5fc3b61-f3d7-4943-b731-24006ffd0a93_WhatsApp Image 2025-08-18 at 00.13.39 (2).jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>zzg4v9yo55</Fingerprint>
+      <Integrity>D5LMXbJDcWUhvRPmKWozyeSH/GhYCZCOIWJEyu0liVA=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\doctors\f5fc3b61-f3d7-4943-b731-24006ffd0a93_WhatsApp Image 2025-08-18 at 00.13.39 (2).jpeg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\voices\75ea2547-3ef4-4b7f-bef7-136426a575bb_test.wav'))">
+      <SourceType>Package</SourceType>
+      <SourceId>SPEAK.Web</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/SPEAK.Web</BasePath>
+      <RelativePath>voices/75ea2547-3ef4-4b7f-bef7-136426a575bb_test.wav</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>0qvsl92vkd</Fingerprint>
+      <Integrity>aJcRLbtOi27KTi0VOEeDBnrYZkgjg/L5h9HWz/oxAk8=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\voices\75ea2547-3ef4-4b7f-bef7-136426a575bb_test.wav'))</OriginalItemSpec>
+    </StaticWebAsset>
+  </ItemGroup>
+</Project>

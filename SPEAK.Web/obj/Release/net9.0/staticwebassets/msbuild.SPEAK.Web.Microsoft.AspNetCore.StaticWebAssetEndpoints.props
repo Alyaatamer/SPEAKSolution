@@ -1,0 +1,64 @@
+﻿<Project>
+  <ItemGroup>
+    <StaticWebAssetEndpoint Include="_content/SPEAK.Web/voices/158370a2-57c3-4316-96dc-71cb008a0b48_test.0qvsl92vkd.wav">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\voices\158370a2-57c3-4316-96dc-71cb008a0b48_test.wav'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"0qvsl92vkd"},{"Name":"integrity","Value":"sha256-aJcRLbtOi27KTi0VOEeDBnrYZkgjg/L5h9HWz/oxAk8="},{"Name":"label","Value":"_content/SPEAK.Web/voices/158370a2-57c3-4316-96dc-71cb008a0b48_test.wav"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1048558"},{"Name":"Content-Type","Value":"audio/wav"},{"Name":"ETag","Value":"\u0022aJcRLbtOi27KTi0VOEeDBnrYZkgjg/L5h9HWz/oxAk8=\u0022"},{"Name":"Last-Modified","Value":"Sun, 08 Feb 2026 08:31:59 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SPEAK.Web/voices/158370a2-57c3-4316-96dc-71cb008a0b48_test.wav">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\voices\158370a2-57c3-4316-96dc-71cb008a0b48_test.wav'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-aJcRLbtOi27KTi0VOEeDBnrYZkgjg/L5h9HWz/oxAk8="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1048558"},{"Name":"Content-Type","Value":"audio/wav"},{"Name":"ETag","Value":"\u0022aJcRLbtOi27KTi0VOEeDBnrYZkgjg/L5h9HWz/oxAk8=\u0022"},{"Name":"Last-Modified","Value":"Sun, 08 Feb 2026 08:31:59 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SPEAK.Web/voices/64d99b1b-6089-4ba5-9b94-3ce9f4ec7008_test.0qvsl92vkd.wav">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\voices\64d99b1b-6089-4ba5-9b94-3ce9f4ec7008_test.wav'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"0qvsl92vkd"},{"Name":"integrity","Value":"sha256-aJcRLbtOi27KTi0VOEeDBnrYZkgjg/L5h9HWz/oxAk8="},{"Name":"label","Value":"_content/SPEAK.Web/voices/64d99b1b-6089-4ba5-9b94-3ce9f4ec7008_test.wav"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1048558"},{"Name":"Content-Type","Value":"audio/wav"},{"Name":"ETag","Value":"\u0022aJcRLbtOi27KTi0VOEeDBnrYZkgjg/L5h9HWz/oxAk8=\u0022"},{"Name":"Last-Modified","Value":"Sat, 07 Feb 2026 18:14:35 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SPEAK.Web/voices/64d99b1b-6089-4ba5-9b94-3ce9f4ec7008_test.wav">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\voices\64d99b1b-6089-4ba5-9b94-3ce9f4ec7008_test.wav'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-aJcRLbtOi27KTi0VOEeDBnrYZkgjg/L5h9HWz/oxAk8="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1048558"},{"Name":"Content-Type","Value":"audio/wav"},{"Name":"ETag","Value":"\u0022aJcRLbtOi27KTi0VOEeDBnrYZkgjg/L5h9HWz/oxAk8=\u0022"},{"Name":"Last-Modified","Value":"Sat, 07 Feb 2026 18:14:35 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SPEAK.Web/voices/9b139b7a-e70f-46d2-b753-4ba6fe67d2ad_test.0qvsl92vkd.wav">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\voices\9b139b7a-e70f-46d2-b753-4ba6fe67d2ad_test.wav'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"0qvsl92vkd"},{"Name":"integrity","Value":"sha256-aJcRLbtOi27KTi0VOEeDBnrYZkgjg/L5h9HWz/oxAk8="},{"Name":"label","Value":"_content/SPEAK.Web/voices/9b139b7a-e70f-46d2-b753-4ba6fe67d2ad_test.wav"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1048558"},{"Name":"Content-Type","Value":"audio/wav"},{"Name":"ETag","Value":"\u0022aJcRLbtOi27KTi0VOEeDBnrYZkgjg/L5h9HWz/oxAk8=\u0022"},{"Name":"Last-Modified","Value":"Mon, 09 Feb 2026 14:37:01 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SPEAK.Web/voices/9b139b7a-e70f-46d2-b753-4ba6fe67d2ad_test.wav">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\voices\9b139b7a-e70f-46d2-b753-4ba6fe67d2ad_test.wav'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-aJcRLbtOi27KTi0VOEeDBnrYZkgjg/L5h9HWz/oxAk8="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1048558"},{"Name":"Content-Type","Value":"audio/wav"},{"Name":"ETag","Value":"\u0022aJcRLbtOi27KTi0VOEeDBnrYZkgjg/L5h9HWz/oxAk8=\u0022"},{"Name":"Last-Modified","Value":"Mon, 09 Feb 2026 14:37:01 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SPEAK.Web/voices/a59a61e9-d1a2-4450-8339-ee6db88c2293_test.0qvsl92vkd.wav">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\voices\a59a61e9-d1a2-4450-8339-ee6db88c2293_test.wav'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"0qvsl92vkd"},{"Name":"integrity","Value":"sha256-aJcRLbtOi27KTi0VOEeDBnrYZkgjg/L5h9HWz/oxAk8="},{"Name":"label","Value":"_content/SPEAK.Web/voices/a59a61e9-d1a2-4450-8339-ee6db88c2293_test.wav"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1048558"},{"Name":"Content-Type","Value":"audio/wav"},{"Name":"ETag","Value":"\u0022aJcRLbtOi27KTi0VOEeDBnrYZkgjg/L5h9HWz/oxAk8=\u0022"},{"Name":"Last-Modified","Value":"Sat, 07 Feb 2026 21:07:36 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SPEAK.Web/voices/a59a61e9-d1a2-4450-8339-ee6db88c2293_test.wav">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\voices\a59a61e9-d1a2-4450-8339-ee6db88c2293_test.wav'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-aJcRLbtOi27KTi0VOEeDBnrYZkgjg/L5h9HWz/oxAk8="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1048558"},{"Name":"Content-Type","Value":"audio/wav"},{"Name":"ETag","Value":"\u0022aJcRLbtOi27KTi0VOEeDBnrYZkgjg/L5h9HWz/oxAk8=\u0022"},{"Name":"Last-Modified","Value":"Sat, 07 Feb 2026 21:07:36 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SPEAK.Web/voices/defd69e3-7373-48ee-86b6-e1a0fb383587_test.0qvsl92vkd.wav">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\voices\defd69e3-7373-48ee-86b6-e1a0fb383587_test.wav'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"0qvsl92vkd"},{"Name":"integrity","Value":"sha256-aJcRLbtOi27KTi0VOEeDBnrYZkgjg/L5h9HWz/oxAk8="},{"Name":"label","Value":"_content/SPEAK.Web/voices/defd69e3-7373-48ee-86b6-e1a0fb383587_test.wav"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1048558"},{"Name":"Content-Type","Value":"audio/wav"},{"Name":"ETag","Value":"\u0022aJcRLbtOi27KTi0VOEeDBnrYZkgjg/L5h9HWz/oxAk8=\u0022"},{"Name":"Last-Modified","Value":"Sat, 07 Feb 2026 20:51:43 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SPEAK.Web/voices/defd69e3-7373-48ee-86b6-e1a0fb383587_test.wav">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\voices\defd69e3-7373-48ee-86b6-e1a0fb383587_test.wav'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-aJcRLbtOi27KTi0VOEeDBnrYZkgjg/L5h9HWz/oxAk8="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1048558"},{"Name":"Content-Type","Value":"audio/wav"},{"Name":"ETag","Value":"\u0022aJcRLbtOi27KTi0VOEeDBnrYZkgjg/L5h9HWz/oxAk8=\u0022"},{"Name":"Last-Modified","Value":"Sat, 07 Feb 2026 20:51:43 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+  </ItemGroup>
+</Project>

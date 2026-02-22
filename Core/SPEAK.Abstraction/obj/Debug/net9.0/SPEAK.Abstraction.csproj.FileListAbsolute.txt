@@ -1,0 +1,103 @@
+C:\Users\Lenovo\source\repos\SPEAKSolution\Core\SPEAK.Abstraction\bin\Debug\net9.0\SPEAK.Abstraction.deps.json
+C:\Users\Lenovo\source\repos\SPEAKSolution\Core\SPEAK.Abstraction\bin\Debug\net9.0\SPEAK.Abstraction.dll
+C:\Users\Lenovo\source\repos\SPEAKSolution\Core\SPEAK.Abstraction\bin\Debug\net9.0\SPEAK.Abstraction.pdb
+C:\Users\Lenovo\source\repos\SPEAKSolution\Core\SPEAK.Abstraction\bin\Debug\net9.0\SPEAK.Shared.dll
+C:\Users\Lenovo\source\repos\SPEAKSolution\Core\SPEAK.Abstraction\bin\Debug\net9.0\SPEAK.Shared.pdb
+C:\Users\Lenovo\source\repos\SPEAKSolution\Core\SPEAK.Abstraction\obj\Debug\net9.0\SPEAK.Abstraction.csproj.AssemblyReference.cache
+C:\Users\Lenovo\source\repos\SPEAKSolution\Core\SPEAK.Abstraction\obj\Debug\net9.0\SPEAK.Abstraction.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lenovo\source\repos\SPEAKSolution\Core\SPEAK.Abstraction\obj\Debug\net9.0\SPEAK.Abstraction.AssemblyInfoInputs.cache
+C:\Users\Lenovo\source\repos\SPEAKSolution\Core\SPEAK.Abstraction\obj\Debug\net9.0\SPEAK.Abstraction.AssemblyInfo.cs
+C:\Users\Lenovo\source\repos\SPEAKSolution\Core\SPEAK.Abstraction\obj\Debug\net9.0\SPEAK.Abstraction.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\source\repos\SPEAKSolution\Core\SPEAK.Abstraction\obj\Debug\net9.0\SPEAK.Abstraction.sourcelink.json
+C:\Users\Lenovo\source\repos\SPEAKSolution\Core\SPEAK.Abstraction\obj\Debug\net9.0\SPEAK.Ab.E4248C2C.Up2Date
+C:\Users\Lenovo\source\repos\SPEAKSolution\Core\SPEAK.Abstraction\obj\Debug\net9.0\SPEAK.Abstraction.dll
+C:\Users\Lenovo\source\repos\SPEAKSolution\Core\SPEAK.Abstraction\obj\Debug\net9.0\refint\SPEAK.Abstraction.dll
+C:\Users\Lenovo\source\repos\SPEAKSolution\Core\SPEAK.Abstraction\obj\Debug\net9.0\SPEAK.Abstraction.pdb
+C:\Users\Lenovo\source\repos\SPEAKSolution\Core\SPEAK.Abstraction\obj\Debug\net9.0\ref\SPEAK.Abstraction.dll
+C:\Users\Lenovo\source\repos\SPEAKSolution\Core\SPEAK.Abstraction\bin\Debug\net9.0\SPEAK.Domain.dll
+C:\Users\Lenovo\source\repos\SPEAKSolution\Core\SPEAK.Abstraction\bin\Debug\net9.0\SPEAK.Domain.pdb
+F:\SPEAK API\SPEAKSolution\SPEAKSolution\Core\SPEAK.Abstraction\bin\Debug\net9.0\SPEAK.Abstraction.deps.json
+F:\SPEAK API\SPEAKSolution\SPEAKSolution\Core\SPEAK.Abstraction\bin\Debug\net9.0\SPEAK.Abstraction.dll
+F:\SPEAK API\SPEAKSolution\SPEAKSolution\Core\SPEAK.Abstraction\bin\Debug\net9.0\SPEAK.Abstraction.pdb
+F:\SPEAK API\SPEAKSolution\SPEAKSolution\Core\SPEAK.Abstraction\bin\Debug\net9.0\SPEAK.Domain.dll
+F:\SPEAK API\SPEAKSolution\SPEAKSolution\Core\SPEAK.Abstraction\bin\Debug\net9.0\SPEAK.Shared.dll
+F:\SPEAK API\SPEAKSolution\SPEAKSolution\Core\SPEAK.Abstraction\bin\Debug\net9.0\SPEAK.Shared.pdb
+F:\SPEAK API\SPEAKSolution\SPEAKSolution\Core\SPEAK.Abstraction\bin\Debug\net9.0\SPEAK.Domain.pdb
+F:\SPEAK API\SPEAKSolution\SPEAKSolution\Core\SPEAK.Abstraction\obj\Debug\net9.0\SPEAK.Abstraction.csproj.AssemblyReference.cache
+F:\SPEAK API\SPEAKSolution\SPEAKSolution\Core\SPEAK.Abstraction\obj\Debug\net9.0\SPEAK.Abstraction.GeneratedMSBuildEditorConfig.editorconfig
+F:\SPEAK API\SPEAKSolution\SPEAKSolution\Core\SPEAK.Abstraction\obj\Debug\net9.0\SPEAK.Abstraction.AssemblyInfoInputs.cache
+F:\SPEAK API\SPEAKSolution\SPEAKSolution\Core\SPEAK.Abstraction\obj\Debug\net9.0\SPEAK.Abstraction.AssemblyInfo.cs
+F:\SPEAK API\SPEAKSolution\SPEAKSolution\Core\SPEAK.Abstraction\obj\Debug\net9.0\SPEAK.Abstraction.csproj.CoreCompileInputs.cache
+F:\SPEAK API\SPEAKSolution\SPEAKSolution\Core\SPEAK.Abstraction\obj\Debug\net9.0\SPEAK.Ab.E4248C2C.Up2Date
+F:\SPEAK API\SPEAKSolution\SPEAKSolution\Core\SPEAK.Abstraction\obj\Debug\net9.0\SPEAK.Abstraction.dll
+F:\SPEAK API\SPEAKSolution\SPEAKSolution\Core\SPEAK.Abstraction\obj\Debug\net9.0\refint\SPEAK.Abstraction.dll
+F:\SPEAK API\SPEAKSolution\SPEAKSolution\Core\SPEAK.Abstraction\obj\Debug\net9.0\SPEAK.Abstraction.pdb
+F:\SPEAK API\SPEAKSolution\SPEAKSolution\Core\SPEAK.Abstraction\obj\Debug\net9.0\ref\SPEAK.Abstraction.dll
+F:\SPEAK\Backend\SPEAKSolution\Core\SPEAK.Abstraction\bin\Debug\net9.0\SPEAK.Abstraction.deps.json
+F:\SPEAK\Backend\SPEAKSolution\Core\SPEAK.Abstraction\bin\Debug\net9.0\SPEAK.Abstraction.dll
+F:\SPEAK\Backend\SPEAKSolution\Core\SPEAK.Abstraction\bin\Debug\net9.0\SPEAK.Abstraction.pdb
+F:\SPEAK\Backend\SPEAKSolution\Core\SPEAK.Abstraction\bin\Debug\net9.0\SPEAK.Domain.dll
+F:\SPEAK\Backend\SPEAKSolution\Core\SPEAK.Abstraction\bin\Debug\net9.0\SPEAK.Shared.dll
+F:\SPEAK\Backend\SPEAKSolution\Core\SPEAK.Abstraction\bin\Debug\net9.0\SPEAK.Shared.pdb
+F:\SPEAK\Backend\SPEAKSolution\Core\SPEAK.Abstraction\bin\Debug\net9.0\SPEAK.Domain.pdb
+F:\SPEAK\Backend\SPEAKSolution\Core\SPEAK.Abstraction\obj\Debug\net9.0\SPEAK.Abstraction.csproj.AssemblyReference.cache
+F:\SPEAK\Backend\SPEAKSolution\Core\SPEAK.Abstraction\obj\Debug\net9.0\SPEAK.Abstraction.GeneratedMSBuildEditorConfig.editorconfig
+F:\SPEAK\Backend\SPEAKSolution\Core\SPEAK.Abstraction\obj\Debug\net9.0\SPEAK.Abstraction.AssemblyInfoInputs.cache
+F:\SPEAK\Backend\SPEAKSolution\Core\SPEAK.Abstraction\obj\Debug\net9.0\SPEAK.Abstraction.AssemblyInfo.cs
+F:\SPEAK\Backend\SPEAKSolution\Core\SPEAK.Abstraction\obj\Debug\net9.0\SPEAK.Abstraction.csproj.CoreCompileInputs.cache
+F:\SPEAK\Backend\SPEAKSolution\Core\SPEAK.Abstraction\obj\Debug\net9.0\SPEAK.Ab.E4248C2C.Up2Date
+F:\SPEAK\Backend\SPEAKSolution\Core\SPEAK.Abstraction\obj\Debug\net9.0\SPEAK.Abstraction.dll
+F:\SPEAK\Backend\SPEAKSolution\Core\SPEAK.Abstraction\obj\Debug\net9.0\refint\SPEAK.Abstraction.dll
+F:\SPEAK\Backend\SPEAKSolution\Core\SPEAK.Abstraction\obj\Debug\net9.0\SPEAK.Abstraction.pdb
+F:\SPEAK\Backend\SPEAKSolution\Core\SPEAK.Abstraction\obj\Debug\net9.0\ref\SPEAK.Abstraction.dll
+F:\Backend\SPEAKSolution\Core\SPEAK.Abstraction\bin\Debug\net9.0\SPEAK.Abstraction.deps.json
+F:\Backend\SPEAKSolution\Core\SPEAK.Abstraction\bin\Debug\net9.0\SPEAK.Abstraction.dll
+F:\Backend\SPEAKSolution\Core\SPEAK.Abstraction\bin\Debug\net9.0\SPEAK.Abstraction.pdb
+F:\Backend\SPEAKSolution\Core\SPEAK.Abstraction\bin\Debug\net9.0\SPEAK.Domain.dll
+F:\Backend\SPEAKSolution\Core\SPEAK.Abstraction\bin\Debug\net9.0\SPEAK.Shared.dll
+F:\Backend\SPEAKSolution\Core\SPEAK.Abstraction\bin\Debug\net9.0\SPEAK.Shared.pdb
+F:\Backend\SPEAKSolution\Core\SPEAK.Abstraction\bin\Debug\net9.0\SPEAK.Domain.pdb
+F:\Backend\SPEAKSolution\Core\SPEAK.Abstraction\obj\Debug\net9.0\SPEAK.Abstraction.csproj.AssemblyReference.cache
+F:\Backend\SPEAKSolution\Core\SPEAK.Abstraction\obj\Debug\net9.0\SPEAK.Abstraction.GeneratedMSBuildEditorConfig.editorconfig
+F:\Backend\SPEAKSolution\Core\SPEAK.Abstraction\obj\Debug\net9.0\SPEAK.Abstraction.AssemblyInfoInputs.cache
+F:\Backend\SPEAKSolution\Core\SPEAK.Abstraction\obj\Debug\net9.0\SPEAK.Abstraction.AssemblyInfo.cs
+F:\Backend\SPEAKSolution\Core\SPEAK.Abstraction\obj\Debug\net9.0\SPEAK.Abstraction.csproj.CoreCompileInputs.cache
+F:\Backend\SPEAKSolution\Core\SPEAK.Abstraction\obj\Debug\net9.0\SPEAK.Ab.E4248C2C.Up2Date
+F:\Backend\SPEAKSolution\Core\SPEAK.Abstraction\obj\Debug\net9.0\SPEAK.Abstraction.dll
+F:\Backend\SPEAKSolution\Core\SPEAK.Abstraction\obj\Debug\net9.0\refint\SPEAK.Abstraction.dll
+F:\Backend\SPEAKSolution\Core\SPEAK.Abstraction\obj\Debug\net9.0\SPEAK.Abstraction.pdb
+F:\Backend\SPEAKSolution\Core\SPEAK.Abstraction\obj\Debug\net9.0\ref\SPEAK.Abstraction.dll
+F:\antigravity test\SPEAKSolution\Core\SPEAK.Abstraction\bin\Debug\net9.0\SPEAK.Abstraction.deps.json
+F:\antigravity test\SPEAKSolution\Core\SPEAK.Abstraction\bin\Debug\net9.0\SPEAK.Abstraction.dll
+F:\antigravity test\SPEAKSolution\Core\SPEAK.Abstraction\bin\Debug\net9.0\SPEAK.Abstraction.pdb
+F:\antigravity test\SPEAKSolution\Core\SPEAK.Abstraction\bin\Debug\net9.0\SPEAK.Domain.dll
+F:\antigravity test\SPEAKSolution\Core\SPEAK.Abstraction\bin\Debug\net9.0\SPEAK.Shared.dll
+F:\antigravity test\SPEAKSolution\Core\SPEAK.Abstraction\bin\Debug\net9.0\SPEAK.Shared.pdb
+F:\antigravity test\SPEAKSolution\Core\SPEAK.Abstraction\bin\Debug\net9.0\SPEAK.Domain.pdb
+F:\antigravity test\SPEAKSolution\Core\SPEAK.Abstraction\obj\Debug\net9.0\SPEAK.Abstraction.csproj.AssemblyReference.cache
+F:\antigravity test\SPEAKSolution\Core\SPEAK.Abstraction\obj\Debug\net9.0\SPEAK.Abstraction.GeneratedMSBuildEditorConfig.editorconfig
+F:\antigravity test\SPEAKSolution\Core\SPEAK.Abstraction\obj\Debug\net9.0\SPEAK.Abstraction.AssemblyInfoInputs.cache
+F:\antigravity test\SPEAKSolution\Core\SPEAK.Abstraction\obj\Debug\net9.0\SPEAK.Abstraction.AssemblyInfo.cs
+F:\antigravity test\SPEAKSolution\Core\SPEAK.Abstraction\obj\Debug\net9.0\SPEAK.Abstraction.csproj.CoreCompileInputs.cache
+F:\antigravity test\SPEAKSolution\Core\SPEAK.Abstraction\obj\Debug\net9.0\SPEAK.Ab.E4248C2C.Up2Date
+F:\antigravity test\SPEAKSolution\Core\SPEAK.Abstraction\obj\Debug\net9.0\SPEAK.Abstraction.dll
+F:\antigravity test\SPEAKSolution\Core\SPEAK.Abstraction\obj\Debug\net9.0\refint\SPEAK.Abstraction.dll
+F:\antigravity test\SPEAKSolution\Core\SPEAK.Abstraction\obj\Debug\net9.0\SPEAK.Abstraction.pdb
+F:\antigravity test\SPEAKSolution\Core\SPEAK.Abstraction\obj\Debug\net9.0\ref\SPEAK.Abstraction.dll
+F:\Graduation Project\SPEAKSolution\Core\SPEAK.Abstraction\bin\Debug\net9.0\SPEAK.Abstraction.deps.json
+F:\Graduation Project\SPEAKSolution\Core\SPEAK.Abstraction\bin\Debug\net9.0\SPEAK.Abstraction.dll
+F:\Graduation Project\SPEAKSolution\Core\SPEAK.Abstraction\bin\Debug\net9.0\SPEAK.Abstraction.pdb
+F:\Graduation Project\SPEAKSolution\Core\SPEAK.Abstraction\bin\Debug\net9.0\SPEAK.Domain.dll
+F:\Graduation Project\SPEAKSolution\Core\SPEAK.Abstraction\bin\Debug\net9.0\SPEAK.Shared.dll
+F:\Graduation Project\SPEAKSolution\Core\SPEAK.Abstraction\bin\Debug\net9.0\SPEAK.Shared.pdb
+F:\Graduation Project\SPEAKSolution\Core\SPEAK.Abstraction\bin\Debug\net9.0\SPEAK.Domain.pdb
+F:\Graduation Project\SPEAKSolution\Core\SPEAK.Abstraction\obj\Debug\net9.0\SPEAK.Abstraction.csproj.AssemblyReference.cache
+F:\Graduation Project\SPEAKSolution\Core\SPEAK.Abstraction\obj\Debug\net9.0\SPEAK.Abstraction.GeneratedMSBuildEditorConfig.editorconfig
+F:\Graduation Project\SPEAKSolution\Core\SPEAK.Abstraction\obj\Debug\net9.0\SPEAK.Abstraction.AssemblyInfoInputs.cache
+F:\Graduation Project\SPEAKSolution\Core\SPEAK.Abstraction\obj\Debug\net9.0\SPEAK.Abstraction.AssemblyInfo.cs
+F:\Graduation Project\SPEAKSolution\Core\SPEAK.Abstraction\obj\Debug\net9.0\SPEAK.Abstraction.csproj.CoreCompileInputs.cache
+F:\Graduation Project\SPEAKSolution\Core\SPEAK.Abstraction\obj\Debug\net9.0\SPEAK.Ab.E4248C2C.Up2Date
+F:\Graduation Project\SPEAKSolution\Core\SPEAK.Abstraction\obj\Debug\net9.0\SPEAK.Abstraction.dll
+F:\Graduation Project\SPEAKSolution\Core\SPEAK.Abstraction\obj\Debug\net9.0\refint\SPEAK.Abstraction.dll
+F:\Graduation Project\SPEAKSolution\Core\SPEAK.Abstraction\obj\Debug\net9.0\SPEAK.Abstraction.pdb
+F:\Graduation Project\SPEAKSolution\Core\SPEAK.Abstraction\obj\Debug\net9.0\ref\SPEAK.Abstraction.dll

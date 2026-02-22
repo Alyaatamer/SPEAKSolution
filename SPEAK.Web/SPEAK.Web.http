@@ -1,0 +1,6 @@
+@SPEAK.Web_HostAddress = http://localhost:5254
+
+GET {{SPEAK.Web_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

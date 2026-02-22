@@ -1,0 +1,139 @@
+C:\Users\Lenovo\source\repos\SPEAKSolution\Infrastructure\SPEAK.Persistence\obj\Debug\net9.0\SPEAK.Persistence.csproj.AssemblyReference.cache
+C:\Users\Lenovo\source\repos\SPEAKSolution\Infrastructure\SPEAK.Persistence\obj\Debug\net9.0\SPEAK.Persistence.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lenovo\source\repos\SPEAKSolution\Infrastructure\SPEAK.Persistence\obj\Debug\net9.0\SPEAK.Persistence.AssemblyInfoInputs.cache
+C:\Users\Lenovo\source\repos\SPEAKSolution\Infrastructure\SPEAK.Persistence\obj\Debug\net9.0\SPEAK.Persistence.AssemblyInfo.cs
+C:\Users\Lenovo\source\repos\SPEAKSolution\Infrastructure\SPEAK.Persistence\obj\Debug\net9.0\SPEAK.Persistence.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\source\repos\SPEAKSolution\Infrastructure\SPEAK.Persistence\obj\Debug\net9.0\SPEAK.Persistence.sourcelink.json
+C:\Users\Lenovo\source\repos\SPEAKSolution\Infrastructure\SPEAK.Persistence\bin\Debug\net9.0\SPEAK.Persistence.deps.json
+C:\Users\Lenovo\source\repos\SPEAKSolution\Infrastructure\SPEAK.Persistence\bin\Debug\net9.0\SPEAK.Persistence.runtimeconfig.json
+C:\Users\Lenovo\source\repos\SPEAKSolution\Infrastructure\SPEAK.Persistence\bin\Debug\net9.0\SPEAK.Persistence.dll
+C:\Users\Lenovo\source\repos\SPEAKSolution\Infrastructure\SPEAK.Persistence\bin\Debug\net9.0\SPEAK.Persistence.pdb
+C:\Users\Lenovo\source\repos\SPEAKSolution\Infrastructure\SPEAK.Persistence\bin\Debug\net9.0\SPEAK.Abstraction.dll
+C:\Users\Lenovo\source\repos\SPEAKSolution\Infrastructure\SPEAK.Persistence\bin\Debug\net9.0\SPEAK.Domain.dll
+C:\Users\Lenovo\source\repos\SPEAKSolution\Infrastructure\SPEAK.Persistence\bin\Debug\net9.0\SPEAK.Service.dll
+C:\Users\Lenovo\source\repos\SPEAKSolution\Infrastructure\SPEAK.Persistence\bin\Debug\net9.0\SPEAK.Shared.dll
+C:\Users\Lenovo\source\repos\SPEAKSolution\Infrastructure\SPEAK.Persistence\bin\Debug\net9.0\SPEAK.Service.pdb
+C:\Users\Lenovo\source\repos\SPEAKSolution\Infrastructure\SPEAK.Persistence\bin\Debug\net9.0\SPEAK.Abstraction.pdb
+C:\Users\Lenovo\source\repos\SPEAKSolution\Infrastructure\SPEAK.Persistence\bin\Debug\net9.0\SPEAK.Domain.pdb
+C:\Users\Lenovo\source\repos\SPEAKSolution\Infrastructure\SPEAK.Persistence\bin\Debug\net9.0\SPEAK.Shared.pdb
+C:\Users\Lenovo\source\repos\SPEAKSolution\Infrastructure\SPEAK.Persistence\obj\Debug\net9.0\SPEAK.Pe.60AAD5D1.Up2Date
+C:\Users\Lenovo\source\repos\SPEAKSolution\Infrastructure\SPEAK.Persistence\obj\Debug\net9.0\SPEAK.Persistence.dll
+C:\Users\Lenovo\source\repos\SPEAKSolution\Infrastructure\SPEAK.Persistence\obj\Debug\net9.0\refint\SPEAK.Persistence.dll
+C:\Users\Lenovo\source\repos\SPEAKSolution\Infrastructure\SPEAK.Persistence\obj\Debug\net9.0\SPEAK.Persistence.pdb
+C:\Users\Lenovo\source\repos\SPEAKSolution\Infrastructure\SPEAK.Persistence\obj\Debug\net9.0\SPEAK.Persistence.genruntimeconfig.cache
+C:\Users\Lenovo\source\repos\SPEAKSolution\Infrastructure\SPEAK.Persistence\obj\Debug\net9.0\ref\SPEAK.Persistence.dll
+F:\SPEAK API\SPEAKSolution\SPEAKSolution\Infrastructure\SPEAK.Persistence\bin\Debug\net9.0\SPEAK.Persistence.deps.json
+F:\SPEAK API\SPEAKSolution\SPEAKSolution\Infrastructure\SPEAK.Persistence\bin\Debug\net9.0\SPEAK.Persistence.runtimeconfig.json
+F:\SPEAK API\SPEAKSolution\SPEAKSolution\Infrastructure\SPEAK.Persistence\bin\Debug\net9.0\SPEAK.Persistence.dll
+F:\SPEAK API\SPEAKSolution\SPEAKSolution\Infrastructure\SPEAK.Persistence\bin\Debug\net9.0\SPEAK.Persistence.pdb
+F:\SPEAK API\SPEAKSolution\SPEAKSolution\Infrastructure\SPEAK.Persistence\bin\Debug\net9.0\SPEAK.Abstraction.dll
+F:\SPEAK API\SPEAKSolution\SPEAKSolution\Infrastructure\SPEAK.Persistence\bin\Debug\net9.0\SPEAK.Domain.dll
+F:\SPEAK API\SPEAKSolution\SPEAKSolution\Infrastructure\SPEAK.Persistence\bin\Debug\net9.0\SPEAK.Service.dll
+F:\SPEAK API\SPEAKSolution\SPEAKSolution\Infrastructure\SPEAK.Persistence\bin\Debug\net9.0\SPEAK.Shared.dll
+F:\SPEAK API\SPEAKSolution\SPEAKSolution\Infrastructure\SPEAK.Persistence\bin\Debug\net9.0\SPEAK.Service.pdb
+F:\SPEAK API\SPEAKSolution\SPEAKSolution\Infrastructure\SPEAK.Persistence\bin\Debug\net9.0\SPEAK.Abstraction.pdb
+F:\SPEAK API\SPEAKSolution\SPEAKSolution\Infrastructure\SPEAK.Persistence\bin\Debug\net9.0\SPEAK.Domain.pdb
+F:\SPEAK API\SPEAKSolution\SPEAKSolution\Infrastructure\SPEAK.Persistence\bin\Debug\net9.0\SPEAK.Shared.pdb
+F:\SPEAK API\SPEAKSolution\SPEAKSolution\Infrastructure\SPEAK.Persistence\obj\Debug\net9.0\SPEAK.Persistence.csproj.AssemblyReference.cache
+F:\SPEAK API\SPEAKSolution\SPEAKSolution\Infrastructure\SPEAK.Persistence\obj\Debug\net9.0\SPEAK.Persistence.GeneratedMSBuildEditorConfig.editorconfig
+F:\SPEAK API\SPEAKSolution\SPEAKSolution\Infrastructure\SPEAK.Persistence\obj\Debug\net9.0\SPEAK.Persistence.AssemblyInfoInputs.cache
+F:\SPEAK API\SPEAKSolution\SPEAKSolution\Infrastructure\SPEAK.Persistence\obj\Debug\net9.0\SPEAK.Persistence.AssemblyInfo.cs
+F:\SPEAK API\SPEAKSolution\SPEAKSolution\Infrastructure\SPEAK.Persistence\obj\Debug\net9.0\SPEAK.Persistence.csproj.CoreCompileInputs.cache
+F:\SPEAK API\SPEAKSolution\SPEAKSolution\Infrastructure\SPEAK.Persistence\obj\Debug\net9.0\SPEAK.Pe.60AAD5D1.Up2Date
+F:\SPEAK API\SPEAKSolution\SPEAKSolution\Infrastructure\SPEAK.Persistence\obj\Debug\net9.0\SPEAK.Persistence.dll
+F:\SPEAK API\SPEAKSolution\SPEAKSolution\Infrastructure\SPEAK.Persistence\obj\Debug\net9.0\refint\SPEAK.Persistence.dll
+F:\SPEAK API\SPEAKSolution\SPEAKSolution\Infrastructure\SPEAK.Persistence\obj\Debug\net9.0\SPEAK.Persistence.pdb
+F:\SPEAK API\SPEAKSolution\SPEAKSolution\Infrastructure\SPEAK.Persistence\obj\Debug\net9.0\SPEAK.Persistence.genruntimeconfig.cache
+F:\SPEAK API\SPEAKSolution\SPEAKSolution\Infrastructure\SPEAK.Persistence\obj\Debug\net9.0\ref\SPEAK.Persistence.dll
+F:\SPEAK\Backend\SPEAKSolution\Infrastructure\SPEAK.Persistence\bin\Debug\net9.0\SPEAK.Persistence.deps.json
+F:\SPEAK\Backend\SPEAKSolution\Infrastructure\SPEAK.Persistence\bin\Debug\net9.0\SPEAK.Persistence.runtimeconfig.json
+F:\SPEAK\Backend\SPEAKSolution\Infrastructure\SPEAK.Persistence\bin\Debug\net9.0\SPEAK.Persistence.dll
+F:\SPEAK\Backend\SPEAKSolution\Infrastructure\SPEAK.Persistence\bin\Debug\net9.0\SPEAK.Persistence.pdb
+F:\SPEAK\Backend\SPEAKSolution\Infrastructure\SPEAK.Persistence\bin\Debug\net9.0\SPEAK.Abstraction.dll
+F:\SPEAK\Backend\SPEAKSolution\Infrastructure\SPEAK.Persistence\bin\Debug\net9.0\SPEAK.Domain.dll
+F:\SPEAK\Backend\SPEAKSolution\Infrastructure\SPEAK.Persistence\bin\Debug\net9.0\SPEAK.Service.dll
+F:\SPEAK\Backend\SPEAKSolution\Infrastructure\SPEAK.Persistence\bin\Debug\net9.0\SPEAK.Shared.dll
+F:\SPEAK\Backend\SPEAKSolution\Infrastructure\SPEAK.Persistence\bin\Debug\net9.0\SPEAK.Service.pdb
+F:\SPEAK\Backend\SPEAKSolution\Infrastructure\SPEAK.Persistence\bin\Debug\net9.0\SPEAK.Abstraction.pdb
+F:\SPEAK\Backend\SPEAKSolution\Infrastructure\SPEAK.Persistence\bin\Debug\net9.0\SPEAK.Domain.pdb
+F:\SPEAK\Backend\SPEAKSolution\Infrastructure\SPEAK.Persistence\bin\Debug\net9.0\SPEAK.Shared.pdb
+F:\SPEAK\Backend\SPEAKSolution\Infrastructure\SPEAK.Persistence\obj\Debug\net9.0\SPEAK.Persistence.csproj.AssemblyReference.cache
+F:\SPEAK\Backend\SPEAKSolution\Infrastructure\SPEAK.Persistence\obj\Debug\net9.0\SPEAK.Persistence.GeneratedMSBuildEditorConfig.editorconfig
+F:\SPEAK\Backend\SPEAKSolution\Infrastructure\SPEAK.Persistence\obj\Debug\net9.0\SPEAK.Persistence.AssemblyInfoInputs.cache
+F:\SPEAK\Backend\SPEAKSolution\Infrastructure\SPEAK.Persistence\obj\Debug\net9.0\SPEAK.Persistence.AssemblyInfo.cs
+F:\SPEAK\Backend\SPEAKSolution\Infrastructure\SPEAK.Persistence\obj\Debug\net9.0\SPEAK.Persistence.csproj.CoreCompileInputs.cache
+F:\SPEAK\Backend\SPEAKSolution\Infrastructure\SPEAK.Persistence\obj\Debug\net9.0\SPEAK.Pe.60AAD5D1.Up2Date
+F:\SPEAK\Backend\SPEAKSolution\Infrastructure\SPEAK.Persistence\obj\Debug\net9.0\SPEAK.Persistence.dll
+F:\SPEAK\Backend\SPEAKSolution\Infrastructure\SPEAK.Persistence\obj\Debug\net9.0\refint\SPEAK.Persistence.dll
+F:\SPEAK\Backend\SPEAKSolution\Infrastructure\SPEAK.Persistence\obj\Debug\net9.0\SPEAK.Persistence.pdb
+F:\SPEAK\Backend\SPEAKSolution\Infrastructure\SPEAK.Persistence\obj\Debug\net9.0\SPEAK.Persistence.genruntimeconfig.cache
+F:\SPEAK\Backend\SPEAKSolution\Infrastructure\SPEAK.Persistence\obj\Debug\net9.0\ref\SPEAK.Persistence.dll
+F:\Backend\SPEAKSolution\Infrastructure\SPEAK.Persistence\bin\Debug\net9.0\SPEAK.Persistence.deps.json
+F:\Backend\SPEAKSolution\Infrastructure\SPEAK.Persistence\bin\Debug\net9.0\SPEAK.Persistence.runtimeconfig.json
+F:\Backend\SPEAKSolution\Infrastructure\SPEAK.Persistence\bin\Debug\net9.0\SPEAK.Persistence.dll
+F:\Backend\SPEAKSolution\Infrastructure\SPEAK.Persistence\bin\Debug\net9.0\SPEAK.Persistence.pdb
+F:\Backend\SPEAKSolution\Infrastructure\SPEAK.Persistence\bin\Debug\net9.0\SPEAK.Abstraction.dll
+F:\Backend\SPEAKSolution\Infrastructure\SPEAK.Persistence\bin\Debug\net9.0\SPEAK.Domain.dll
+F:\Backend\SPEAKSolution\Infrastructure\SPEAK.Persistence\bin\Debug\net9.0\SPEAK.Service.dll
+F:\Backend\SPEAKSolution\Infrastructure\SPEAK.Persistence\bin\Debug\net9.0\SPEAK.Shared.dll
+F:\Backend\SPEAKSolution\Infrastructure\SPEAK.Persistence\bin\Debug\net9.0\SPEAK.Service.pdb
+F:\Backend\SPEAKSolution\Infrastructure\SPEAK.Persistence\bin\Debug\net9.0\SPEAK.Abstraction.pdb
+F:\Backend\SPEAKSolution\Infrastructure\SPEAK.Persistence\bin\Debug\net9.0\SPEAK.Domain.pdb
+F:\Backend\SPEAKSolution\Infrastructure\SPEAK.Persistence\bin\Debug\net9.0\SPEAK.Shared.pdb
+F:\Backend\SPEAKSolution\Infrastructure\SPEAK.Persistence\obj\Debug\net9.0\SPEAK.Persistence.csproj.AssemblyReference.cache
+F:\Backend\SPEAKSolution\Infrastructure\SPEAK.Persistence\obj\Debug\net9.0\SPEAK.Persistence.GeneratedMSBuildEditorConfig.editorconfig
+F:\Backend\SPEAKSolution\Infrastructure\SPEAK.Persistence\obj\Debug\net9.0\SPEAK.Persistence.AssemblyInfoInputs.cache
+F:\Backend\SPEAKSolution\Infrastructure\SPEAK.Persistence\obj\Debug\net9.0\SPEAK.Persistence.AssemblyInfo.cs
+F:\Backend\SPEAKSolution\Infrastructure\SPEAK.Persistence\obj\Debug\net9.0\SPEAK.Persistence.csproj.CoreCompileInputs.cache
+F:\Backend\SPEAKSolution\Infrastructure\SPEAK.Persistence\obj\Debug\net9.0\SPEAK.Pe.60AAD5D1.Up2Date
+F:\Backend\SPEAKSolution\Infrastructure\SPEAK.Persistence\obj\Debug\net9.0\SPEAK.Persistence.dll
+F:\Backend\SPEAKSolution\Infrastructure\SPEAK.Persistence\obj\Debug\net9.0\refint\SPEAK.Persistence.dll
+F:\Backend\SPEAKSolution\Infrastructure\SPEAK.Persistence\obj\Debug\net9.0\SPEAK.Persistence.pdb
+F:\Backend\SPEAKSolution\Infrastructure\SPEAK.Persistence\obj\Debug\net9.0\SPEAK.Persistence.genruntimeconfig.cache
+F:\Backend\SPEAKSolution\Infrastructure\SPEAK.Persistence\obj\Debug\net9.0\ref\SPEAK.Persistence.dll
+F:\antigravity test\SPEAKSolution\Infrastructure\SPEAK.Persistence\bin\Debug\net9.0\SPEAK.Persistence.deps.json
+F:\antigravity test\SPEAKSolution\Infrastructure\SPEAK.Persistence\bin\Debug\net9.0\SPEAK.Persistence.runtimeconfig.json
+F:\antigravity test\SPEAKSolution\Infrastructure\SPEAK.Persistence\bin\Debug\net9.0\SPEAK.Persistence.dll
+F:\antigravity test\SPEAKSolution\Infrastructure\SPEAK.Persistence\bin\Debug\net9.0\SPEAK.Persistence.pdb
+F:\antigravity test\SPEAKSolution\Infrastructure\SPEAK.Persistence\bin\Debug\net9.0\SPEAK.Abstraction.dll
+F:\antigravity test\SPEAKSolution\Infrastructure\SPEAK.Persistence\bin\Debug\net9.0\SPEAK.Domain.dll
+F:\antigravity test\SPEAKSolution\Infrastructure\SPEAK.Persistence\bin\Debug\net9.0\SPEAK.Service.dll
+F:\antigravity test\SPEAKSolution\Infrastructure\SPEAK.Persistence\bin\Debug\net9.0\SPEAK.Shared.dll
+F:\antigravity test\SPEAKSolution\Infrastructure\SPEAK.Persistence\bin\Debug\net9.0\SPEAK.Service.pdb
+F:\antigravity test\SPEAKSolution\Infrastructure\SPEAK.Persistence\bin\Debug\net9.0\SPEAK.Abstraction.pdb
+F:\antigravity test\SPEAKSolution\Infrastructure\SPEAK.Persistence\bin\Debug\net9.0\SPEAK.Domain.pdb
+F:\antigravity test\SPEAKSolution\Infrastructure\SPEAK.Persistence\bin\Debug\net9.0\SPEAK.Shared.pdb
+F:\antigravity test\SPEAKSolution\Infrastructure\SPEAK.Persistence\obj\Debug\net9.0\SPEAK.Persistence.csproj.AssemblyReference.cache
+F:\antigravity test\SPEAKSolution\Infrastructure\SPEAK.Persistence\obj\Debug\net9.0\SPEAK.Persistence.GeneratedMSBuildEditorConfig.editorconfig
+F:\antigravity test\SPEAKSolution\Infrastructure\SPEAK.Persistence\obj\Debug\net9.0\SPEAK.Persistence.AssemblyInfoInputs.cache
+F:\antigravity test\SPEAKSolution\Infrastructure\SPEAK.Persistence\obj\Debug\net9.0\SPEAK.Persistence.AssemblyInfo.cs
+F:\antigravity test\SPEAKSolution\Infrastructure\SPEAK.Persistence\obj\Debug\net9.0\SPEAK.Persistence.csproj.CoreCompileInputs.cache
+F:\antigravity test\SPEAKSolution\Infrastructure\SPEAK.Persistence\obj\Debug\net9.0\SPEAK.Pe.60AAD5D1.Up2Date
+F:\antigravity test\SPEAKSolution\Infrastructure\SPEAK.Persistence\obj\Debug\net9.0\SPEAK.Persistence.dll
+F:\antigravity test\SPEAKSolution\Infrastructure\SPEAK.Persistence\obj\Debug\net9.0\refint\SPEAK.Persistence.dll
+F:\antigravity test\SPEAKSolution\Infrastructure\SPEAK.Persistence\obj\Debug\net9.0\SPEAK.Persistence.pdb
+F:\antigravity test\SPEAKSolution\Infrastructure\SPEAK.Persistence\obj\Debug\net9.0\SPEAK.Persistence.genruntimeconfig.cache
+F:\antigravity test\SPEAKSolution\Infrastructure\SPEAK.Persistence\obj\Debug\net9.0\ref\SPEAK.Persistence.dll
+F:\Graduation Project\SPEAKSolution\Infrastructure\SPEAK.Persistence\bin\Debug\net9.0\SPEAK.Persistence.deps.json
+F:\Graduation Project\SPEAKSolution\Infrastructure\SPEAK.Persistence\bin\Debug\net9.0\SPEAK.Persistence.runtimeconfig.json
+F:\Graduation Project\SPEAKSolution\Infrastructure\SPEAK.Persistence\bin\Debug\net9.0\SPEAK.Persistence.dll
+F:\Graduation Project\SPEAKSolution\Infrastructure\SPEAK.Persistence\bin\Debug\net9.0\SPEAK.Persistence.pdb
+F:\Graduation Project\SPEAKSolution\Infrastructure\SPEAK.Persistence\bin\Debug\net9.0\SPEAK.Abstraction.dll
+F:\Graduation Project\SPEAKSolution\Infrastructure\SPEAK.Persistence\bin\Debug\net9.0\SPEAK.Domain.dll
+F:\Graduation Project\SPEAKSolution\Infrastructure\SPEAK.Persistence\bin\Debug\net9.0\SPEAK.Service.dll
+F:\Graduation Project\SPEAKSolution\Infrastructure\SPEAK.Persistence\bin\Debug\net9.0\SPEAK.Shared.dll
+F:\Graduation Project\SPEAKSolution\Infrastructure\SPEAK.Persistence\bin\Debug\net9.0\SPEAK.Service.pdb
+F:\Graduation Project\SPEAKSolution\Infrastructure\SPEAK.Persistence\bin\Debug\net9.0\SPEAK.Abstraction.pdb
+F:\Graduation Project\SPEAKSolution\Infrastructure\SPEAK.Persistence\bin\Debug\net9.0\SPEAK.Domain.pdb
+F:\Graduation Project\SPEAKSolution\Infrastructure\SPEAK.Persistence\bin\Debug\net9.0\SPEAK.Shared.pdb
+F:\Graduation Project\SPEAKSolution\Infrastructure\SPEAK.Persistence\obj\Debug\net9.0\SPEAK.Persistence.csproj.AssemblyReference.cache
+F:\Graduation Project\SPEAKSolution\Infrastructure\SPEAK.Persistence\obj\Debug\net9.0\SPEAK.Persistence.GeneratedMSBuildEditorConfig.editorconfig
+F:\Graduation Project\SPEAKSolution\Infrastructure\SPEAK.Persistence\obj\Debug\net9.0\SPEAK.Persistence.AssemblyInfoInputs.cache
+F:\Graduation Project\SPEAKSolution\Infrastructure\SPEAK.Persistence\obj\Debug\net9.0\SPEAK.Persistence.AssemblyInfo.cs
+F:\Graduation Project\SPEAKSolution\Infrastructure\SPEAK.Persistence\obj\Debug\net9.0\SPEAK.Persistence.csproj.CoreCompileInputs.cache
+F:\Graduation Project\SPEAKSolution\Infrastructure\SPEAK.Persistence\obj\Debug\net9.0\SPEAK.Pe.60AAD5D1.Up2Date
+F:\Graduation Project\SPEAKSolution\Infrastructure\SPEAK.Persistence\obj\Debug\net9.0\SPEAK.Persistence.dll
+F:\Graduation Project\SPEAKSolution\Infrastructure\SPEAK.Persistence\obj\Debug\net9.0\refint\SPEAK.Persistence.dll
+F:\Graduation Project\SPEAKSolution\Infrastructure\SPEAK.Persistence\obj\Debug\net9.0\SPEAK.Persistence.pdb
+F:\Graduation Project\SPEAKSolution\Infrastructure\SPEAK.Persistence\obj\Debug\net9.0\SPEAK.Persistence.genruntimeconfig.cache
+F:\Graduation Project\SPEAKSolution\Infrastructure\SPEAK.Persistence\obj\Debug\net9.0\ref\SPEAK.Persistence.dll

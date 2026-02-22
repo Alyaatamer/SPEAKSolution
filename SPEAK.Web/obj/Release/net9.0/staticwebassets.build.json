@@ -1,0 +1,1722 @@
+{
+  "Version": 1,
+  "Hash": "oX/KFAiQ2xi5YSuthwZ86HguFkOyf+fuViPkrsi/Y9Y=",
+  "Source": "SPEAK.Web",
+  "BasePath": "_content/SPEAK.Web",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "SPEAK.Web\\wwwroot",
+      "Source": "SPEAK.Web",
+      "ContentRoot": "F:\\antigravity test\\SPEAKSolution\\SPEAK.Web\\wwwroot\\",
+      "BasePath": "_content/SPEAK.Web",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "F:\\antigravity test\\SPEAKSolution\\SPEAK.Web\\obj\\Release\\net9.0\\compressed\\2jdploho02-0qvsl92vkd.gz",
+      "SourceId": "SPEAK.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\antigravity test\\SPEAKSolution\\SPEAK.Web\\obj\\Release\\net9.0\\compressed\\",
+      "BasePath": "_content/SPEAK.Web",
+      "RelativePath": "voices/9b139b7a-e70f-46d2-b753-4ba6fe67d2ad_test#[.{fingerprint=0qvsl92vkd}]?.wav.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "F:\\antigravity test\\SPEAKSolution\\SPEAK.Web\\wwwroot\\voices\\9b139b7a-e70f-46d2-b753-4ba6fe67d2ad_test.wav",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "jn2ijjvair",
+      "Integrity": "72yN9oo4yP1sPhKQMGyHmOdrEpk3UUUyzckOYgQgDpc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "F:\\antigravity test\\SPEAKSolution\\SPEAK.Web\\wwwroot\\voices\\9b139b7a-e70f-46d2-b753-4ba6fe67d2ad_test.wav"
+    },
+    {
+      "Identity": "F:\\antigravity test\\SPEAKSolution\\SPEAK.Web\\obj\\Release\\net9.0\\compressed\\5yrmv8uitf-0qvsl92vkd.gz",
+      "SourceId": "SPEAK.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\antigravity test\\SPEAKSolution\\SPEAK.Web\\obj\\Release\\net9.0\\compressed\\",
+      "BasePath": "_content/SPEAK.Web",
+      "RelativePath": "voices/64d99b1b-6089-4ba5-9b94-3ce9f4ec7008_test#[.{fingerprint=0qvsl92vkd}]?.wav.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "F:\\antigravity test\\SPEAKSolution\\SPEAK.Web\\wwwroot\\voices\\64d99b1b-6089-4ba5-9b94-3ce9f4ec7008_test.wav",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "jn2ijjvair",
+      "Integrity": "72yN9oo4yP1sPhKQMGyHmOdrEpk3UUUyzckOYgQgDpc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "F:\\antigravity test\\SPEAKSolution\\SPEAK.Web\\wwwroot\\voices\\64d99b1b-6089-4ba5-9b94-3ce9f4ec7008_test.wav"
+    },
+    {
+      "Identity": "F:\\antigravity test\\SPEAKSolution\\SPEAK.Web\\obj\\Release\\net9.0\\compressed\\fpzn178rqe-0qvsl92vkd.gz",
+      "SourceId": "SPEAK.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\antigravity test\\SPEAKSolution\\SPEAK.Web\\obj\\Release\\net9.0\\compressed\\",
+      "BasePath": "_content/SPEAK.Web",
+      "RelativePath": "voices/a59a61e9-d1a2-4450-8339-ee6db88c2293_test#[.{fingerprint=0qvsl92vkd}]?.wav.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "F:\\antigravity test\\SPEAKSolution\\SPEAK.Web\\wwwroot\\voices\\a59a61e9-d1a2-4450-8339-ee6db88c2293_test.wav",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "jn2ijjvair",
+      "Integrity": "72yN9oo4yP1sPhKQMGyHmOdrEpk3UUUyzckOYgQgDpc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "F:\\antigravity test\\SPEAKSolution\\SPEAK.Web\\wwwroot\\voices\\a59a61e9-d1a2-4450-8339-ee6db88c2293_test.wav"
+    },
+    {
+      "Identity": "F:\\antigravity test\\SPEAKSolution\\SPEAK.Web\\obj\\Release\\net9.0\\compressed\\lwle2zef52-0qvsl92vkd.gz",
+      "SourceId": "SPEAK.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\antigravity test\\SPEAKSolution\\SPEAK.Web\\obj\\Release\\net9.0\\compressed\\",
+      "BasePath": "_content/SPEAK.Web",
+      "RelativePath": "voices/158370a2-57c3-4316-96dc-71cb008a0b48_test#[.{fingerprint=0qvsl92vkd}]?.wav.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "F:\\antigravity test\\SPEAKSolution\\SPEAK.Web\\wwwroot\\voices\\158370a2-57c3-4316-96dc-71cb008a0b48_test.wav",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "jn2ijjvair",
+      "Integrity": "72yN9oo4yP1sPhKQMGyHmOdrEpk3UUUyzckOYgQgDpc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "F:\\antigravity test\\SPEAKSolution\\SPEAK.Web\\wwwroot\\voices\\158370a2-57c3-4316-96dc-71cb008a0b48_test.wav"
+    },
+    {
+      "Identity": "F:\\antigravity test\\SPEAKSolution\\SPEAK.Web\\obj\\Release\\net9.0\\compressed\\ovmrd9ljna-0qvsl92vkd.gz",
+      "SourceId": "SPEAK.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\antigravity test\\SPEAKSolution\\SPEAK.Web\\obj\\Release\\net9.0\\compressed\\",
+      "BasePath": "_content/SPEAK.Web",
+      "RelativePath": "voices/defd69e3-7373-48ee-86b6-e1a0fb383587_test#[.{fingerprint=0qvsl92vkd}]?.wav.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "F:\\antigravity test\\SPEAKSolution\\SPEAK.Web\\wwwroot\\voices\\defd69e3-7373-48ee-86b6-e1a0fb383587_test.wav",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "jn2ijjvair",
+      "Integrity": "72yN9oo4yP1sPhKQMGyHmOdrEpk3UUUyzckOYgQgDpc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "F:\\antigravity test\\SPEAKSolution\\SPEAK.Web\\wwwroot\\voices\\defd69e3-7373-48ee-86b6-e1a0fb383587_test.wav"
+    },
+    {
+      "Identity": "F:\\antigravity test\\SPEAKSolution\\SPEAK.Web\\wwwroot\\voices\\158370a2-57c3-4316-96dc-71cb008a0b48_test.wav",
+      "SourceId": "SPEAK.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\antigravity test\\SPEAKSolution\\SPEAK.Web\\wwwroot\\",
+      "BasePath": "_content/SPEAK.Web",
+      "RelativePath": "voices/158370a2-57c3-4316-96dc-71cb008a0b48_test#[.{fingerprint}]?.wav",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "0qvsl92vkd",
+      "Integrity": "aJcRLbtOi27KTi0VOEeDBnrYZkgjg/L5h9HWz/oxAk8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\voices\\158370a2-57c3-4316-96dc-71cb008a0b48_test.wav"
+    },
+    {
+      "Identity": "F:\\antigravity test\\SPEAKSolution\\SPEAK.Web\\wwwroot\\voices\\64d99b1b-6089-4ba5-9b94-3ce9f4ec7008_test.wav",
+      "SourceId": "SPEAK.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\antigravity test\\SPEAKSolution\\SPEAK.Web\\wwwroot\\",
+      "BasePath": "_content/SPEAK.Web",
+      "RelativePath": "voices/64d99b1b-6089-4ba5-9b94-3ce9f4ec7008_test#[.{fingerprint}]?.wav",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "0qvsl92vkd",
+      "Integrity": "aJcRLbtOi27KTi0VOEeDBnrYZkgjg/L5h9HWz/oxAk8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\voices\\64d99b1b-6089-4ba5-9b94-3ce9f4ec7008_test.wav"
+    },
+    {
+      "Identity": "F:\\antigravity test\\SPEAKSolution\\SPEAK.Web\\wwwroot\\voices\\9b139b7a-e70f-46d2-b753-4ba6fe67d2ad_test.wav",
+      "SourceId": "SPEAK.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\antigravity test\\SPEAKSolution\\SPEAK.Web\\wwwroot\\",
+      "BasePath": "_content/SPEAK.Web",
+      "RelativePath": "voices/9b139b7a-e70f-46d2-b753-4ba6fe67d2ad_test#[.{fingerprint}]?.wav",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "0qvsl92vkd",
+      "Integrity": "aJcRLbtOi27KTi0VOEeDBnrYZkgjg/L5h9HWz/oxAk8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\voices\\9b139b7a-e70f-46d2-b753-4ba6fe67d2ad_test.wav"
+    },
+    {
+      "Identity": "F:\\antigravity test\\SPEAKSolution\\SPEAK.Web\\wwwroot\\voices\\a59a61e9-d1a2-4450-8339-ee6db88c2293_test.wav",
+      "SourceId": "SPEAK.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\antigravity test\\SPEAKSolution\\SPEAK.Web\\wwwroot\\",
+      "BasePath": "_content/SPEAK.Web",
+      "RelativePath": "voices/a59a61e9-d1a2-4450-8339-ee6db88c2293_test#[.{fingerprint}]?.wav",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "0qvsl92vkd",
+      "Integrity": "aJcRLbtOi27KTi0VOEeDBnrYZkgjg/L5h9HWz/oxAk8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\voices\\a59a61e9-d1a2-4450-8339-ee6db88c2293_test.wav"
+    },
+    {
+      "Identity": "F:\\antigravity test\\SPEAKSolution\\SPEAK.Web\\wwwroot\\voices\\defd69e3-7373-48ee-86b6-e1a0fb383587_test.wav",
+      "SourceId": "SPEAK.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\antigravity test\\SPEAKSolution\\SPEAK.Web\\wwwroot\\",
+      "BasePath": "_content/SPEAK.Web",
+      "RelativePath": "voices/defd69e3-7373-48ee-86b6-e1a0fb383587_test#[.{fingerprint}]?.wav",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "0qvsl92vkd",
+      "Integrity": "aJcRLbtOi27KTi0VOEeDBnrYZkgjg/L5h9HWz/oxAk8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\voices\\defd69e3-7373-48ee-86b6-e1a0fb383587_test.wav"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "voices/158370a2-57c3-4316-96dc-71cb008a0b48_test.0qvsl92vkd.wav",
+      "AssetFile": "F:\\antigravity test\\SPEAKSolution\\SPEAK.Web\\obj\\Release\\net9.0\\compressed\\lwle2zef52-0qvsl92vkd.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000001212775"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "824554"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"72yN9oo4yP1sPhKQMGyHmOdrEpk3UUUyzckOYgQgDpc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 08 Feb 2026 08:31:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/wav"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"aJcRLbtOi27KTi0VOEeDBnrYZkgjg/L5h9HWz/oxAk8=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0qvsl92vkd"
+        },
+        {
+          "Name": "label",
+          "Value": "voices/158370a2-57c3-4316-96dc-71cb008a0b48_test.wav"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-aJcRLbtOi27KTi0VOEeDBnrYZkgjg/L5h9HWz/oxAk8="
+        }
+      ]
+    },
+    {
+      "Route": "voices/158370a2-57c3-4316-96dc-71cb008a0b48_test.0qvsl92vkd.wav",
+      "AssetFile": "F:\\antigravity test\\SPEAKSolution\\SPEAK.Web\\wwwroot\\voices\\158370a2-57c3-4316-96dc-71cb008a0b48_test.wav",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1048558"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/wav"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"aJcRLbtOi27KTi0VOEeDBnrYZkgjg/L5h9HWz/oxAk8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 08 Feb 2026 08:31:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0qvsl92vkd"
+        },
+        {
+          "Name": "label",
+          "Value": "voices/158370a2-57c3-4316-96dc-71cb008a0b48_test.wav"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-aJcRLbtOi27KTi0VOEeDBnrYZkgjg/L5h9HWz/oxAk8="
+        }
+      ]
+    },
+    {
+      "Route": "voices/158370a2-57c3-4316-96dc-71cb008a0b48_test.0qvsl92vkd.wav.gz",
+      "AssetFile": "F:\\antigravity test\\SPEAKSolution\\SPEAK.Web\\obj\\Release\\net9.0\\compressed\\lwle2zef52-0qvsl92vkd.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "824554"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/wav"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"72yN9oo4yP1sPhKQMGyHmOdrEpk3UUUyzckOYgQgDpc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 08 Feb 2026 08:31:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0qvsl92vkd"
+        },
+        {
+          "Name": "label",
+          "Value": "voices/158370a2-57c3-4316-96dc-71cb008a0b48_test.wav.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-72yN9oo4yP1sPhKQMGyHmOdrEpk3UUUyzckOYgQgDpc="
+        }
+      ]
+    },
+    {
+      "Route": "voices/158370a2-57c3-4316-96dc-71cb008a0b48_test.wav",
+      "AssetFile": "F:\\antigravity test\\SPEAKSolution\\SPEAK.Web\\obj\\Release\\net9.0\\compressed\\lwle2zef52-0qvsl92vkd.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000001212775"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "824554"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"72yN9oo4yP1sPhKQMGyHmOdrEpk3UUUyzckOYgQgDpc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 08 Feb 2026 08:31:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/wav"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"aJcRLbtOi27KTi0VOEeDBnrYZkgjg/L5h9HWz/oxAk8=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-aJcRLbtOi27KTi0VOEeDBnrYZkgjg/L5h9HWz/oxAk8="
+        }
+      ]
+    },
+    {
+      "Route": "voices/158370a2-57c3-4316-96dc-71cb008a0b48_test.wav",
+      "AssetFile": "F:\\antigravity test\\SPEAKSolution\\SPEAK.Web\\wwwroot\\voices\\158370a2-57c3-4316-96dc-71cb008a0b48_test.wav",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1048558"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/wav"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"aJcRLbtOi27KTi0VOEeDBnrYZkgjg/L5h9HWz/oxAk8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 08 Feb 2026 08:31:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-aJcRLbtOi27KTi0VOEeDBnrYZkgjg/L5h9HWz/oxAk8="
+        }
+      ]
+    },
+    {
+      "Route": "voices/158370a2-57c3-4316-96dc-71cb008a0b48_test.wav.gz",
+      "AssetFile": "F:\\antigravity test\\SPEAKSolution\\SPEAK.Web\\obj\\Release\\net9.0\\compressed\\lwle2zef52-0qvsl92vkd.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "824554"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/wav"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"72yN9oo4yP1sPhKQMGyHmOdrEpk3UUUyzckOYgQgDpc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 08 Feb 2026 08:31:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-72yN9oo4yP1sPhKQMGyHmOdrEpk3UUUyzckOYgQgDpc="
+        }
+      ]
+    },
+    {
+      "Route": "voices/64d99b1b-6089-4ba5-9b94-3ce9f4ec7008_test.0qvsl92vkd.wav",
+      "AssetFile": "F:\\antigravity test\\SPEAKSolution\\SPEAK.Web\\obj\\Release\\net9.0\\compressed\\5yrmv8uitf-0qvsl92vkd.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000001212775"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "824554"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"72yN9oo4yP1sPhKQMGyHmOdrEpk3UUUyzckOYgQgDpc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 07 Feb 2026 18:14:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/wav"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"aJcRLbtOi27KTi0VOEeDBnrYZkgjg/L5h9HWz/oxAk8=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0qvsl92vkd"
+        },
+        {
+          "Name": "label",
+          "Value": "voices/64d99b1b-6089-4ba5-9b94-3ce9f4ec7008_test.wav"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-aJcRLbtOi27KTi0VOEeDBnrYZkgjg/L5h9HWz/oxAk8="
+        }
+      ]
+    },
+    {
+      "Route": "voices/64d99b1b-6089-4ba5-9b94-3ce9f4ec7008_test.0qvsl92vkd.wav",
+      "AssetFile": "F:\\antigravity test\\SPEAKSolution\\SPEAK.Web\\wwwroot\\voices\\64d99b1b-6089-4ba5-9b94-3ce9f4ec7008_test.wav",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1048558"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/wav"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"aJcRLbtOi27KTi0VOEeDBnrYZkgjg/L5h9HWz/oxAk8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 07 Feb 2026 18:14:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0qvsl92vkd"
+        },
+        {
+          "Name": "label",
+          "Value": "voices/64d99b1b-6089-4ba5-9b94-3ce9f4ec7008_test.wav"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-aJcRLbtOi27KTi0VOEeDBnrYZkgjg/L5h9HWz/oxAk8="
+        }
+      ]
+    },
+    {
+      "Route": "voices/64d99b1b-6089-4ba5-9b94-3ce9f4ec7008_test.0qvsl92vkd.wav.gz",
+      "AssetFile": "F:\\antigravity test\\SPEAKSolution\\SPEAK.Web\\obj\\Release\\net9.0\\compressed\\5yrmv8uitf-0qvsl92vkd.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "824554"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/wav"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"72yN9oo4yP1sPhKQMGyHmOdrEpk3UUUyzckOYgQgDpc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 07 Feb 2026 18:14:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0qvsl92vkd"
+        },
+        {
+          "Name": "label",
+          "Value": "voices/64d99b1b-6089-4ba5-9b94-3ce9f4ec7008_test.wav.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-72yN9oo4yP1sPhKQMGyHmOdrEpk3UUUyzckOYgQgDpc="
+        }
+      ]
+    },
+    {
+      "Route": "voices/64d99b1b-6089-4ba5-9b94-3ce9f4ec7008_test.wav",
+      "AssetFile": "F:\\antigravity test\\SPEAKSolution\\SPEAK.Web\\obj\\Release\\net9.0\\compressed\\5yrmv8uitf-0qvsl92vkd.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000001212775"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "824554"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"72yN9oo4yP1sPhKQMGyHmOdrEpk3UUUyzckOYgQgDpc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 07 Feb 2026 18:14:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/wav"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"aJcRLbtOi27KTi0VOEeDBnrYZkgjg/L5h9HWz/oxAk8=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-aJcRLbtOi27KTi0VOEeDBnrYZkgjg/L5h9HWz/oxAk8="
+        }
+      ]
+    },
+    {
+      "Route": "voices/64d99b1b-6089-4ba5-9b94-3ce9f4ec7008_test.wav",
+      "AssetFile": "F:\\antigravity test\\SPEAKSolution\\SPEAK.Web\\wwwroot\\voices\\64d99b1b-6089-4ba5-9b94-3ce9f4ec7008_test.wav",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1048558"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/wav"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"aJcRLbtOi27KTi0VOEeDBnrYZkgjg/L5h9HWz/oxAk8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 07 Feb 2026 18:14:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-aJcRLbtOi27KTi0VOEeDBnrYZkgjg/L5h9HWz/oxAk8="
+        }
+      ]
+    },
+    {
+      "Route": "voices/64d99b1b-6089-4ba5-9b94-3ce9f4ec7008_test.wav.gz",
+      "AssetFile": "F:\\antigravity test\\SPEAKSolution\\SPEAK.Web\\obj\\Release\\net9.0\\compressed\\5yrmv8uitf-0qvsl92vkd.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "824554"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/wav"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"72yN9oo4yP1sPhKQMGyHmOdrEpk3UUUyzckOYgQgDpc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 07 Feb 2026 18:14:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-72yN9oo4yP1sPhKQMGyHmOdrEpk3UUUyzckOYgQgDpc="
+        }
+      ]
+    },
+    {
+      "Route": "voices/9b139b7a-e70f-46d2-b753-4ba6fe67d2ad_test.0qvsl92vkd.wav",
+      "AssetFile": "F:\\antigravity test\\SPEAKSolution\\SPEAK.Web\\obj\\Release\\net9.0\\compressed\\2jdploho02-0qvsl92vkd.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000001212775"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "824554"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"72yN9oo4yP1sPhKQMGyHmOdrEpk3UUUyzckOYgQgDpc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 09 Feb 2026 14:37:01 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/wav"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"aJcRLbtOi27KTi0VOEeDBnrYZkgjg/L5h9HWz/oxAk8=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0qvsl92vkd"
+        },
+        {
+          "Name": "label",
+          "Value": "voices/9b139b7a-e70f-46d2-b753-4ba6fe67d2ad_test.wav"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-aJcRLbtOi27KTi0VOEeDBnrYZkgjg/L5h9HWz/oxAk8="
+        }
+      ]
+    },
+    {
+      "Route": "voices/9b139b7a-e70f-46d2-b753-4ba6fe67d2ad_test.0qvsl92vkd.wav",
+      "AssetFile": "F:\\antigravity test\\SPEAKSolution\\SPEAK.Web\\wwwroot\\voices\\9b139b7a-e70f-46d2-b753-4ba6fe67d2ad_test.wav",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1048558"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/wav"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"aJcRLbtOi27KTi0VOEeDBnrYZkgjg/L5h9HWz/oxAk8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 09 Feb 2026 14:37:01 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0qvsl92vkd"
+        },
+        {
+          "Name": "label",
+          "Value": "voices/9b139b7a-e70f-46d2-b753-4ba6fe67d2ad_test.wav"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-aJcRLbtOi27KTi0VOEeDBnrYZkgjg/L5h9HWz/oxAk8="
+        }
+      ]
+    },
+    {
+      "Route": "voices/9b139b7a-e70f-46d2-b753-4ba6fe67d2ad_test.0qvsl92vkd.wav.gz",
+      "AssetFile": "F:\\antigravity test\\SPEAKSolution\\SPEAK.Web\\obj\\Release\\net9.0\\compressed\\2jdploho02-0qvsl92vkd.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "824554"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/wav"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"72yN9oo4yP1sPhKQMGyHmOdrEpk3UUUyzckOYgQgDpc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 09 Feb 2026 14:37:01 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0qvsl92vkd"
+        },
+        {
+          "Name": "label",
+          "Value": "voices/9b139b7a-e70f-46d2-b753-4ba6fe67d2ad_test.wav.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-72yN9oo4yP1sPhKQMGyHmOdrEpk3UUUyzckOYgQgDpc="
+        }
+      ]
+    },
+    {
+      "Route": "voices/9b139b7a-e70f-46d2-b753-4ba6fe67d2ad_test.wav",
+      "AssetFile": "F:\\antigravity test\\SPEAKSolution\\SPEAK.Web\\obj\\Release\\net9.0\\compressed\\2jdploho02-0qvsl92vkd.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000001212775"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "824554"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"72yN9oo4yP1sPhKQMGyHmOdrEpk3UUUyzckOYgQgDpc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 09 Feb 2026 14:37:01 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/wav"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"aJcRLbtOi27KTi0VOEeDBnrYZkgjg/L5h9HWz/oxAk8=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-aJcRLbtOi27KTi0VOEeDBnrYZkgjg/L5h9HWz/oxAk8="
+        }
+      ]
+    },
+    {
+      "Route": "voices/9b139b7a-e70f-46d2-b753-4ba6fe67d2ad_test.wav",
+      "AssetFile": "F:\\antigravity test\\SPEAKSolution\\SPEAK.Web\\wwwroot\\voices\\9b139b7a-e70f-46d2-b753-4ba6fe67d2ad_test.wav",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1048558"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/wav"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"aJcRLbtOi27KTi0VOEeDBnrYZkgjg/L5h9HWz/oxAk8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 09 Feb 2026 14:37:01 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-aJcRLbtOi27KTi0VOEeDBnrYZkgjg/L5h9HWz/oxAk8="
+        }
+      ]
+    },
+    {
+      "Route": "voices/9b139b7a-e70f-46d2-b753-4ba6fe67d2ad_test.wav.gz",
+      "AssetFile": "F:\\antigravity test\\SPEAKSolution\\SPEAK.Web\\obj\\Release\\net9.0\\compressed\\2jdploho02-0qvsl92vkd.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "824554"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/wav"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"72yN9oo4yP1sPhKQMGyHmOdrEpk3UUUyzckOYgQgDpc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 09 Feb 2026 14:37:01 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-72yN9oo4yP1sPhKQMGyHmOdrEpk3UUUyzckOYgQgDpc="
+        }
+      ]
+    },
+    {
+      "Route": "voices/a59a61e9-d1a2-4450-8339-ee6db88c2293_test.0qvsl92vkd.wav",
+      "AssetFile": "F:\\antigravity test\\SPEAKSolution\\SPEAK.Web\\obj\\Release\\net9.0\\compressed\\fpzn178rqe-0qvsl92vkd.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000001212775"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "824554"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"72yN9oo4yP1sPhKQMGyHmOdrEpk3UUUyzckOYgQgDpc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 07 Feb 2026 21:07:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/wav"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"aJcRLbtOi27KTi0VOEeDBnrYZkgjg/L5h9HWz/oxAk8=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0qvsl92vkd"
+        },
+        {
+          "Name": "label",
+          "Value": "voices/a59a61e9-d1a2-4450-8339-ee6db88c2293_test.wav"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-aJcRLbtOi27KTi0VOEeDBnrYZkgjg/L5h9HWz/oxAk8="
+        }
+      ]
+    },
+    {
+      "Route": "voices/a59a61e9-d1a2-4450-8339-ee6db88c2293_test.0qvsl92vkd.wav",
+      "AssetFile": "F:\\antigravity test\\SPEAKSolution\\SPEAK.Web\\wwwroot\\voices\\a59a61e9-d1a2-4450-8339-ee6db88c2293_test.wav",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1048558"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/wav"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"aJcRLbtOi27KTi0VOEeDBnrYZkgjg/L5h9HWz/oxAk8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 07 Feb 2026 21:07:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0qvsl92vkd"
+        },
+        {
+          "Name": "label",
+          "Value": "voices/a59a61e9-d1a2-4450-8339-ee6db88c2293_test.wav"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-aJcRLbtOi27KTi0VOEeDBnrYZkgjg/L5h9HWz/oxAk8="
+        }
+      ]
+    },
+    {
+      "Route": "voices/a59a61e9-d1a2-4450-8339-ee6db88c2293_test.0qvsl92vkd.wav.gz",
+      "AssetFile": "F:\\antigravity test\\SPEAKSolution\\SPEAK.Web\\obj\\Release\\net9.0\\compressed\\fpzn178rqe-0qvsl92vkd.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "824554"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/wav"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"72yN9oo4yP1sPhKQMGyHmOdrEpk3UUUyzckOYgQgDpc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 07 Feb 2026 21:07:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0qvsl92vkd"
+        },
+        {
+          "Name": "label",
+          "Value": "voices/a59a61e9-d1a2-4450-8339-ee6db88c2293_test.wav.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-72yN9oo4yP1sPhKQMGyHmOdrEpk3UUUyzckOYgQgDpc="
+        }
+      ]
+    },
+    {
+      "Route": "voices/a59a61e9-d1a2-4450-8339-ee6db88c2293_test.wav",
+      "AssetFile": "F:\\antigravity test\\SPEAKSolution\\SPEAK.Web\\obj\\Release\\net9.0\\compressed\\fpzn178rqe-0qvsl92vkd.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000001212775"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "824554"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"72yN9oo4yP1sPhKQMGyHmOdrEpk3UUUyzckOYgQgDpc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 07 Feb 2026 21:07:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/wav"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"aJcRLbtOi27KTi0VOEeDBnrYZkgjg/L5h9HWz/oxAk8=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-aJcRLbtOi27KTi0VOEeDBnrYZkgjg/L5h9HWz/oxAk8="
+        }
+      ]
+    },
+    {
+      "Route": "voices/a59a61e9-d1a2-4450-8339-ee6db88c2293_test.wav",
+      "AssetFile": "F:\\antigravity test\\SPEAKSolution\\SPEAK.Web\\wwwroot\\voices\\a59a61e9-d1a2-4450-8339-ee6db88c2293_test.wav",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1048558"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/wav"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"aJcRLbtOi27KTi0VOEeDBnrYZkgjg/L5h9HWz/oxAk8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 07 Feb 2026 21:07:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-aJcRLbtOi27KTi0VOEeDBnrYZkgjg/L5h9HWz/oxAk8="
+        }
+      ]
+    },
+    {
+      "Route": "voices/a59a61e9-d1a2-4450-8339-ee6db88c2293_test.wav.gz",
+      "AssetFile": "F:\\antigravity test\\SPEAKSolution\\SPEAK.Web\\obj\\Release\\net9.0\\compressed\\fpzn178rqe-0qvsl92vkd.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "824554"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/wav"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"72yN9oo4yP1sPhKQMGyHmOdrEpk3UUUyzckOYgQgDpc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 07 Feb 2026 21:07:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-72yN9oo4yP1sPhKQMGyHmOdrEpk3UUUyzckOYgQgDpc="
+        }
+      ]
+    },
+    {
+      "Route": "voices/defd69e3-7373-48ee-86b6-e1a0fb383587_test.0qvsl92vkd.wav",
+      "AssetFile": "F:\\antigravity test\\SPEAKSolution\\SPEAK.Web\\obj\\Release\\net9.0\\compressed\\ovmrd9ljna-0qvsl92vkd.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000001212775"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "824554"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"72yN9oo4yP1sPhKQMGyHmOdrEpk3UUUyzckOYgQgDpc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 07 Feb 2026 20:51:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/wav"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"aJcRLbtOi27KTi0VOEeDBnrYZkgjg/L5h9HWz/oxAk8=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0qvsl92vkd"
+        },
+        {
+          "Name": "label",
+          "Value": "voices/defd69e3-7373-48ee-86b6-e1a0fb383587_test.wav"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-aJcRLbtOi27KTi0VOEeDBnrYZkgjg/L5h9HWz/oxAk8="
+        }
+      ]
+    },
+    {
+      "Route": "voices/defd69e3-7373-48ee-86b6-e1a0fb383587_test.0qvsl92vkd.wav",
+      "AssetFile": "F:\\antigravity test\\SPEAKSolution\\SPEAK.Web\\wwwroot\\voices\\defd69e3-7373-48ee-86b6-e1a0fb383587_test.wav",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1048558"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/wav"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"aJcRLbtOi27KTi0VOEeDBnrYZkgjg/L5h9HWz/oxAk8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 07 Feb 2026 20:51:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0qvsl92vkd"
+        },
+        {
+          "Name": "label",
+          "Value": "voices/defd69e3-7373-48ee-86b6-e1a0fb383587_test.wav"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-aJcRLbtOi27KTi0VOEeDBnrYZkgjg/L5h9HWz/oxAk8="
+        }
+      ]
+    },
+    {
+      "Route": "voices/defd69e3-7373-48ee-86b6-e1a0fb383587_test.0qvsl92vkd.wav.gz",
+      "AssetFile": "F:\\antigravity test\\SPEAKSolution\\SPEAK.Web\\obj\\Release\\net9.0\\compressed\\ovmrd9ljna-0qvsl92vkd.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "824554"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/wav"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"72yN9oo4yP1sPhKQMGyHmOdrEpk3UUUyzckOYgQgDpc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 07 Feb 2026 20:51:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0qvsl92vkd"
+        },
+        {
+          "Name": "label",
+          "Value": "voices/defd69e3-7373-48ee-86b6-e1a0fb383587_test.wav.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-72yN9oo4yP1sPhKQMGyHmOdrEpk3UUUyzckOYgQgDpc="
+        }
+      ]
+    },
+    {
+      "Route": "voices/defd69e3-7373-48ee-86b6-e1a0fb383587_test.wav",
+      "AssetFile": "F:\\antigravity test\\SPEAKSolution\\SPEAK.Web\\obj\\Release\\net9.0\\compressed\\ovmrd9ljna-0qvsl92vkd.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000001212775"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "824554"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"72yN9oo4yP1sPhKQMGyHmOdrEpk3UUUyzckOYgQgDpc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 07 Feb 2026 20:51:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/wav"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"aJcRLbtOi27KTi0VOEeDBnrYZkgjg/L5h9HWz/oxAk8=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-aJcRLbtOi27KTi0VOEeDBnrYZkgjg/L5h9HWz/oxAk8="
+        }
+      ]
+    },
+    {
+      "Route": "voices/defd69e3-7373-48ee-86b6-e1a0fb383587_test.wav",
+      "AssetFile": "F:\\antigravity test\\SPEAKSolution\\SPEAK.Web\\wwwroot\\voices\\defd69e3-7373-48ee-86b6-e1a0fb383587_test.wav",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1048558"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/wav"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"aJcRLbtOi27KTi0VOEeDBnrYZkgjg/L5h9HWz/oxAk8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 07 Feb 2026 20:51:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-aJcRLbtOi27KTi0VOEeDBnrYZkgjg/L5h9HWz/oxAk8="
+        }
+      ]
+    },
+    {
+      "Route": "voices/defd69e3-7373-48ee-86b6-e1a0fb383587_test.wav.gz",
+      "AssetFile": "F:\\antigravity test\\SPEAKSolution\\SPEAK.Web\\obj\\Release\\net9.0\\compressed\\ovmrd9ljna-0qvsl92vkd.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "824554"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/wav"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"72yN9oo4yP1sPhKQMGyHmOdrEpk3UUUyzckOYgQgDpc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 07 Feb 2026 20:51:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-72yN9oo4yP1sPhKQMGyHmOdrEpk3UUUyzckOYgQgDpc="
+        }
+      ]
+    }
+  ]
+}

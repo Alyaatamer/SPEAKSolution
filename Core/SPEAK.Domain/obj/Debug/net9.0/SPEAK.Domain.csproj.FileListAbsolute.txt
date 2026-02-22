@@ -1,0 +1,73 @@
+C:\Users\Lenovo\source\repos\SPEAKSolution\Core\SPEAK.Domain\bin\Debug\net9.0\SPEAK.Domain.deps.json
+C:\Users\Lenovo\source\repos\SPEAKSolution\Core\SPEAK.Domain\bin\Debug\net9.0\SPEAK.Domain.dll
+C:\Users\Lenovo\source\repos\SPEAKSolution\Core\SPEAK.Domain\bin\Debug\net9.0\SPEAK.Domain.pdb
+C:\Users\Lenovo\source\repos\SPEAKSolution\Core\SPEAK.Domain\obj\Debug\net9.0\SPEAK.Domain.csproj.AssemblyReference.cache
+C:\Users\Lenovo\source\repos\SPEAKSolution\Core\SPEAK.Domain\obj\Debug\net9.0\SPEAK.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lenovo\source\repos\SPEAKSolution\Core\SPEAK.Domain\obj\Debug\net9.0\SPEAK.Domain.AssemblyInfoInputs.cache
+C:\Users\Lenovo\source\repos\SPEAKSolution\Core\SPEAK.Domain\obj\Debug\net9.0\SPEAK.Domain.AssemblyInfo.cs
+C:\Users\Lenovo\source\repos\SPEAKSolution\Core\SPEAK.Domain\obj\Debug\net9.0\SPEAK.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\source\repos\SPEAKSolution\Core\SPEAK.Domain\obj\Debug\net9.0\SPEAK.Domain.sourcelink.json
+C:\Users\Lenovo\source\repos\SPEAKSolution\Core\SPEAK.Domain\obj\Debug\net9.0\SPEAK.Domain.dll
+C:\Users\Lenovo\source\repos\SPEAKSolution\Core\SPEAK.Domain\obj\Debug\net9.0\refint\SPEAK.Domain.dll
+C:\Users\Lenovo\source\repos\SPEAKSolution\Core\SPEAK.Domain\obj\Debug\net9.0\SPEAK.Domain.pdb
+C:\Users\Lenovo\source\repos\SPEAKSolution\Core\SPEAK.Domain\obj\Debug\net9.0\ref\SPEAK.Domain.dll
+F:\SPEAK API\SPEAKSolution\SPEAKSolution\Core\SPEAK.Domain\bin\Debug\net9.0\SPEAK.Domain.deps.json
+F:\SPEAK API\SPEAKSolution\SPEAKSolution\Core\SPEAK.Domain\bin\Debug\net9.0\SPEAK.Domain.dll
+F:\SPEAK API\SPEAKSolution\SPEAKSolution\Core\SPEAK.Domain\bin\Debug\net9.0\SPEAK.Domain.pdb
+F:\SPEAK API\SPEAKSolution\SPEAKSolution\Core\SPEAK.Domain\obj\Debug\net9.0\SPEAK.Domain.csproj.AssemblyReference.cache
+F:\SPEAK API\SPEAKSolution\SPEAKSolution\Core\SPEAK.Domain\obj\Debug\net9.0\SPEAK.Domain.GeneratedMSBuildEditorConfig.editorconfig
+F:\SPEAK API\SPEAKSolution\SPEAKSolution\Core\SPEAK.Domain\obj\Debug\net9.0\SPEAK.Domain.AssemblyInfoInputs.cache
+F:\SPEAK API\SPEAKSolution\SPEAKSolution\Core\SPEAK.Domain\obj\Debug\net9.0\SPEAK.Domain.AssemblyInfo.cs
+F:\SPEAK API\SPEAKSolution\SPEAKSolution\Core\SPEAK.Domain\obj\Debug\net9.0\SPEAK.Domain.csproj.CoreCompileInputs.cache
+F:\SPEAK API\SPEAKSolution\SPEAKSolution\Core\SPEAK.Domain\obj\Debug\net9.0\SPEAK.Domain.dll
+F:\SPEAK API\SPEAKSolution\SPEAKSolution\Core\SPEAK.Domain\obj\Debug\net9.0\refint\SPEAK.Domain.dll
+F:\SPEAK API\SPEAKSolution\SPEAKSolution\Core\SPEAK.Domain\obj\Debug\net9.0\SPEAK.Domain.pdb
+F:\SPEAK API\SPEAKSolution\SPEAKSolution\Core\SPEAK.Domain\obj\Debug\net9.0\ref\SPEAK.Domain.dll
+F:\SPEAK\Backend\SPEAKSolution\Core\SPEAK.Domain\bin\Debug\net9.0\SPEAK.Domain.deps.json
+F:\SPEAK\Backend\SPEAKSolution\Core\SPEAK.Domain\bin\Debug\net9.0\SPEAK.Domain.dll
+F:\SPEAK\Backend\SPEAKSolution\Core\SPEAK.Domain\bin\Debug\net9.0\SPEAK.Domain.pdb
+F:\SPEAK\Backend\SPEAKSolution\Core\SPEAK.Domain\obj\Debug\net9.0\SPEAK.Domain.csproj.AssemblyReference.cache
+F:\SPEAK\Backend\SPEAKSolution\Core\SPEAK.Domain\obj\Debug\net9.0\SPEAK.Domain.GeneratedMSBuildEditorConfig.editorconfig
+F:\SPEAK\Backend\SPEAKSolution\Core\SPEAK.Domain\obj\Debug\net9.0\SPEAK.Domain.AssemblyInfoInputs.cache
+F:\SPEAK\Backend\SPEAKSolution\Core\SPEAK.Domain\obj\Debug\net9.0\SPEAK.Domain.AssemblyInfo.cs
+F:\SPEAK\Backend\SPEAKSolution\Core\SPEAK.Domain\obj\Debug\net9.0\SPEAK.Domain.csproj.CoreCompileInputs.cache
+F:\SPEAK\Backend\SPEAKSolution\Core\SPEAK.Domain\obj\Debug\net9.0\SPEAK.Domain.dll
+F:\SPEAK\Backend\SPEAKSolution\Core\SPEAK.Domain\obj\Debug\net9.0\refint\SPEAK.Domain.dll
+F:\SPEAK\Backend\SPEAKSolution\Core\SPEAK.Domain\obj\Debug\net9.0\SPEAK.Domain.pdb
+F:\SPEAK\Backend\SPEAKSolution\Core\SPEAK.Domain\obj\Debug\net9.0\ref\SPEAK.Domain.dll
+F:\Backend\SPEAKSolution\Core\SPEAK.Domain\bin\Debug\net9.0\SPEAK.Domain.deps.json
+F:\Backend\SPEAKSolution\Core\SPEAK.Domain\bin\Debug\net9.0\SPEAK.Domain.dll
+F:\Backend\SPEAKSolution\Core\SPEAK.Domain\bin\Debug\net9.0\SPEAK.Domain.pdb
+F:\Backend\SPEAKSolution\Core\SPEAK.Domain\obj\Debug\net9.0\SPEAK.Domain.csproj.AssemblyReference.cache
+F:\Backend\SPEAKSolution\Core\SPEAK.Domain\obj\Debug\net9.0\SPEAK.Domain.GeneratedMSBuildEditorConfig.editorconfig
+F:\Backend\SPEAKSolution\Core\SPEAK.Domain\obj\Debug\net9.0\SPEAK.Domain.AssemblyInfoInputs.cache
+F:\Backend\SPEAKSolution\Core\SPEAK.Domain\obj\Debug\net9.0\SPEAK.Domain.AssemblyInfo.cs
+F:\Backend\SPEAKSolution\Core\SPEAK.Domain\obj\Debug\net9.0\SPEAK.Domain.csproj.CoreCompileInputs.cache
+F:\Backend\SPEAKSolution\Core\SPEAK.Domain\obj\Debug\net9.0\SPEAK.Domain.dll
+F:\Backend\SPEAKSolution\Core\SPEAK.Domain\obj\Debug\net9.0\refint\SPEAK.Domain.dll
+F:\Backend\SPEAKSolution\Core\SPEAK.Domain\obj\Debug\net9.0\SPEAK.Domain.pdb
+F:\Backend\SPEAKSolution\Core\SPEAK.Domain\obj\Debug\net9.0\ref\SPEAK.Domain.dll
+F:\antigravity test\SPEAKSolution\Core\SPEAK.Domain\bin\Debug\net9.0\SPEAK.Domain.deps.json
+F:\antigravity test\SPEAKSolution\Core\SPEAK.Domain\bin\Debug\net9.0\SPEAK.Domain.dll
+F:\antigravity test\SPEAKSolution\Core\SPEAK.Domain\bin\Debug\net9.0\SPEAK.Domain.pdb
+F:\antigravity test\SPEAKSolution\Core\SPEAK.Domain\obj\Debug\net9.0\SPEAK.Domain.csproj.AssemblyReference.cache
+F:\antigravity test\SPEAKSolution\Core\SPEAK.Domain\obj\Debug\net9.0\SPEAK.Domain.GeneratedMSBuildEditorConfig.editorconfig
+F:\antigravity test\SPEAKSolution\Core\SPEAK.Domain\obj\Debug\net9.0\SPEAK.Domain.AssemblyInfoInputs.cache
+F:\antigravity test\SPEAKSolution\Core\SPEAK.Domain\obj\Debug\net9.0\SPEAK.Domain.AssemblyInfo.cs
+F:\antigravity test\SPEAKSolution\Core\SPEAK.Domain\obj\Debug\net9.0\SPEAK.Domain.csproj.CoreCompileInputs.cache
+F:\antigravity test\SPEAKSolution\Core\SPEAK.Domain\obj\Debug\net9.0\SPEAK.Domain.dll
+F:\antigravity test\SPEAKSolution\Core\SPEAK.Domain\obj\Debug\net9.0\refint\SPEAK.Domain.dll
+F:\antigravity test\SPEAKSolution\Core\SPEAK.Domain\obj\Debug\net9.0\SPEAK.Domain.pdb
+F:\antigravity test\SPEAKSolution\Core\SPEAK.Domain\obj\Debug\net9.0\ref\SPEAK.Domain.dll
+F:\Graduation Project\SPEAKSolution\Core\SPEAK.Domain\bin\Debug\net9.0\SPEAK.Domain.deps.json
+F:\Graduation Project\SPEAKSolution\Core\SPEAK.Domain\bin\Debug\net9.0\SPEAK.Domain.dll
+F:\Graduation Project\SPEAKSolution\Core\SPEAK.Domain\bin\Debug\net9.0\SPEAK.Domain.pdb
+F:\Graduation Project\SPEAKSolution\Core\SPEAK.Domain\obj\Debug\net9.0\SPEAK.Domain.csproj.AssemblyReference.cache
+F:\Graduation Project\SPEAKSolution\Core\SPEAK.Domain\obj\Debug\net9.0\SPEAK.Domain.GeneratedMSBuildEditorConfig.editorconfig
+F:\Graduation Project\SPEAKSolution\Core\SPEAK.Domain\obj\Debug\net9.0\SPEAK.Domain.AssemblyInfoInputs.cache
+F:\Graduation Project\SPEAKSolution\Core\SPEAK.Domain\obj\Debug\net9.0\SPEAK.Domain.AssemblyInfo.cs
+F:\Graduation Project\SPEAKSolution\Core\SPEAK.Domain\obj\Debug\net9.0\SPEAK.Domain.csproj.CoreCompileInputs.cache
+F:\Graduation Project\SPEAKSolution\Core\SPEAK.Domain\obj\Debug\net9.0\SPEAK.Domain.dll
+F:\Graduation Project\SPEAKSolution\Core\SPEAK.Domain\obj\Debug\net9.0\refint\SPEAK.Domain.dll
+F:\Graduation Project\SPEAKSolution\Core\SPEAK.Domain\obj\Debug\net9.0\SPEAK.Domain.pdb
+F:\Graduation Project\SPEAKSolution\Core\SPEAK.Domain\obj\Debug\net9.0\ref\SPEAK.Domain.dll

@@ -1,0 +1,45 @@
+{
+  "Files": [
+    {
+      "Id": "F:\\antigravity test\\SPEAKSolution\\SPEAK.Web\\wwwroot\\voices\\158370a2-57c3-4316-96dc-71cb008a0b48_test.wav",
+      "PackagePath": "staticwebassets\\voices\\158370a2-57c3-4316-96dc-71cb008a0b48_test.wav"
+    },
+    {
+      "Id": "F:\\antigravity test\\SPEAKSolution\\SPEAK.Web\\wwwroot\\voices\\64d99b1b-6089-4ba5-9b94-3ce9f4ec7008_test.wav",
+      "PackagePath": "staticwebassets\\voices\\64d99b1b-6089-4ba5-9b94-3ce9f4ec7008_test.wav"
+    },
+    {
+      "Id": "F:\\antigravity test\\SPEAKSolution\\SPEAK.Web\\wwwroot\\voices\\9b139b7a-e70f-46d2-b753-4ba6fe67d2ad_test.wav",
+      "PackagePath": "staticwebassets\\voices\\9b139b7a-e70f-46d2-b753-4ba6fe67d2ad_test.wav"
+    },
+    {
+      "Id": "F:\\antigravity test\\SPEAKSolution\\SPEAK.Web\\wwwroot\\voices\\a59a61e9-d1a2-4450-8339-ee6db88c2293_test.wav",
+      "PackagePath": "staticwebassets\\voices\\a59a61e9-d1a2-4450-8339-ee6db88c2293_test.wav"
+    },
+    {
+      "Id": "F:\\antigravity test\\SPEAKSolution\\SPEAK.Web\\wwwroot\\voices\\defd69e3-7373-48ee-86b6-e1a0fb383587_test.wav",
+      "PackagePath": "staticwebassets\\voices\\defd69e3-7373-48ee-86b6-e1a0fb383587_test.wav"
+    },
+    {
+      "Id": "obj\\Release\\net9.0\\staticwebassets\\msbuild.SPEAK.Web.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Release\\net9.0\\staticwebassets\\msbuild.SPEAK.Web.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Release\\net9.0\\staticwebassets\\msbuild.build.SPEAK.Web.props",
+      "PackagePath": "build\\SPEAK.Web.props"
+    },
+    {
+      "Id": "obj\\Release\\net9.0\\staticwebassets\\msbuild.buildMultiTargeting.SPEAK.Web.props",
+      "PackagePath": "buildMultiTargeting\\SPEAK.Web.props"
+    },
+    {
+      "Id": "obj\\Release\\net9.0\\staticwebassets\\msbuild.buildTransitive.SPEAK.Web.props",
+      "PackagePath": "buildTransitive\\SPEAK.Web.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

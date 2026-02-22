@@ -1,0 +1,10 @@
+F:\antigravity test\SPEAKSolution\SPEAK.Web\wwwroot\voices\9b139b7a-e70f-46d2-b753-4ba6fe67d2ad_test.wav
+F:\antigravity test\SPEAKSolution\SPEAK.Web\wwwroot\voices\64d99b1b-6089-4ba5-9b94-3ce9f4ec7008_test.wav
+F:\antigravity test\SPEAKSolution\SPEAK.Web\wwwroot\voices\a59a61e9-d1a2-4450-8339-ee6db88c2293_test.wav
+F:\antigravity test\SPEAKSolution\SPEAK.Web\wwwroot\voices\158370a2-57c3-4316-96dc-71cb008a0b48_test.wav
+F:\antigravity test\SPEAKSolution\SPEAK.Web\wwwroot\voices\defd69e3-7373-48ee-86b6-e1a0fb383587_test.wav
+wwwroot\voices\158370a2-57c3-4316-96dc-71cb008a0b48_test.wav
+wwwroot\voices\64d99b1b-6089-4ba5-9b94-3ce9f4ec7008_test.wav
+wwwroot\voices\9b139b7a-e70f-46d2-b753-4ba6fe67d2ad_test.wav
+wwwroot\voices\a59a61e9-d1a2-4450-8339-ee6db88c2293_test.wav
+wwwroot\voices\defd69e3-7373-48ee-86b6-e1a0fb383587_test.wav
