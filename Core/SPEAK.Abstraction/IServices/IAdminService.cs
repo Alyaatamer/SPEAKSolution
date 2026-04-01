@@ -13,6 +13,6 @@ namespace SPEAK.Abstraction.IServices
         Task RejectDoctorAsync(string doctorUserId, string adminId);
         Task DisableUserAsync(string userId, string adminId);
         Task EnableUserAsync(string userId, string adminId);
-        Task<List<AdminLog>> GetAdminLogsAsync();
+        Task<List<AdminLogDto>> GetAdminLogsAsync();
     }
 }

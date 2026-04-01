@@ -1,0 +1,118 @@
+﻿@model SPEAK.Dashboard.ViewModels.DashboardViewModel
+@{
+    ViewData["Title"] = "Dashboard";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2 style="font-size:20px; font-weight:700; margin-bottom:20px; color:#1a1a2e;">Statistics Overview</h2>
+
+<!-- Stats Cards -->
+<div style="display:grid; grid-template-columns:repeat(4,1fr); gap:16px; margin-bottom:24px;">
+
+    <!-- Total Users -->
+    <div class="card" style="display:flex; align-items:center; justify-content:space-between;">
+        <div>
+            <p style="font-size:12px; color:#94a3b8; margin-bottom:4px;">Total Users</p>
+            <p style="font-size:28px; font-weight:700; color:#1a1a2e;">@Model.TotalUsers</p>
+        </div>
+        <div style="width:44px;height:44px;background:#eff6ff;border-radius:10px;display:flex;align-items:center;justify-content:center;">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1a56db" stroke-width="2">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>
+            </svg>
+        </div>
+    </div>
+
+    <!-- Approved Doctors -->
+    <div class="card" style="display:flex; align-items:center; justify-content:space-between;">
+        <div>
+            <p style="font-size:12px; color:#94a3b8; margin-bottom:4px;">Approved Doctors</p>
+            <p style="font-size:28px; font-weight:700; color:#1a1a2e;">@Model.ApprovedDoctors</p>
+        </div>
+        <div style="width:44px;height:44px;background:#ecfdf5;border-radius:10px;display:flex;align-items:center;justify-content:center;">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>
+            </svg>
+        </div>
+    </div>
+
+    <!-- Pending Doctors -->
+    <div class="card" style="display:flex; align-items:center; justify-content:space-between;">
+        <div>
+            <p style="font-size:12px; color:#94a3b8; margin-bottom:4px;">Pending Doctors</p>
+            <p style="font-size:28px; font-weight:700; color:#1a1a2e;">@Model.PendingDoctors</p>
+        </div>
+        <div style="width:44px;height:44px;background:#fff7ed;border-radius:10px;display:flex;align-items:center;justify-content:center;">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#d97706" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+            </svg>
+        </div>
+    </div>
+
+    <!-- Total Children -->
+    <div class="card" style="display:flex; align-items:center; justify-content:space-between;">
+        <div>
+            <p style="font-size:12px; color:#94a3b8; margin-bottom:4px;">Total Children</p>
+            <p style="font-size:28px; font-weight:700; color:#1a1a2e;">@Model.TotalChildren</p>
+        </div>
+        <div style="width:44px;height:44px;background:#fdf4ff;border-radius:10px;display:flex;align-items:center;justify-content:center;">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#9333ea" stroke-width="2">
+                <circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
+            </svg>
+        </div>
+    </div>
+</div>
+
+<!-- Bottom section: Recent Doctors + Recent Admin Actions -->
+<div style="display:grid; grid-template-columns:1fr 1fr; gap:20px;">
+
+    <!-- Recent Doctor Registrations -->
+    <div class="card">
+        <h3 style="font-size:15px; font-weight:600; margin-bottom:16px; color:#1a1a2e;">Recent Doctor Registrations</h3>
+
+        @foreach (var doctor in Model.RecentDoctors)
+        {
+            <div style="display:flex; justify-content:space-between; align-items:center; padding:10px 0; border-bottom:1px solid #f9fafb;">
+                <div>
+                    <p style="font-weight:600; font-size:13.5px; color:#1a1a2e;">@doctor.DisplayName</p>
+                    <p style="font-size:12px; color:#94a3b8; margin-top:2px;">@doctor.Email</p>
+                </div>
+                @{
+                    var statusClass = doctor.DoctorStatus?.ToLower() switch
+                    {
+                        "approved" => "badge-approved",
+                        "rejected" => "badge-rejected",
+                        _ => "badge-pending"
+                    };
+                }
+                <span class="badge @statusClass">@doctor.DoctorStatus</span>
+            </div>
+        }
+
+        @if (!Model.RecentDoctors.Any())
+        {
+            <p style="color:#94a3b8; font-size:13px; text-align:center; padding:20px 0;">No recent registrations</p>
+        }
+    </div>
+
+    <!-- Recent Admin Actions -->
+    <div class="card">
+        <h3 style="font-size:15px; font-weight:600; margin-bottom:16px; color:#1a1a2e;">Recent Admin Actions</h3>
+
+        @foreach (var log in Model.RecentAdminActions)
+        {
+            <div style="padding:10px 0; border-bottom:1px solid #f9fafb;">
+                <p style="font-weight:600; font-size:13.5px; color:#1a1a2e;">@log.Action</p>
+                <p style="font-size:12px; color:#94a3b8; margin-top:3px;">
+                    @log.Details • @log.Timestamp.ToString("yyyy-MM-dd HH:mm:ss")
+                </p>
+            </div>
+        }
+
+        @if (!Model.RecentAdminActions.Any())
+        {
+            <p style="color:#94a3b8; font-size:13px; text-align:center; padding:20px 0;">No recent actions</p>
+        }
+    </div>
+
+</div>

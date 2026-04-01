@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SPEAK.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fa9822b65c3eefdfa00c564480ac390d1620b094")]
 [assembly: System.Reflection.AssemblyProductAttribute("SPEAK.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SPEAK.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

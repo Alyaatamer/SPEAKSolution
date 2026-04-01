@@ -113,3 +113,4 @@ F:\Graduation Project\SPEAKSolution\Core\SPEAK.Service\obj\Debug\net9.0\SPEAK.Se
 F:\Graduation Project\SPEAKSolution\Core\SPEAK.Service\obj\Debug\net9.0\refint\SPEAK.Service.dll
 F:\Graduation Project\SPEAKSolution\Core\SPEAK.Service\obj\Debug\net9.0\SPEAK.Service.pdb
 F:\Graduation Project\SPEAKSolution\Core\SPEAK.Service\obj\Debug\net9.0\ref\SPEAK.Service.dll
+F:\Graduation Project\SPEAKSolution\Core\SPEAK.Service\obj\Debug\net9.0\SPEAK.Service.sourcelink.json

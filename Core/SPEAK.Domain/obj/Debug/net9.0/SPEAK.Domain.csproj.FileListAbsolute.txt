@@ -71,3 +71,4 @@ F:\Graduation Project\SPEAKSolution\Core\SPEAK.Domain\obj\Debug\net9.0\SPEAK.Dom
 F:\Graduation Project\SPEAKSolution\Core\SPEAK.Domain\obj\Debug\net9.0\refint\SPEAK.Domain.dll
 F:\Graduation Project\SPEAKSolution\Core\SPEAK.Domain\obj\Debug\net9.0\SPEAK.Domain.pdb
 F:\Graduation Project\SPEAKSolution\Core\SPEAK.Domain\obj\Debug\net9.0\ref\SPEAK.Domain.dll
+F:\Graduation Project\SPEAKSolution\Core\SPEAK.Domain\obj\Debug\net9.0\SPEAK.Domain.sourcelink.json

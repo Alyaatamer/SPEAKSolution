@@ -3,84 +3,44 @@
   "WorkspaceRootPath": "F:\\Graduation Project\\SPEAKSolution\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A30041E4-0044-47E2-B041-B0DD5C08C574}|Core\\SPEAK.Service\\SPEAK.Service.csproj|f:\\graduation project\\speaksolution\\core\\speak.service\\services\\authenticationservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A30041E4-0044-47E2-B041-B0DD5C08C574}|Core\\SPEAK.Service\\SPEAK.Service.csproj|solutionrelative:core\\speak.service\\services\\authenticationservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Graduation Project\\SPEAKSolution\\Infrastructure\\SPEAK.Persistence\\Migrations\\20260222122335_AddRolesAndProfilesTables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Infrastructure\\SPEAK.Persistence\\Migrations\\20260222122335_AddRolesAndProfilesTables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CAEE8C44-47CB-4BD6-9BBB-BC8A8994ECE9}|Infrastructure\\SPEAK.Presentation\\SPEAK.Presentation.csproj|f:\\graduation project\\speaksolution\\infrastructure\\speak.presentation\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CAEE8C44-47CB-4BD6-9BBB-BC8A8994ECE9}|Infrastructure\\SPEAK.Presentation\\SPEAK.Presentation.csproj|solutionrelative:infrastructure\\speak.presentation\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{07023422-ADFB-45A9-B4FC-16A103F14526}|SPEAK.Web\\SPEAK.Web.csproj|f:\\graduation project\\speaksolution\\speak.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{07023422-ADFB-45A9-B4FC-16A103F14526}|SPEAK.Web\\SPEAK.Web.csproj|solutionrelative:speak.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3CA37B35-6397-4E55-86A5-B49590D85484}|Core\\SPEAK.Abstraction\\SPEAK.Abstraction.csproj|f:\\graduation project\\speaksolution\\core\\speak.abstraction\\iservices\\iadminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3CA37B35-6397-4E55-86A5-B49590D85484}|Core\\SPEAK.Abstraction\\SPEAK.Abstraction.csproj|solutionrelative:core\\speak.abstraction\\iservices\\iadminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A30041E4-0044-47E2-B041-B0DD5C08C574}|Core\\SPEAK.Service\\SPEAK.Service.csproj|f:\\graduation project\\speaksolution\\core\\speak.service\\services\\adminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A30041E4-0044-47E2-B041-B0DD5C08C574}|Core\\SPEAK.Service\\SPEAK.Service.csproj|solutionrelative:core\\speak.service\\services\\adminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3CA37B35-6397-4E55-86A5-B49590D85484}|Core\\SPEAK.Abstraction\\SPEAK.Abstraction.csproj|f:\\graduation project\\speaksolution\\core\\speak.abstraction\\irepositories\\iadminlogrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3CA37B35-6397-4E55-86A5-B49590D85484}|Core\\SPEAK.Abstraction\\SPEAK.Abstraction.csproj|solutionrelative:core\\speak.abstraction\\irepositories\\iadminlogrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CAEE8C44-47CB-4BD6-9BBB-BC8A8994ECE9}|Infrastructure\\SPEAK.Presentation\\SPEAK.Presentation.csproj|f:\\graduation project\\speaksolution\\infrastructure\\speak.presentation\\controllers\\chatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAEE8C44-47CB-4BD6-9BBB-BC8A8994ECE9}|Infrastructure\\SPEAK.Presentation\\SPEAK.Presentation.csproj|solutionrelative:infrastructure\\speak.presentation\\controllers\\chatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CAEE8C44-47CB-4BD6-9BBB-BC8A8994ECE9}|Infrastructure\\SPEAK.Presentation\\SPEAK.Presentation.csproj|f:\\graduation project\\speaksolution\\infrastructure\\speak.presentation\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CAEE8C44-47CB-4BD6-9BBB-BC8A8994ECE9}|Infrastructure\\SPEAK.Presentation\\SPEAK.Presentation.csproj|solutionrelative:infrastructure\\speak.presentation\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D588CF3F-A147-42D7-A12A-7E667E3FA13F}|SPEAK.Shared\\SPEAK.Shared.csproj|f:\\graduation project\\speaksolution\\speak.shared\\dto\u0027s\\admindto\\pendingdoctordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D588CF3F-A147-42D7-A12A-7E667E3FA13F}|SPEAK.Shared\\SPEAK.Shared.csproj|solutionrelative:speak.shared\\dto\u0027s\\admindto\\pendingdoctordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{07023422-ADFB-45A9-B4FC-16A103F14526}|SPEAK.Web\\SPEAK.Web.csproj|f:\\graduation project\\speaksolution\\speak.web\\hubs\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07023422-ADFB-45A9-B4FC-16A103F14526}|SPEAK.Web\\SPEAK.Web.csproj|solutionrelative:speak.web\\hubs\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{17F07475-6FA7-45BD-9F0F-E78CDA690B0F}|Infrastructure\\SPEAK.Persistence\\SPEAK.Persistence.csproj|f:\\graduation project\\speaksolution\\infrastructure\\speak.persistence\\repositories\\adminlogrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{17F07475-6FA7-45BD-9F0F-E78CDA690B0F}|Infrastructure\\SPEAK.Persistence\\SPEAK.Persistence.csproj|solutionrelative:infrastructure\\speak.persistence\\repositories\\adminlogrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{07023422-ADFB-45A9-B4FC-16A103F14526}|SPEAK.Web\\SPEAK.Web.csproj|f:\\graduation project\\speaksolution\\speak.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07023422-ADFB-45A9-B4FC-16A103F14526}|SPEAK.Web\\SPEAK.Web.csproj|solutionrelative:speak.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3CA37B35-6397-4E55-86A5-B49590D85484}|Core\\SPEAK.Abstraction\\SPEAK.Abstraction.csproj|f:\\graduation project\\speaksolution\\core\\speak.abstraction\\iservices\\iauthenticationservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3CA37B35-6397-4E55-86A5-B49590D85484}|Core\\SPEAK.Abstraction\\SPEAK.Abstraction.csproj|solutionrelative:core\\speak.abstraction\\iservices\\iauthenticationservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{17F07475-6FA7-45BD-9F0F-E78CDA690B0F}|Infrastructure\\SPEAK.Persistence\\SPEAK.Persistence.csproj|f:\\graduation project\\speaksolution\\infrastructure\\speak.persistence\\repositories\\chatrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17F07475-6FA7-45BD-9F0F-E78CDA690B0F}|Infrastructure\\SPEAK.Persistence\\SPEAK.Persistence.csproj|solutionrelative:infrastructure\\speak.persistence\\repositories\\chatrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D588CF3F-A147-42D7-A12A-7E667E3FA13F}|SPEAK.Shared\\SPEAK.Shared.csproj|f:\\graduation project\\speaksolution\\speak.shared\\dto\u0027s\\identitydto\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D588CF3F-A147-42D7-A12A-7E667E3FA13F}|SPEAK.Shared\\SPEAK.Shared.csproj|solutionrelative:speak.shared\\dto\u0027s\\identitydto\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3CA37B35-6397-4E55-86A5-B49590D85484}|Core\\SPEAK.Abstraction\\SPEAK.Abstraction.csproj|f:\\graduation project\\speaksolution\\core\\speak.abstraction\\irepositories\\ichatrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CA37B35-6397-4E55-86A5-B49590D85484}|Core\\SPEAK.Abstraction\\SPEAK.Abstraction.csproj|solutionrelative:core\\speak.abstraction\\irepositories\\ichatrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D588CF3F-A147-42D7-A12A-7E667E3FA13F}|SPEAK.Shared\\SPEAK.Shared.csproj|f:\\graduation project\\speaksolution\\speak.shared\\dto\u0027s\\admindto\\doctoractiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D588CF3F-A147-42D7-A12A-7E667E3FA13F}|SPEAK.Shared\\SPEAK.Shared.csproj|solutionrelative:speak.shared\\dto\u0027s\\admindto\\doctoractiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D588CF3F-A147-42D7-A12A-7E667E3FA13F}|SPEAK.Shared\\SPEAK.Shared.csproj|f:\\graduation project\\speaksolution\\speak.shared\\dto\u0027s\\chatdto\\messagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D588CF3F-A147-42D7-A12A-7E667E3FA13F}|SPEAK.Shared\\SPEAK.Shared.csproj|solutionrelative:speak.shared\\dto\u0027s\\chatdto\\messagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D588CF3F-A147-42D7-A12A-7E667E3FA13F}|SPEAK.Shared\\SPEAK.Shared.csproj|f:\\graduation project\\speaksolution\\speak.shared\\dto\u0027s\\identitydto\\doctorregisterdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D588CF3F-A147-42D7-A12A-7E667E3FA13F}|SPEAK.Shared\\SPEAK.Shared.csproj|solutionrelative:speak.shared\\dto\u0027s\\identitydto\\doctorregisterdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D588CF3F-A147-42D7-A12A-7E667E3FA13F}|SPEAK.Shared\\SPEAK.Shared.csproj|f:\\graduation project\\speaksolution\\speak.shared\\dto\u0027s\\chatdto\\sendmessagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D588CF3F-A147-42D7-A12A-7E667E3FA13F}|SPEAK.Shared\\SPEAK.Shared.csproj|solutionrelative:speak.shared\\dto\u0027s\\chatdto\\sendmessagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0453371-4531-48FE-BF83-D06962B33535}|Core\\SPEAK.Domain\\SPEAK.Domain.csproj|f:\\graduation project\\speaksolution\\core\\speak.domain\\models\\chat\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0453371-4531-48FE-BF83-D06962B33535}|Core\\SPEAK.Domain\\SPEAK.Domain.csproj|solutionrelative:core\\speak.domain\\models\\chat\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{17F07475-6FA7-45BD-9F0F-E78CDA690B0F}|Infrastructure\\SPEAK.Persistence\\SPEAK.Persistence.csproj|f:\\graduation project\\speaksolution\\infrastructure\\speak.persistence\\contexts\\useridentitydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{17F07475-6FA7-45BD-9F0F-E78CDA690B0F}|Infrastructure\\SPEAK.Persistence\\SPEAK.Persistence.csproj|solutionrelative:infrastructure\\speak.persistence\\contexts\\useridentitydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A0453371-4531-48FE-BF83-D06962B33535}|Core\\SPEAK.Domain\\SPEAK.Domain.csproj|f:\\graduation project\\speaksolution\\core\\speak.domain\\models\\admin\\adminlog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A0453371-4531-48FE-BF83-D06962B33535}|Core\\SPEAK.Domain\\SPEAK.Domain.csproj|solutionrelative:core\\speak.domain\\models\\admin\\adminlog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A0453371-4531-48FE-BF83-D06962B33535}|Core\\SPEAK.Domain\\SPEAK.Domain.csproj|f:\\graduation project\\speaksolution\\core\\speak.domain\\models\\identity\\parentprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A0453371-4531-48FE-BF83-D06962B33535}|Core\\SPEAK.Domain\\SPEAK.Domain.csproj|solutionrelative:core\\speak.domain\\models\\identity\\parentprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A0453371-4531-48FE-BF83-D06962B33535}|Core\\SPEAK.Domain\\SPEAK.Domain.csproj|f:\\graduation project\\speaksolution\\core\\speak.domain\\models\\identity\\doctorprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A0453371-4531-48FE-BF83-D06962B33535}|Core\\SPEAK.Domain\\SPEAK.Domain.csproj|solutionrelative:core\\speak.domain\\models\\identity\\doctorprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A0453371-4531-48FE-BF83-D06962B33535}|Core\\SPEAK.Domain\\SPEAK.Domain.csproj|f:\\graduation project\\speaksolution\\core\\speak.domain\\models\\identity\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A0453371-4531-48FE-BF83-D06962B33535}|Core\\SPEAK.Domain\\SPEAK.Domain.csproj|solutionrelative:core\\speak.domain\\models\\identity\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A0453371-4531-48FE-BF83-D06962B33535}|Core\\SPEAK.Domain\\SPEAK.Domain.csproj|f:\\graduation project\\speaksolution\\core\\speak.domain\\models\\enums\\doctorstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A0453371-4531-48FE-BF83-D06962B33535}|Core\\SPEAK.Domain\\SPEAK.Domain.csproj|solutionrelative:core\\speak.domain\\models\\enums\\doctorstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -90,7 +50,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 1094,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -106,118 +66,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "20260222122335_AddRolesAndProfilesTables.cs",
-              "DocumentMoniker": "F:\\Graduation Project\\SPEAKSolution\\Infrastructure\\SPEAK.Persistence\\Migrations\\20260222122335_AddRolesAndProfilesTables.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\SPEAK.Persistence\\Migrations\\20260222122335_AddRolesAndProfilesTables.cs",
-              "ToolTip": "F:\\Graduation Project\\SPEAKSolution\\Infrastructure\\SPEAK.Persistence\\Migrations\\20260222122335_AddRolesAndProfilesTables.cs",
-              "RelativeToolTip": "Infrastructure\\SPEAK.Persistence\\Migrations\\20260222122335_AddRolesAndProfilesTables.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-22T12:23:35.616Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AuthenticationServices.cs",
-              "DocumentMoniker": "F:\\Graduation Project\\SPEAKSolution\\Core\\SPEAK.Service\\Services\\AuthenticationServices.cs",
-              "RelativeDocumentMoniker": "Core\\SPEAK.Service\\Services\\AuthenticationServices.cs",
-              "ToolTip": "F:\\Graduation Project\\SPEAKSolution\\Core\\SPEAK.Service\\Services\\AuthenticationServices.cs",
-              "RelativeToolTip": "Core\\SPEAK.Service\\Services\\AuthenticationServices.cs",
-              "ViewState": "AgIAADUAAAAAAAAAAAAcwEQAAAApAAAAAAAAAA==",
+              "Title": "ChatController.cs",
+              "DocumentMoniker": "F:\\Graduation Project\\SPEAKSolution\\Infrastructure\\SPEAK.Presentation\\Controllers\\ChatController.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\SPEAK.Presentation\\Controllers\\ChatController.cs",
+              "ToolTip": "F:\\Graduation Project\\SPEAKSolution\\Infrastructure\\SPEAK.Presentation\\Controllers\\ChatController.cs",
+              "RelativeToolTip": "Infrastructure\\SPEAK.Presentation\\Controllers\\ChatController.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAIwBIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-22T12:19:39.027Z",
+              "WhenOpened": "2026-03-31T22:31:42.75Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AuthenticationController.cs",
-              "DocumentMoniker": "F:\\Graduation Project\\SPEAKSolution\\Infrastructure\\SPEAK.Presentation\\Controllers\\AuthenticationController.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\SPEAK.Presentation\\Controllers\\AuthenticationController.cs",
-              "ToolTip": "F:\\Graduation Project\\SPEAKSolution\\Infrastructure\\SPEAK.Presentation\\Controllers\\AuthenticationController.cs",
-              "RelativeToolTip": "Infrastructure\\SPEAK.Presentation\\Controllers\\AuthenticationController.cs",
-              "ViewState": "AgIAAEsAAAAAAAAAAAAAAFMAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-22T12:18:39.021Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 1,
               "Title": "AdminController.cs",
               "DocumentMoniker": "F:\\Graduation Project\\SPEAKSolution\\Infrastructure\\SPEAK.Presentation\\Controllers\\AdminController.cs",
               "RelativeDocumentMoniker": "Infrastructure\\SPEAK.Presentation\\Controllers\\AdminController.cs",
               "ToolTip": "F:\\Graduation Project\\SPEAKSolution\\Infrastructure\\SPEAK.Presentation\\Controllers\\AdminController.cs",
               "RelativeToolTip": "Infrastructure\\SPEAK.Presentation\\Controllers\\AdminController.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwB0AAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-22T12:13:57.739Z",
+              "WhenOpened": "2026-03-31T22:23:53.171Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AdminService.cs",
-              "DocumentMoniker": "F:\\Graduation Project\\SPEAKSolution\\Core\\SPEAK.Service\\Services\\AdminService.cs",
-              "RelativeDocumentMoniker": "Core\\SPEAK.Service\\Services\\AdminService.cs",
-              "ToolTip": "F:\\Graduation Project\\SPEAKSolution\\Core\\SPEAK.Service\\Services\\AdminService.cs",
-              "RelativeToolTip": "Core\\SPEAK.Service\\Services\\AdminService.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAAAAsAAAAgAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "ChatHub.cs",
+              "DocumentMoniker": "F:\\Graduation Project\\SPEAKSolution\\SPEAK.Web\\Hubs\\ChatHub.cs",
+              "RelativeDocumentMoniker": "SPEAK.Web\\Hubs\\ChatHub.cs",
+              "ToolTip": "F:\\Graduation Project\\SPEAKSolution\\SPEAK.Web\\Hubs\\ChatHub.cs",
+              "RelativeToolTip": "SPEAK.Web\\Hubs\\ChatHub.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-22T12:02:29.779Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "IAdminLogRepository.cs",
-              "DocumentMoniker": "F:\\Graduation Project\\SPEAKSolution\\Core\\SPEAK.Abstraction\\IRepositories\\IAdminLogRepository.cs",
-              "RelativeDocumentMoniker": "Core\\SPEAK.Abstraction\\IRepositories\\IAdminLogRepository.cs",
-              "ToolTip": "F:\\Graduation Project\\SPEAKSolution\\Core\\SPEAK.Abstraction\\IRepositories\\IAdminLogRepository.cs",
-              "RelativeToolTip": "Core\\SPEAK.Abstraction\\IRepositories\\IAdminLogRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAwAsAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-22T11:58:55.86Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "IAdminService.cs",
-              "DocumentMoniker": "F:\\Graduation Project\\SPEAKSolution\\Core\\SPEAK.Abstraction\\IServices\\IAdminService.cs",
-              "RelativeDocumentMoniker": "Core\\SPEAK.Abstraction\\IServices\\IAdminService.cs",
-              "ToolTip": "F:\\Graduation Project\\SPEAKSolution\\Core\\SPEAK.Abstraction\\IServices\\IAdminService.cs",
-              "RelativeToolTip": "Core\\SPEAK.Abstraction\\IServices\\IAdminService.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAxwBIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-22T11:58:20.54Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "DoctorActionDto.cs",
-              "DocumentMoniker": "F:\\Graduation Project\\SPEAKSolution\\SPEAK.Shared\\DTO\u0027s\\AdminDto\\DoctorActionDto.cs",
-              "RelativeDocumentMoniker": "SPEAK.Shared\\DTO\u0027s\\AdminDto\\DoctorActionDto.cs",
-              "ToolTip": "F:\\Graduation Project\\SPEAKSolution\\SPEAK.Shared\\DTO\u0027s\\AdminDto\\DoctorActionDto.cs",
-              "RelativeToolTip": "SPEAK.Shared\\DTO\u0027s\\AdminDto\\DoctorActionDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-22T11:56:57.268Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "PendingDoctorDto.cs",
-              "DocumentMoniker": "F:\\Graduation Project\\SPEAKSolution\\SPEAK.Shared\\DTO\u0027s\\AdminDto\\PendingDoctorDto.cs",
-              "RelativeDocumentMoniker": "SPEAK.Shared\\DTO\u0027s\\AdminDto\\PendingDoctorDto.cs",
-              "ToolTip": "F:\\Graduation Project\\SPEAKSolution\\SPEAK.Shared\\DTO\u0027s\\AdminDto\\PendingDoctorDto.cs",
-              "RelativeToolTip": "SPEAK.Shared\\DTO\u0027s\\AdminDto\\PendingDoctorDto.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAqwBEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-22T11:50:25.209Z",
+              "WhenOpened": "2026-03-31T22:05:18.521Z",
               "EditorCaption": ""
             },
             {
@@ -228,130 +111,88 @@
               "RelativeDocumentMoniker": "SPEAK.Web\\Program.cs",
               "ToolTip": "F:\\Graduation Project\\SPEAKSolution\\SPEAK.Web\\Program.cs",
               "RelativeToolTip": "SPEAK.Web\\Program.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAQwL8AAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAAHgAAAAAAAAAAAAQwKMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-03T18:59:59.381Z",
+              "WhenOpened": "2026-03-31T21:59:08.815Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "IAuthenticationServices.cs",
-              "DocumentMoniker": "F:\\Graduation Project\\SPEAKSolution\\Core\\SPEAK.Abstraction\\IServices\\IAuthenticationServices.cs",
-              "RelativeDocumentMoniker": "Core\\SPEAK.Abstraction\\IServices\\IAuthenticationServices.cs",
-              "ToolTip": "F:\\Graduation Project\\SPEAKSolution\\Core\\SPEAK.Abstraction\\IServices\\IAuthenticationServices.cs",
-              "RelativeToolTip": "Core\\SPEAK.Abstraction\\IServices\\IAuthenticationServices.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAkwBMAAAA2AAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "ChatRepository.cs",
+              "DocumentMoniker": "F:\\Graduation Project\\SPEAKSolution\\Infrastructure\\SPEAK.Persistence\\Repositories\\ChatRepository.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\SPEAK.Persistence\\Repositories\\ChatRepository.cs",
+              "ToolTip": "F:\\Graduation Project\\SPEAKSolution\\Infrastructure\\SPEAK.Persistence\\Repositories\\ChatRepository.cs",
+              "RelativeToolTip": "Infrastructure\\SPEAK.Persistence\\Repositories\\ChatRepository.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABQAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-22T11:59:34.017Z"
+              "WhenOpened": "2026-03-31T21:54:12.484Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IChatRepository.cs",
+              "DocumentMoniker": "F:\\Graduation Project\\SPEAKSolution\\Core\\SPEAK.Abstraction\\IRepositories\\IChatRepository.cs",
+              "RelativeDocumentMoniker": "Core\\SPEAK.Abstraction\\IRepositories\\IChatRepository.cs",
+              "ToolTip": "F:\\Graduation Project\\SPEAKSolution\\Core\\SPEAK.Abstraction\\IRepositories\\IChatRepository.cs",
+              "RelativeToolTip": "Core\\SPEAK.Abstraction\\IRepositories\\IChatRepository.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-31T21:52:37.771Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MessageDto.cs",
+              "DocumentMoniker": "F:\\Graduation Project\\SPEAKSolution\\SPEAK.Shared\\DTO\u0027s\\ChatDto\\MessageDto.cs",
+              "RelativeDocumentMoniker": "SPEAK.Shared\\DTO\u0027s\\ChatDto\\MessageDto.cs",
+              "ToolTip": "F:\\Graduation Project\\SPEAKSolution\\SPEAK.Shared\\DTO\u0027s\\ChatDto\\MessageDto.cs",
+              "RelativeToolTip": "SPEAK.Shared\\DTO\u0027s\\ChatDto\\MessageDto.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAADwvw4AAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-31T21:49:22.861Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SendMessageDto.cs",
+              "DocumentMoniker": "F:\\Graduation Project\\SPEAKSolution\\SPEAK.Shared\\DTO\u0027s\\ChatDto\\SendMessageDto.cs",
+              "RelativeDocumentMoniker": "SPEAK.Shared\\DTO\u0027s\\ChatDto\\SendMessageDto.cs",
+              "ToolTip": "F:\\Graduation Project\\SPEAKSolution\\SPEAK.Shared\\DTO\u0027s\\ChatDto\\SendMessageDto.cs",
+              "RelativeToolTip": "SPEAK.Shared\\DTO\u0027s\\ChatDto\\SendMessageDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-31T21:48:36.292Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "AdminLogRepository.cs",
-              "DocumentMoniker": "F:\\Graduation Project\\SPEAKSolution\\Infrastructure\\SPEAK.Persistence\\Repositories\\AdminLogRepository.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\SPEAK.Persistence\\Repositories\\AdminLogRepository.cs",
-              "ToolTip": "F:\\Graduation Project\\SPEAKSolution\\Infrastructure\\SPEAK.Persistence\\Repositories\\AdminLogRepository.cs",
-              "RelativeToolTip": "Infrastructure\\SPEAK.Persistence\\Repositories\\AdminLogRepository.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAQwBAAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-22T12:00:53.058Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
               "Title": "UserIdentityDbContext.cs",
               "DocumentMoniker": "F:\\Graduation Project\\SPEAKSolution\\Infrastructure\\SPEAK.Persistence\\Contexts\\UserIdentityDbContext.cs",
               "RelativeDocumentMoniker": "Infrastructure\\SPEAK.Persistence\\Contexts\\UserIdentityDbContext.cs",
               "ToolTip": "F:\\Graduation Project\\SPEAKSolution\\Infrastructure\\SPEAK.Persistence\\Contexts\\UserIdentityDbContext.cs",
               "RelativeToolTip": "Infrastructure\\SPEAK.Persistence\\Contexts\\UserIdentityDbContext.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-22T11:40:01.799Z"
+              "WhenOpened": "2026-03-31T21:39:03.214Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "ParentProfile.cs",
-              "DocumentMoniker": "F:\\Graduation Project\\SPEAKSolution\\Core\\SPEAK.Domain\\Models\\Identity\\ParentProfile.cs",
-              "RelativeDocumentMoniker": "Core\\SPEAK.Domain\\Models\\Identity\\ParentProfile.cs",
-              "ToolTip": "F:\\Graduation Project\\SPEAKSolution\\Core\\SPEAK.Domain\\Models\\Identity\\ParentProfile.cs",
-              "RelativeToolTip": "Core\\SPEAK.Domain\\Models\\Identity\\ParentProfile.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAABYAAAAvAAAAAAAAAA==",
+              "DocumentIndex": 8,
+              "Title": "Message.cs",
+              "DocumentMoniker": "F:\\Graduation Project\\SPEAKSolution\\Core\\SPEAK.Domain\\Models\\Chat\\Message.cs",
+              "RelativeDocumentMoniker": "Core\\SPEAK.Domain\\Models\\Chat\\Message.cs",
+              "ToolTip": "F:\\Graduation Project\\SPEAKSolution\\Core\\SPEAK.Domain\\Models\\Chat\\Message.cs",
+              "RelativeToolTip": "Core\\SPEAK.Domain\\Models\\Chat\\Message.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-22T11:36:23.689Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "DoctorProfile.cs",
-              "DocumentMoniker": "F:\\Graduation Project\\SPEAKSolution\\Core\\SPEAK.Domain\\Models\\Identity\\DoctorProfile.cs",
-              "RelativeDocumentMoniker": "Core\\SPEAK.Domain\\Models\\Identity\\DoctorProfile.cs",
-              "ToolTip": "F:\\Graduation Project\\SPEAKSolution\\Core\\SPEAK.Domain\\Models\\Identity\\DoctorProfile.cs",
-              "RelativeToolTip": "Core\\SPEAK.Domain\\Models\\Identity\\DoctorProfile.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAA1wBwAAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-22T11:29:26.567Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "UserDto.cs",
-              "DocumentMoniker": "F:\\Graduation Project\\SPEAKSolution\\SPEAK.Shared\\DTO\u0027s\\IdentityDto\\UserDto.cs",
-              "RelativeDocumentMoniker": "SPEAK.Shared\\DTO\u0027s\\IdentityDto\\UserDto.cs",
-              "ToolTip": "F:\\Graduation Project\\SPEAKSolution\\SPEAK.Shared\\DTO\u0027s\\IdentityDto\\UserDto.cs",
-              "RelativeToolTip": "SPEAK.Shared\\DTO\u0027s\\IdentityDto\\UserDto.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-21T12:33:08.84Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "DoctorRegisterDto.cs",
-              "DocumentMoniker": "F:\\Graduation Project\\SPEAKSolution\\SPEAK.Shared\\DTO\u0027s\\IdentityDto\\DoctorRegisterDto.cs",
-              "RelativeDocumentMoniker": "SPEAK.Shared\\DTO\u0027s\\IdentityDto\\DoctorRegisterDto.cs",
-              "ToolTip": "F:\\Graduation Project\\SPEAKSolution\\SPEAK.Shared\\DTO\u0027s\\IdentityDto\\DoctorRegisterDto.cs",
-              "RelativeToolTip": "SPEAK.Shared\\DTO\u0027s\\IdentityDto\\DoctorRegisterDto.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABcAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-21T12:30:26.454Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "AdminLog.cs",
-              "DocumentMoniker": "F:\\Graduation Project\\SPEAKSolution\\Core\\SPEAK.Domain\\Models\\Admin\\AdminLog.cs",
-              "RelativeDocumentMoniker": "Core\\SPEAK.Domain\\Models\\Admin\\AdminLog.cs",
-              "ToolTip": "F:\\Graduation Project\\SPEAKSolution\\Core\\SPEAK.Domain\\Models\\Admin\\AdminLog.cs",
-              "RelativeToolTip": "Core\\SPEAK.Domain\\Models\\Admin\\AdminLog.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABMAAABAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-21T12:12:23.727Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "ApplicationUser.cs",
-              "DocumentMoniker": "F:\\Graduation Project\\SPEAKSolution\\Core\\SPEAK.Domain\\Models\\Identity\\ApplicationUser.cs",
-              "RelativeDocumentMoniker": "Core\\SPEAK.Domain\\Models\\Identity\\ApplicationUser.cs",
-              "ToolTip": "F:\\Graduation Project\\SPEAKSolution\\Core\\SPEAK.Domain\\Models\\Identity\\ApplicationUser.cs",
-              "RelativeToolTip": "Core\\SPEAK.Domain\\Models\\Identity\\ApplicationUser.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABIAAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-21T12:08:39.248Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "DoctorStatus.cs",
-              "DocumentMoniker": "F:\\Graduation Project\\SPEAKSolution\\Core\\SPEAK.Domain\\Models\\Enums\\DoctorStatus.cs",
-              "RelativeDocumentMoniker": "Core\\SPEAK.Domain\\Models\\Enums\\DoctorStatus.cs",
-              "ToolTip": "F:\\Graduation Project\\SPEAKSolution\\Core\\SPEAK.Domain\\Models\\Enums\\DoctorStatus.cs",
-              "RelativeToolTip": "Core\\SPEAK.Domain\\Models\\Enums\\DoctorStatus.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-21T12:08:00.52Z"
+              "WhenOpened": "2026-03-31T21:36:46.444Z",
+              "EditorCaption": ""
             }
           ]
         },

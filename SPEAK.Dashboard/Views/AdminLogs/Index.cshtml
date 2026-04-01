@@ -1,0 +1,74 @@
+@model SPEAK.Dashboard.ViewModels.AdminLogViewModel
+@{
+    ViewData["Title"] = "Admin Logs";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:22px; flex-wrap:wrap; gap:12px;">
+    <h2 style="font-size:20px; font-weight:700; color:#1a1a2e;">Admin Logs</h2>
+
+    <form method="get" action="/AdminLogs" style="display:flex; align-items:center; gap:10px; flex-wrap:wrap;">
+
+        <!-- Search box -->
+        <div style="position:relative;">
+            <span style="position:absolute; left:10px; top:50%; transform:translateY(-50%); color:#94a3b8;">🔍</span>
+            <input type="text" name="search" value="@Model.SearchQuery"
+                   placeholder="Search logs..."
+                   style="padding:7px 12px 7px 32px; border:1px solid #e2e8f0; border-radius:6px; font-size:13px; width:200px;" />
+        </div>
+
+        <!-- Date Filter -->
+        <button type="submit"
+                style="background:#1a56db; color:#fff; border:none; border-radius:6px; padding:7px 14px; font-size:13px; cursor:pointer; display:flex; align-items:center; gap:6px;">
+            📅 Date Filter
+        </button>
+    </form>
+</div>
+
+<div class="card" style="padding:0; overflow:hidden;">
+    <table class="data-table">
+        <thead style="background:#fafbfc;">
+            <tr>
+                <th>Admin Name</th>
+                <th>Action</th>
+                <th>Target User</th>
+                <th style="color:#1a56db;">Timestamp</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var log in Model.Logs)
+            {
+                <tr>
+                    <td style="font-weight:500; color:#1a1a2e;">@log.AdminName</td>
+
+                    <!-- Action with color based on type -->
+                    <td>
+                        @{
+                            var actionColor = log.Action?.ToLower() switch
+                            {
+                                var a when a != null && a.Contains("approve") => "#059669",
+                                var a when a != null && a.Contains("reject")  => "#dc2626",
+                                var a when a != null && a.Contains("disable") => "#d97706",
+                                _ => "#1a56db"
+                            };
+                        }
+                        <span style="color:@actionColor; font-weight:500;">@log.Action</span>
+                    </td>
+
+                    <td style="color:#064e3b;">@log.Details</td>
+
+                    <td style="color:#64748b; font-size:12.5px;">
+                        @log.Timestamp.ToString("yyyy-MM-dd HH:mm:ss")
+                    </td>
+                </tr>
+            }
+
+            @if (!Model.Logs.Any())
+            {
+                <tr>
+                    <td colspan="4" style="text-align:center; padding:30px; color:#94a3b8;">No logs found.</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

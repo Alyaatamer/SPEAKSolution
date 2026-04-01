@@ -193,7 +193,7 @@ namespace SPEAK.Service.Services
             };
         }
 
-        public async Task<UserDto> DoctorRegisterAsync(DoctorRegisterDto dto, string syndicateCardImageUrl, string nationalIdImageUrl)
+        public async Task<UserDto> DoctorRegisterAsync(DoctorRegisterDto dto, string syndicateCardImageUrl, string nationalIdImageUrl, string? vezeetaLink)
         {
             var existingUser = await _userManager.FindByEmailAsync(dto.Email ?? "");
             if (existingUser != null)
@@ -205,7 +205,8 @@ namespace SPEAK.Service.Services
                 Email = dto.Email ?? "",
                 UserName = dto.Email ?? "",
                 PhoneNumber = dto.PhoneNumber ?? "",
-                EmailConfirmed = true
+                EmailConfirmed = true,
+
             };
 
             var result = await _userManager.CreateAsync(user, dto.Password ?? "");
@@ -220,7 +221,8 @@ namespace SPEAK.Service.Services
                 UserId = user.Id,
                 SyndicateCardImageUrl = syndicateCardImageUrl,
                 NationalIdImageUrl = nationalIdImageUrl,
-                Status = DoctorStatus.Pending
+                Status = DoctorStatus.Pending,
+                VezeetaLink = dto.vezeetaLink
             };
             await _doctorRepository.AddDoctorProfileAsync(doctorProfile);
 

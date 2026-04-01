@@ -23,5 +23,6 @@ namespace SPEAK.Domain.Models.Identity
 
         public string? ApprovedByAdminId { get; set; }
         public DateTime? ApprovedAt { get; set; }
+        public string? VezeetaLink { get; set; }
     }
 }

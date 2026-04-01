@@ -12,6 +12,7 @@ using SPEAK.Persistence.Contexts;
 using SPEAK.Service.Services;
 using SPEAK.Web.Middleware;
 using System.Text;
+using SPEAK.Web.Hubs;
 
 namespace SPEAK.Web
 {
@@ -21,7 +22,8 @@ namespace SPEAK.Web
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            builder.Services.AddControllers();
+            builder.Services.AddControllers()
+                .AddApplicationPart(typeof(SPEAK.Presentation.Controllers.AuthenticationController).Assembly);
 
             // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
             builder.Services.AddEndpointsApiExplorer();
@@ -127,7 +129,12 @@ namespace SPEAK.Web
             builder.Services.AddScoped<IAdminLogRepository, AdminLogRepository>();
             builder.Services.AddScoped<IDoctorRepository, DoctorRepository>();
             builder.Services.AddHttpClient<IVoiceProcessingService, VoiceProcessingService>();
+
+            builder.Services.AddScoped<IChatRepository, ChatRepository>();
             #endregion
+
+            builder.Services.AddSignalR();
+
 
             var app = builder.Build();
 
@@ -151,6 +158,7 @@ namespace SPEAK.Web
 
             app.UseAuthentication();
             app.UseAuthorization();
+            app.MapHub<ChatHub>("/chatHub");
 
             app.UseStaticFiles();
 

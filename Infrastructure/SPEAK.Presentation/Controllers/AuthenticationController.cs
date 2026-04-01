@@ -75,15 +75,14 @@ namespace SPEAK.Presentation.Controllers
         }
 
 
-
-
         [HttpPost("register-doctor")]
         [Consumes("multipart/form-data")]
         public async Task<ActionResult<UserDto>> RegisterDoctor(
-            [FromForm] DoctorRegisterDto dto,
-            [FromForm] IFormFile syndicateCardImage,
-            [FromForm] IFormFile nationalIdImage,
-            [FromServices] IWebHostEnvironment env)
+         [FromForm] DoctorRegisterDto dto,
+         [FromForm] IFormFile syndicateCardImage,
+         [FromForm] IFormFile nationalIdImage,
+         [FromForm] string? vezeetaLink, 
+         [FromServices] IWebHostEnvironment env)
         {
             if (syndicateCardImage == null || nationalIdImage == null)
                 return BadRequest(new { message = "Both syndicate card image and national ID image are required." });
@@ -108,9 +107,11 @@ namespace SPEAK.Presentation.Controllers
             // Build public URLs
             var baseUrl = $"{Request.Scheme}://{Request.Host}";
             var syndicateUrl = $"{baseUrl}/uploads/doctors/{syndicateName}";
-            var nationalIdUrl  = $"{baseUrl}/uploads/doctors/{nationalIdName}";
+            var nationalIdUrl = $"{baseUrl}/uploads/doctors/{nationalIdName}";
 
-            var result = await servicesManger.AuthenticationServices.DoctorRegisterAsync(dto, syndicateUrl, nationalIdUrl);
+            // Pass vezeetaLink to the service
+            var result = await servicesManger.AuthenticationServices.DoctorRegisterAsync(dto, syndicateUrl, nationalIdUrl, vezeetaLink);
+
             return Ok(result);
         }
     }

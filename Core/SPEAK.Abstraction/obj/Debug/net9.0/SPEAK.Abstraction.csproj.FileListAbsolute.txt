@@ -101,3 +101,4 @@ F:\Graduation Project\SPEAKSolution\Core\SPEAK.Abstraction\obj\Debug\net9.0\SPEA
 F:\Graduation Project\SPEAKSolution\Core\SPEAK.Abstraction\obj\Debug\net9.0\refint\SPEAK.Abstraction.dll
 F:\Graduation Project\SPEAKSolution\Core\SPEAK.Abstraction\obj\Debug\net9.0\SPEAK.Abstraction.pdb
 F:\Graduation Project\SPEAKSolution\Core\SPEAK.Abstraction\obj\Debug\net9.0\ref\SPEAK.Abstraction.dll
+F:\Graduation Project\SPEAKSolution\Core\SPEAK.Abstraction\obj\Debug\net9.0\SPEAK.Abstraction.sourcelink.json

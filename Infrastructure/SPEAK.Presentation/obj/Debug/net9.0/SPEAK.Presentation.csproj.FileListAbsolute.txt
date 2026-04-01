@@ -113,3 +113,4 @@ F:\Graduation Project\SPEAKSolution\Infrastructure\SPEAK.Presentation\obj\Debug\
 F:\Graduation Project\SPEAKSolution\Infrastructure\SPEAK.Presentation\obj\Debug\net9.0\refint\SPEAK.Presentation.dll
 F:\Graduation Project\SPEAKSolution\Infrastructure\SPEAK.Presentation\obj\Debug\net9.0\SPEAK.Presentation.pdb
 F:\Graduation Project\SPEAKSolution\Infrastructure\SPEAK.Presentation\obj\Debug\net9.0\ref\SPEAK.Presentation.dll
+F:\Graduation Project\SPEAKSolution\Infrastructure\SPEAK.Presentation\obj\Debug\net9.0\SPEAK.Presentation.sourcelink.json

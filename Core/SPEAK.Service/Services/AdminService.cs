@@ -102,7 +102,7 @@ namespace SPEAK.Service.Services
             });
         }
 
-        public async Task<List<AdminLog>> GetAdminLogsAsync()
+        public async Task<List<AdminLogDto>> GetAdminLogsAsync()
         {
             return await _logRepository.GetAllLogsAsync();
         }

@@ -247,32 +247,7 @@
         "IsRequired": false
       },
       {
-        "Name": "ContentType",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "ContentDisposition",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "Headers",
-        "Type": "Microsoft.AspNetCore.Http.IHeaderDictionary",
-        "IsRequired": false
-      },
-      {
-        "Name": "Length",
-        "Type": "System.Int64",
-        "IsRequired": false
-      },
-      {
-        "Name": "Name",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "FileName",
+        "Name": "vezeetaLink",
         "Type": "System.String",
         "IsRequired": false
       },
@@ -303,6 +278,41 @@
       },
       {
         "Name": "FileName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ContentType",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ContentDisposition",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Headers",
+        "Type": "Microsoft.AspNetCore.Http.IHeaderDictionary",
+        "IsRequired": false
+      },
+      {
+        "Name": "Length",
+        "Type": "System.Int64",
+        "IsRequired": false
+      },
+      {
+        "Name": "Name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "FileName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "vezeetaLink",
         "Type": "System.String",
         "IsRequired": false
       }
@@ -394,6 +404,32 @@
     ]
   },
   {
+    "ContainingType": "SPEAK.Presentation.Controllers.ChatController",
+    "Method": "GetAvailableDoctors",
+    "RelativePath": "api/Chat/doctors",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SPEAK.Presentation.Controllers.ChatController",
+    "Method": "GetChatHistory",
+    "RelativePath": "api/Chat/history/{otherUserId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "otherUserId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "SPEAK.Presentation.Controllers.MergeVoicesController",
     "Method": "CalculateSSI",
     "RelativePath": "api/MergeVoices/calculate-ssi",
@@ -452,6 +488,22 @@
         "Name": "type",
         "Type": "System.String",
         "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SPEAK.Web.Controllers.TestChatController",
+    "Method": "SendMessageTest",
+    "RelativePath": "api/TestChat/send",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "SPEAK.Shared.DTO_s.ChatDto.SendMessageDto",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []

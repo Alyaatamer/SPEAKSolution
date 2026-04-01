@@ -137,3 +137,4 @@ F:\Graduation Project\SPEAKSolution\Infrastructure\SPEAK.Persistence\obj\Debug\n
 F:\Graduation Project\SPEAKSolution\Infrastructure\SPEAK.Persistence\obj\Debug\net9.0\SPEAK.Persistence.pdb
 F:\Graduation Project\SPEAKSolution\Infrastructure\SPEAK.Persistence\obj\Debug\net9.0\SPEAK.Persistence.genruntimeconfig.cache
 F:\Graduation Project\SPEAKSolution\Infrastructure\SPEAK.Persistence\obj\Debug\net9.0\ref\SPEAK.Persistence.dll
+F:\Graduation Project\SPEAKSolution\Infrastructure\SPEAK.Persistence\obj\Debug\net9.0\SPEAK.Persistence.sourcelink.json

@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36717.8 d17.14
+VisualStudioVersion = 17.14.36717.8
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SPEAK.Web", "SPEAK.Web\SPEAK.Web.csproj", "{07023422-ADFB-45A9-B4FC-16A103F14526}"
 EndProject
@@ -20,6 +20,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SPEAK.Persistence", "Infrastructure\SPEAK.Persistence\SPEAK.Persistence.csproj", "{17F07475-6FA7-45BD-9F0F-E78CDA690B0F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SPEAK.Shared", "SPEAK.Shared\SPEAK.Shared.csproj", "{D588CF3F-A147-42D7-A12A-7E667E3FA13F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SPEAK.Dashboard", "SPEAK.Dashboard\SPEAK.Dashboard.csproj", "{BD70410E-6600-4B33-A21D-E20248AF15D8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -55,6 +57,10 @@ Global
 		{D588CF3F-A147-42D7-A12A-7E667E3FA13F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D588CF3F-A147-42D7-A12A-7E667E3FA13F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D588CF3F-A147-42D7-A12A-7E667E3FA13F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD70410E-6600-4B33-A21D-E20248AF15D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD70410E-6600-4B33-A21D-E20248AF15D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD70410E-6600-4B33-A21D-E20248AF15D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD70410E-6600-4B33-A21D-E20248AF15D8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -23,5 +23,6 @@ namespace SPEAK.Shared.DTO_s.IdentityDto
 
         [Phone]
         public string? PhoneNumber { get; set; }
+        public string? vezeetaLink { get; set; }
     }
 }

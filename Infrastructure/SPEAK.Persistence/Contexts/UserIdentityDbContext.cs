@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using SPEAK.Domain.Models;
+using SPEAK.Domain.Models.Chat;
 using SPEAK.Domain.Models.Identity;
 
 namespace SPEAK.Persistence.Contexts
@@ -12,6 +13,7 @@ namespace SPEAK.Persistence.Contexts
         public DbSet<DoctorProfile> DoctorProfiles { get; set; }
         public DbSet<ParentProfile> ParentProfiles { get; set; }
         public DbSet<AdminLog> AdminLogs { get; set; }
+        public DbSet<Message> Messages { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {

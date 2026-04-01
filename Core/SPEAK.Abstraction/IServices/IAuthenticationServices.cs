@@ -27,6 +27,6 @@ namespace SPEAK.Abstraction.IServices
 
 
 
-        Task<UserDto> DoctorRegisterAsync(DoctorRegisterDto dto, string syndicateCardImageUrl, string nationalIdImageUrl);
+        Task<UserDto> DoctorRegisterAsync(DoctorRegisterDto dto, string syndicateCardImageUrl, string nationalIdImageUrl, string? vezeetaLink);
     }
 }
