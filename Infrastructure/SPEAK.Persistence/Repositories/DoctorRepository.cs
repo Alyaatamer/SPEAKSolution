@@ -79,5 +79,16 @@ namespace SPEAK.Persistence.Repositories
             await _context.ParentProfiles.AddAsync(profile);
             await _context.SaveChangesAsync();
         }
+
+        public async Task<ParentProfile?> GetParentProfileByUserIdAsync(string userId)
+        {
+            return await _context.ParentProfiles.FirstOrDefaultAsync(p => p.UserId == userId);
+        }
+
+        public async Task UpdateParentProfileAsync(ParentProfile profile)
+        {
+            _context.ParentProfiles.Update(profile);
+            await _context.SaveChangesAsync();
+        }
     }
 }

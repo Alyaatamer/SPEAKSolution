@@ -31,6 +31,12 @@ namespace SPEAK.Web
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "SPEAK API", Version = "v1" });
 
+                // Handle conflicting actions (duplicate routes across assemblies)
+                c.ResolveConflictingActions(apiDescriptions => apiDescriptions.First());
+
+                // Fix duplicate schema name conflicts (classes with same name in different namespaces)
+                c.CustomSchemaIds(type => type.FullName?.Replace("+", "."));
+
                 // Add JWT Authentication to Swagger
                 c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
                 {
@@ -129,6 +135,7 @@ namespace SPEAK.Web
             builder.Services.AddScoped<IAdminLogRepository, AdminLogRepository>();
             builder.Services.AddScoped<IDoctorRepository, DoctorRepository>();
             builder.Services.AddHttpClient<IVoiceProcessingService, VoiceProcessingService>();
+            builder.Services.AddScoped<SPEAK.Web.Services.IAIService, SPEAK.Web.Services.AIService>();
 
             builder.Services.AddScoped<IChatRepository, ChatRepository>();
             #endregion
@@ -138,18 +145,18 @@ namespace SPEAK.Web
 
             var app = builder.Build();
 
-            // Seed Roles and Admin Users 
+            // Seed Roles and Admin Users and apply DB changes
             using (var scope = app.Services.CreateScope())
             {
+                var context = scope.ServiceProvider.GetRequiredService<UserIdentityDbContext>();
+                context.Database.Migrate();
+                
                 await SeedData.SeedAsync(scope.ServiceProvider);
             }
 
             // Configure the HTTP request pipeline.
-            if (app.Environment.IsDevelopment())
-            {
-                app.UseSwagger();
-                app.UseSwaggerUI();
-            }
+            app.UseSwagger();
+            app.UseSwaggerUI();
 
             // app.UseHttpsRedirection();
 

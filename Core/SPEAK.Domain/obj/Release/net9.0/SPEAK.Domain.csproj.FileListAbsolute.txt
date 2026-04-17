@@ -22,3 +22,16 @@ F:\antigravity test\SPEAKSolution\Core\SPEAK.Domain\obj\Release\net9.0\SPEAK.Dom
 F:\antigravity test\SPEAKSolution\Core\SPEAK.Domain\obj\Release\net9.0\refint\SPEAK.Domain.dll
 F:\antigravity test\SPEAKSolution\Core\SPEAK.Domain\obj\Release\net9.0\SPEAK.Domain.pdb
 F:\antigravity test\SPEAKSolution\Core\SPEAK.Domain\obj\Release\net9.0\ref\SPEAK.Domain.dll
+F:\Graduation Project\SPEAKSolution\Core\SPEAK.Domain\bin\Release\net9.0\SPEAK.Domain.deps.json
+F:\Graduation Project\SPEAKSolution\Core\SPEAK.Domain\bin\Release\net9.0\SPEAK.Domain.dll
+F:\Graduation Project\SPEAKSolution\Core\SPEAK.Domain\bin\Release\net9.0\SPEAK.Domain.pdb
+F:\Graduation Project\SPEAKSolution\Core\SPEAK.Domain\obj\Release\net9.0\SPEAK.Domain.csproj.AssemblyReference.cache
+F:\Graduation Project\SPEAKSolution\Core\SPEAK.Domain\obj\Release\net9.0\SPEAK.Domain.GeneratedMSBuildEditorConfig.editorconfig
+F:\Graduation Project\SPEAKSolution\Core\SPEAK.Domain\obj\Release\net9.0\SPEAK.Domain.AssemblyInfoInputs.cache
+F:\Graduation Project\SPEAKSolution\Core\SPEAK.Domain\obj\Release\net9.0\SPEAK.Domain.AssemblyInfo.cs
+F:\Graduation Project\SPEAKSolution\Core\SPEAK.Domain\obj\Release\net9.0\SPEAK.Domain.csproj.CoreCompileInputs.cache
+F:\Graduation Project\SPEAKSolution\Core\SPEAK.Domain\obj\Release\net9.0\SPEAK.Domain.sourcelink.json
+F:\Graduation Project\SPEAKSolution\Core\SPEAK.Domain\obj\Release\net9.0\SPEAK.Domain.dll
+F:\Graduation Project\SPEAKSolution\Core\SPEAK.Domain\obj\Release\net9.0\refint\SPEAK.Domain.dll
+F:\Graduation Project\SPEAKSolution\Core\SPEAK.Domain\obj\Release\net9.0\SPEAK.Domain.pdb
+F:\Graduation Project\SPEAKSolution\Core\SPEAK.Domain\obj\Release\net9.0\ref\SPEAK.Domain.dll

@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using SPEAK.Abstraction.IServices;
@@ -24,6 +24,7 @@ namespace SPEAK.Presentation.Controllers
         }
 
         [HttpPost("merge-voices")]
+        [ApiExplorerSettings(IgnoreApi = true)]
         public async Task<IActionResult> MergeVoices([FromForm] List<IFormFile> files, [FromForm] string type = "general")
         {
             if (files == null || files.Count == 0)
@@ -96,9 +97,43 @@ namespace SPEAK.Presentation.Controllers
                 }
                 
                 var record = await _voiceProcessingService.GetLatestDiagnosisAsync(userId);
-                
-                // Return Ok with null instead of NotFound to avoid middleware conflicts
-                return Ok(record);
+
+                if (record == null)
+                    return Ok(null);
+
+                // Parse the FullResultJson and merge it with the record metadata
+                // so Flutter can access all AI fields (most_frequent, arabic_severity, etc.) directly
+                try
+                {
+                    using var doc = System.Text.Json.JsonDocument.Parse(record.FullResultJson);
+                    var merged = new System.Collections.Generic.Dictionary<string, object?>
+                    {
+                        ["id"]             = record.Id,
+                        ["userId"]         = record.UserId,
+                        ["severity"]       = record.Severity,
+                        ["labelCountsJson"] = record.LabelCountsJson,
+                        ["createdAt"]      = record.CreatedAt,
+                    };
+
+                    // Merge every top-level key from the full AI result JSON
+                    foreach (var prop in doc.RootElement.EnumerateObject())
+                    {
+                        // Use JsonElement so all nested structures are preserved
+                        merged[prop.Name] = prop.Value.Clone();
+                    }
+
+                    return new ContentResult
+                    {
+                        Content     = System.Text.Json.JsonSerializer.Serialize(merged),
+                        ContentType = "application/json",
+                        StatusCode  = 200
+                    };
+                }
+                catch
+                {
+                    // If parsing fails, fall back to returning the raw record
+                    return Ok(record);
+                }
             }
             catch (Exception ex)
             {

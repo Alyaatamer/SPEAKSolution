@@ -1,8 +1,28 @@
 {
   "Files": [
     {
+      "Id": "F:\\Graduation Project\\SPEAKSolution\\SPEAK.Web\\wwwroot\\uploads\\chat\\2e8e967d-8f7c-4884-a1ae-a5e7f72da217_1000487001.mp4",
+      "PackagePath": "staticwebassets\\uploads\\chat\\2e8e967d-8f7c-4884-a1ae-a5e7f72da217_1000487001.mp4"
+    },
+    {
+      "Id": "F:\\Graduation Project\\SPEAKSolution\\SPEAK.Web\\wwwroot\\uploads\\chat\\4607748f-c561-47dc-b71b-9da84193e187_1000521595.jpg",
+      "PackagePath": "staticwebassets\\uploads\\chat\\4607748f-c561-47dc-b71b-9da84193e187_1000521595.jpg"
+    },
+    {
+      "Id": "F:\\Graduation Project\\SPEAKSolution\\SPEAK.Web\\wwwroot\\uploads\\chat\\b8abbf1d-971c-4a55-bf64-4c9872eac9ac_d84154d2-584e-4299-8df5-376d96c5828a89711463132889837.jpg",
+      "PackagePath": "staticwebassets\\uploads\\chat\\b8abbf1d-971c-4a55-bf64-4c9872eac9ac_d84154d2-584e-4299-8df5-376d96c5828a89711463132889837.jpg"
+    },
+    {
+      "Id": "F:\\Graduation Project\\SPEAKSolution\\SPEAK.Web\\wwwroot\\uploads\\chat\\f985a888-a2d1-4ab9-96b8-c29bd9569e67_1000559673.jpg",
+      "PackagePath": "staticwebassets\\uploads\\chat\\f985a888-a2d1-4ab9-96b8-c29bd9569e67_1000559673.jpg"
+    },
+    {
       "Id": "F:\\Graduation Project\\SPEAKSolution\\SPEAK.Web\\wwwroot\\uploads\\doctors\\079ed1e5-5480-40f8-9832-cfe96019a33b_WhatsApp Image 2025-08-18 at 00.13.39 (2).jpeg",
       "PackagePath": "staticwebassets\\uploads\\doctors\\079ed1e5-5480-40f8-9832-cfe96019a33b_WhatsApp Image 2025-08-18 at 00.13.39 (2).jpeg"
+    },
+    {
+      "Id": "F:\\Graduation Project\\SPEAKSolution\\SPEAK.Web\\wwwroot\\uploads\\doctors\\0b0ae0fc-7701-418b-9128-177ff4d6a9b6_WhatsApp Image 2025-08-18 at 00.13.39 (2).jpeg",
+      "PackagePath": "staticwebassets\\uploads\\doctors\\0b0ae0fc-7701-418b-9128-177ff4d6a9b6_WhatsApp Image 2025-08-18 at 00.13.39 (2).jpeg"
     },
     {
       "Id": "F:\\Graduation Project\\SPEAKSolution\\SPEAK.Web\\wwwroot\\uploads\\doctors\\151e70c5-4b26-4587-a3e4-8c2df214f2d5_WhatsApp Image 2025-06-19 at 14.12.45 (1).jpeg",
@@ -69,8 +89,16 @@
       "PackagePath": "staticwebassets\\uploads\\doctors\\94614a2a-8a21-41bc-bae3-fe2f88d1f508_WhatsApp Image 2025-08-18 at 00.13.39 (2).jpeg"
     },
     {
+      "Id": "F:\\Graduation Project\\SPEAKSolution\\SPEAK.Web\\wwwroot\\uploads\\doctors\\94ac1e76-f427-4425-b6bb-015994316fbf_WhatsApp Image 2025-06-19 at 14.12.45 (1).jpeg",
+      "PackagePath": "staticwebassets\\uploads\\doctors\\94ac1e76-f427-4425-b6bb-015994316fbf_WhatsApp Image 2025-06-19 at 14.12.45 (1).jpeg"
+    },
+    {
       "Id": "F:\\Graduation Project\\SPEAKSolution\\SPEAK.Web\\wwwroot\\uploads\\doctors\\9b64b8e9-3d56-407b-87fa-1bc2da380d5d_WhatsApp Image 2025-08-18 at 00.13.39 (2).jpeg",
       "PackagePath": "staticwebassets\\uploads\\doctors\\9b64b8e9-3d56-407b-87fa-1bc2da380d5d_WhatsApp Image 2025-08-18 at 00.13.39 (2).jpeg"
+    },
+    {
+      "Id": "F:\\Graduation Project\\SPEAKSolution\\SPEAK.Web\\wwwroot\\uploads\\doctors\\9fa6f5f1-9d39-4fff-81e6-5b848c77e71c_WhatsApp Image 2025-08-18 at 00.13.39 (2).jpeg",
+      "PackagePath": "staticwebassets\\uploads\\doctors\\9fa6f5f1-9d39-4fff-81e6-5b848c77e71c_WhatsApp Image 2025-08-18 at 00.13.39 (2).jpeg"
     },
     {
       "Id": "F:\\Graduation Project\\SPEAKSolution\\SPEAK.Web\\wwwroot\\uploads\\doctors\\a883ab13-bbbc-429b-bf2f-87977a080343_WhatsApp Image 2025-06-19 at 14.12.45 (1).jpeg",
@@ -95,6 +123,10 @@
     {
       "Id": "F:\\Graduation Project\\SPEAKSolution\\SPEAK.Web\\wwwroot\\uploads\\doctors\\bb9895d4-ba7d-428f-9a02-cc29d5430dcd_WhatsApp Image 2025-06-19 at 14.12.45 (1).jpeg",
       "PackagePath": "staticwebassets\\uploads\\doctors\\bb9895d4-ba7d-428f-9a02-cc29d5430dcd_WhatsApp Image 2025-06-19 at 14.12.45 (1).jpeg"
+    },
+    {
+      "Id": "F:\\Graduation Project\\SPEAKSolution\\SPEAK.Web\\wwwroot\\uploads\\doctors\\e57bb94f-037d-4da1-a0da-d787cf439b2a_WhatsApp Image 2025-06-19 at 14.12.45 (1).jpeg",
+      "PackagePath": "staticwebassets\\uploads\\doctors\\e57bb94f-037d-4da1-a0da-d787cf439b2a_WhatsApp Image 2025-06-19 at 14.12.45 (1).jpeg"
     },
     {
       "Id": "F:\\Graduation Project\\SPEAKSolution\\SPEAK.Web\\wwwroot\\uploads\\doctors\\e7b9e38d-0ad1-4d86-91d4-5e3d820ffa52_WhatsApp Image 2025-06-19 at 14.12.45 (1).jpeg",

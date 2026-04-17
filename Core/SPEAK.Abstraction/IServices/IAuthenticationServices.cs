@@ -1,4 +1,5 @@
-﻿using SPEAK.Shared.DTO_s.IdentityDto;
+using SPEAK.Shared.DTO_s.IdentityDto;
+using System.Security.Claims;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,12 +14,15 @@ namespace SPEAK.Abstraction.IServices
         Task<UserDto> RegisterAsync(RegisterDto registerDto);
         Task<bool> CheckEmailAsync(string email);
         Task<UserDto> GetCurrentUserAsync(string email);
+        Task<UserDto> UpdateParentProfileAsync(string email, UpdateProfileDto dto);
+        Task ChangePasswordAsync(string email, ChangePasswordDto dto);
 
 
         Task SendForgetPasswordOtpAsync(string email);
         Task<string> VerifyOtpAndGetResetTokenAsync(VerifyOtpDto dto);
         Task ResetPasswordAsync(ResetPasswordDto dto);
         Task<UserDto> GoogleLoginAsync(GoogleLoginDto dto);
+        Task<UserDto> CompleteGoogleProfileAsync(ClaimsPrincipal userPrincipal, ChildProfileDto dto);
         Task SendEmailVerificationAsync(string email);
         Task VerifyEmailAsync(VerifyEmailDto dto);
         

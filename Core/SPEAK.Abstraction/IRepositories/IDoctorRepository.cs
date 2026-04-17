@@ -21,5 +21,7 @@ namespace SPEAK.Abstraction.IRepositories
         // Profile creation (used by AuthenticationServices)
         Task AddDoctorProfileAsync(DoctorProfile profile);
         Task AddParentProfileAsync(ParentProfile profile);
+        Task<ParentProfile?> GetParentProfileByUserIdAsync(string userId);
+        Task UpdateParentProfileAsync(ParentProfile profile);
     }
 }

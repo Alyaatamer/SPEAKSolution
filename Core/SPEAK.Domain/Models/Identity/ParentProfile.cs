@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
@@ -19,7 +19,8 @@ namespace SPEAK.Domain.Models.Identity
         public ApplicationUser? User { get; set; }
 
         public string? ChildName { get; set; }
-        public int ChildAge { get; set; }
+        public DateTime? ChildBirthDate { get; set; }
         public Gender ChildGender { get; set; }
+        public int AvatarId { get; set; } = 1; // 1-6 mapping default to 1
     }
 }

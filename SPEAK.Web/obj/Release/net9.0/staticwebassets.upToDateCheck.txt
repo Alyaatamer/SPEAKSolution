@@ -1,10 +1,38 @@
-F:\antigravity test\SPEAKSolution\SPEAK.Web\wwwroot\voices\9b139b7a-e70f-46d2-b753-4ba6fe67d2ad_test.wav
-F:\antigravity test\SPEAKSolution\SPEAK.Web\wwwroot\voices\64d99b1b-6089-4ba5-9b94-3ce9f4ec7008_test.wav
-F:\antigravity test\SPEAKSolution\SPEAK.Web\wwwroot\voices\a59a61e9-d1a2-4450-8339-ee6db88c2293_test.wav
-F:\antigravity test\SPEAKSolution\SPEAK.Web\wwwroot\voices\158370a2-57c3-4316-96dc-71cb008a0b48_test.wav
-F:\antigravity test\SPEAKSolution\SPEAK.Web\wwwroot\voices\defd69e3-7373-48ee-86b6-e1a0fb383587_test.wav
-wwwroot\voices\158370a2-57c3-4316-96dc-71cb008a0b48_test.wav
-wwwroot\voices\64d99b1b-6089-4ba5-9b94-3ce9f4ec7008_test.wav
-wwwroot\voices\9b139b7a-e70f-46d2-b753-4ba6fe67d2ad_test.wav
-wwwroot\voices\a59a61e9-d1a2-4450-8339-ee6db88c2293_test.wav
-wwwroot\voices\defd69e3-7373-48ee-86b6-e1a0fb383587_test.wav
+F:\Graduation Project\SPEAKSolution\SPEAK.Web\wwwroot\voices\75ea2547-3ef4-4b7f-bef7-136426a575bb_test.wav
+wwwroot\uploads\chat\2e8e967d-8f7c-4884-a1ae-a5e7f72da217_1000487001.mp4
+wwwroot\uploads\chat\4607748f-c561-47dc-b71b-9da84193e187_1000521595.jpg
+wwwroot\uploads\chat\b8abbf1d-971c-4a55-bf64-4c9872eac9ac_d84154d2-584e-4299-8df5-376d96c5828a89711463132889837.jpg
+wwwroot\uploads\chat\f985a888-a2d1-4ab9-96b8-c29bd9569e67_1000559673.jpg
+wwwroot\uploads\doctors\079ed1e5-5480-40f8-9832-cfe96019a33b_WhatsApp Image 2025-08-18 at 00.13.39 (2).jpeg
+wwwroot\uploads\doctors\0b0ae0fc-7701-418b-9128-177ff4d6a9b6_WhatsApp Image 2025-08-18 at 00.13.39 (2).jpeg
+wwwroot\uploads\doctors\151e70c5-4b26-4587-a3e4-8c2df214f2d5_WhatsApp Image 2025-06-19 at 14.12.45 (1).jpeg
+wwwroot\uploads\doctors\16042323-bb20-474d-9bf5-d69dc464a3a6_WhatsApp Image 2025-06-19 at 14.12.45 (1).jpeg
+wwwroot\uploads\doctors\1c5d3a10-3f69-40ae-8b4a-e6c8dd4eb8dc_WhatsApp Image 2025-08-18 at 00.13.39 (2).jpeg
+wwwroot\uploads\doctors\336bfa1f-7f71-4c8a-b4c4-b02386332922_WhatsApp Image 2025-06-19 at 14.12.45 (1).jpeg
+wwwroot\uploads\doctors\38376cf7-24b1-49fd-8238-5dfd5557ab75_WhatsApp Image 2025-06-19 at 14.12.45 (1).jpeg
+wwwroot\uploads\doctors\3fee5357-5523-4dfa-8f8e-dab75b72dcab_WhatsApp Image 2025-08-18 at 00.13.39 (2).jpeg
+wwwroot\uploads\doctors\4661f140-fd38-4640-87a0-6da9d53df01d_WhatsApp Image 2025-08-18 at 00.13.39 (2).jpeg
+wwwroot\uploads\doctors\4b9542a5-f095-4356-ba3c-88ac7f9898e6_WhatsApp Image 2025-08-18 at 00.13.39 (2).jpeg
+wwwroot\uploads\doctors\6dc9eb4e-b0a6-44a0-9b85-edf5345cd8de_WhatsApp Image 2025-06-19 at 14.12.45 (1).jpeg
+wwwroot\uploads\doctors\7290de09-a616-46af-9cc5-ffb09b04cf11_WhatsApp Image 2025-06-19 at 14.12.45 (1).jpeg
+wwwroot\uploads\doctors\74055746-394e-49c9-b269-3165504d0bcb_WhatsApp Image 2025-08-18 at 00.13.39 (2).jpeg
+wwwroot\uploads\doctors\786ee6c9-bd6d-489a-bb24-7aa1ac6a9c07_WhatsApp Image 2025-08-18 at 00.13.39 (2).jpeg
+wwwroot\uploads\doctors\792a9ad5-5fa0-4538-afd4-12bce779a708_WhatsApp Image 2025-08-18 at 00.13.39 (2).jpeg
+wwwroot\uploads\doctors\7cdbbb80-20ea-45f2-b2a3-d98451bc6339_WhatsApp Image 2025-08-18 at 00.13.39 (2).jpeg
+wwwroot\uploads\doctors\8536ade4-06f2-4bef-9fd2-7aa5ee790a69_WhatsApp Image 2025-06-19 at 14.12.45 (1).jpeg
+wwwroot\uploads\doctors\94614a2a-8a21-41bc-bae3-fe2f88d1f508_WhatsApp Image 2025-08-18 at 00.13.39 (2).jpeg
+wwwroot\uploads\doctors\94ac1e76-f427-4425-b6bb-015994316fbf_WhatsApp Image 2025-06-19 at 14.12.45 (1).jpeg
+wwwroot\uploads\doctors\9b64b8e9-3d56-407b-87fa-1bc2da380d5d_WhatsApp Image 2025-08-18 at 00.13.39 (2).jpeg
+wwwroot\uploads\doctors\9fa6f5f1-9d39-4fff-81e6-5b848c77e71c_WhatsApp Image 2025-08-18 at 00.13.39 (2).jpeg
+wwwroot\uploads\doctors\a883ab13-bbbc-429b-bf2f-87977a080343_WhatsApp Image 2025-06-19 at 14.12.45 (1).jpeg
+wwwroot\uploads\doctors\ac8b2875-c6bb-4bfc-b969-9a7deb2718b6_WhatsApp Image 2025-06-19 at 14.12.45 (1).jpeg
+wwwroot\uploads\doctors\b51d8640-efc9-4bfa-94ef-2d5219fac1a4_WhatsApp Image 2025-06-19 at 14.12.45 (1).jpeg
+wwwroot\uploads\doctors\b723eb4c-9535-413f-bb44-a0e6fe7aab9c_WhatsApp Image 2025-08-18 at 00.13.39 (2).jpeg
+wwwroot\uploads\doctors\b9879dc4-b87a-4987-9e9d-5960eff361d6_WhatsApp Image 2025-08-18 at 00.13.39 (2).jpeg
+wwwroot\uploads\doctors\bb9895d4-ba7d-428f-9a02-cc29d5430dcd_WhatsApp Image 2025-06-19 at 14.12.45 (1).jpeg
+wwwroot\uploads\doctors\e57bb94f-037d-4da1-a0da-d787cf439b2a_WhatsApp Image 2025-06-19 at 14.12.45 (1).jpeg
+wwwroot\uploads\doctors\e7b9e38d-0ad1-4d86-91d4-5e3d820ffa52_WhatsApp Image 2025-06-19 at 14.12.45 (1).jpeg
+wwwroot\uploads\doctors\f5439fdb-dcb7-4c69-b873-a04808f5b957_WhatsApp Image 2025-06-19 at 14.12.45 (1).jpeg
+wwwroot\uploads\doctors\f5fc3b61-f3d7-4943-b731-24006ffd0a93_WhatsApp Image 2025-08-18 at 00.13.39 (2).jpeg
+wwwroot\uploads\doctors\fd57cbb4-1547-4c9c-8fd3-9bc9a0d3d4d1_WhatsApp Image 2025-06-19 at 14.12.45 (1).jpeg
+wwwroot\voices\75ea2547-3ef4-4b7f-bef7-136426a575bb_test.wav

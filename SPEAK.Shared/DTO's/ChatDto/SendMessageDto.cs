@@ -10,5 +10,8 @@ namespace SPEAK.Shared.DTO_s.ChatDto
     {
         public string ReceiverId { get; set; } = string.Empty;
         public string Content { get; set; } = string.Empty;
+        
+        public int MessageType { get; set; } = 0; // Default to Text
+        public string? MediaUrl { get; set; }
     }
 }

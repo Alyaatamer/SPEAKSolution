@@ -46,10 +46,23 @@ namespace SPEAK.Presentation.Controllers
                 SenderId = m.SenderId,
                 ReceiverId = m.ReceiverId,
                 Content = m.Content,
-                Timestamp = m.Timestamp
+                Timestamp = m.Timestamp,
+                IsRead = m.IsRead,
+                ReadAt = m.ReadAt,
+                MessageType = (int)m.MessageType,
+                MediaUrl = m.MediaUrl
             });
             return Ok(messageDtos);
         }
 
+        [HttpGet("conversations")]
+        public async Task<IActionResult> GetConversations()
+        {
+            var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+            if (userId == null) return Unauthorized();
+
+            var conversations = await _chatRepository.GetUserConversationsAsync(userId);
+            return Ok(conversations);
+        }
     }
 }

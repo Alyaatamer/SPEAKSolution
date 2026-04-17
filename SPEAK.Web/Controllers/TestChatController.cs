@@ -34,7 +34,9 @@ namespace SPEAK.Web.Controllers
                 SenderId = senderId,
                 ReceiverId = dto.ReceiverId,
                 Content = dto.Content,
-                Timestamp = DateTime.UtcNow 
+                Timestamp = DateTime.UtcNow,
+                MessageType = (MessageType)dto.MessageType,
+                MediaUrl = dto.MediaUrl
             };
             
             var savedMessage = await _chatRepository.SaveMessageAsync(message);
@@ -45,7 +47,11 @@ namespace SPEAK.Web.Controllers
                 SenderId = savedMessage.SenderId,
                 ReceiverId = savedMessage.ReceiverId,
                 Content = savedMessage.Content,
-                Timestamp = savedMessage.Timestamp
+                Timestamp = savedMessage.Timestamp,
+                IsRead = savedMessage.IsRead,
+                ReadAt = savedMessage.ReadAt,
+                MessageType = (int)savedMessage.MessageType,
+                MediaUrl = savedMessage.MediaUrl
             };
             
             // This is the Magic line that instantly broadcasts it to Flutter!

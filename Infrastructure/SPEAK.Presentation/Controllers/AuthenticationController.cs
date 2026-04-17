@@ -1,7 +1,8 @@
-﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
 using SPEAK.Abstraction.IServices;
 using SPEAK.Shared.DTO_s.IdentityDto;
 
@@ -74,9 +75,17 @@ namespace SPEAK.Presentation.Controllers
             return Ok(User);
         }
 
+        [HttpPost("complete-google-profile")]
+        [Authorize]
+        public async Task<ActionResult<UserDto>> CompleteGoogleProfile([FromBody] ChildProfileDto dto)
+        {
+            var result = await servicesManger.AuthenticationServices.CompleteGoogleProfileAsync(User, dto);
+            return Ok(result);
+        }
 
         [HttpPost("register-doctor")]
         [Consumes("multipart/form-data")]
+        [ApiExplorerSettings(IgnoreApi = true)] // Hidden from Swagger - uses mixed FromForm+IFormFile params
         public async Task<ActionResult<UserDto>> RegisterDoctor(
          [FromForm] DoctorRegisterDto dto,
          [FromForm] IFormFile syndicateCardImage,
@@ -113,6 +122,39 @@ namespace SPEAK.Presentation.Controllers
             var result = await servicesManger.AuthenticationServices.DoctorRegisterAsync(dto, syndicateUrl, nationalIdUrl, vezeetaLink);
 
             return Ok(result);
+        }
+
+        [Authorize(Roles = "Parent")]
+        [HttpPut("profile")]
+        public async Task<ActionResult<UserDto>> UpdateProfile([FromBody] UpdateProfileDto dto)
+        {
+            var email = User.FindFirstValue(ClaimTypes.Email);
+            if (string.IsNullOrEmpty(email)) return Unauthorized();
+
+            var updatedUser = await servicesManger.AuthenticationServices.UpdateParentProfileAsync(email, dto);
+            return Ok(updatedUser);
+        }
+
+        [Authorize]
+        [HttpGet("profile")]
+        public async Task<ActionResult<UserDto>> GetProfile()
+        {
+            var email = User.FindFirstValue(ClaimTypes.Email);
+            if (string.IsNullOrEmpty(email)) return Unauthorized();
+
+            var userProfile = await servicesManger.AuthenticationServices.GetCurrentUserAsync(email);
+            return Ok(userProfile);
+        }
+
+        [Authorize]
+        [HttpPut("change-password")]
+        public async Task<IActionResult> ChangePassword([FromBody] ChangePasswordDto dto)
+        {
+            var email = User.FindFirstValue(ClaimTypes.Email);
+            if (string.IsNullOrEmpty(email)) return Unauthorized();
+
+            await servicesManger.AuthenticationServices.ChangePasswordAsync(email, dto);
+            return Ok(new { message = "Password changed successfully." });
         }
     }
 }

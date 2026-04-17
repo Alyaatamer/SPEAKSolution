@@ -1,4 +1,4 @@
-﻿using SPEAK.Domain.Models.Enums;
+using SPEAK.Domain.Models.Enums;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,7 +10,7 @@ namespace SPEAK.Domain.Models.Identity
     public class Child
     {
         public string ChildName { get; set; } = null!;
-        public int ChildAge { get; set; }
+        public DateTime? ChildBirthDate { get; set; }
         public Gender ChildGender { get; set; }
     }
 }

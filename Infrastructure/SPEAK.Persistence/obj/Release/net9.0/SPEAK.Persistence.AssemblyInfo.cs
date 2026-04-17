@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SPEAK.Persistence")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+41e4542ec8cc2b75212ebfa128714611298400a3")]
 [assembly: System.Reflection.AssemblyProductAttribute("SPEAK.Persistence")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SPEAK.Persistence")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,4 +1,4 @@
-﻿using SPEAK.Domain.Models.Enums;
+using SPEAK.Domain.Models.Enums;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -27,8 +27,8 @@ namespace SPEAK.Shared.DTO_s.IdentityDto
 
         public string? ChildName { get; set; }   
 
-        [Required, Range(3, 12)]
-        public int ChildAge { get; set; }
+        [Required]
+        public DateTime? ChildBirthDate { get; set; }
 
         [Required]
         public Gender ChildGender { get; set; }

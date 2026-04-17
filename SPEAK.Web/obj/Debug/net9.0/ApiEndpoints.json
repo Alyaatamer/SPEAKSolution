@@ -121,6 +121,32 @@
   },
   {
     "ContainingType": "SPEAK.Presentation.Controllers.AuthenticationController",
+    "Method": "CompleteGoogleProfile",
+    "RelativePath": "api/Authentication/complete-google-profile",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "SPEAK.Shared.DTO_s.IdentityDto.ChildProfileDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "SPEAK.Shared.DTO_s.IdentityDto.UserDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "SPEAK.Presentation.Controllers.AuthenticationController",
     "Method": "ForgetPassword",
     "RelativePath": "api/Authentication/forget-password",
     "HttpMethod": "POST",
@@ -175,6 +201,52 @@
         "IsRequired": true
       }
     ],
+    "ReturnTypes": [
+      {
+        "Type": "SPEAK.Shared.DTO_s.IdentityDto.UserDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "SPEAK.Presentation.Controllers.AuthenticationController",
+    "Method": "UpdateProfile",
+    "RelativePath": "api/Authentication/profile",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "SPEAK.Shared.DTO_s.IdentityDto.UpdateProfileDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "SPEAK.Shared.DTO_s.IdentityDto.UserDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "SPEAK.Presentation.Controllers.AuthenticationController",
+    "Method": "GetProfile",
+    "RelativePath": "api/Authentication/profile",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": [
       {
         "Type": "SPEAK.Shared.DTO_s.IdentityDto.UserDto",
@@ -405,6 +477,16 @@
   },
   {
     "ContainingType": "SPEAK.Presentation.Controllers.ChatController",
+    "Method": "GetConversations",
+    "RelativePath": "api/Chat/conversations",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SPEAK.Presentation.Controllers.ChatController",
     "Method": "GetAvailableDoctors",
     "RelativePath": "api/Chat/doctors",
     "HttpMethod": "GET",
@@ -425,6 +507,101 @@
         "Name": "otherUserId",
         "Type": "System.String",
         "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SPEAK.Web.Controllers.ChatBotController",
+    "Method": "Chat",
+    "RelativePath": "api/chatbot/chat",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "SPEAK.Shared.DTO_s.ChatDto.ChatBotRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SPEAK.Web.Controllers.ChatBotController",
+    "Method": "ChatStream",
+    "RelativePath": "api/chatbot/chat-stream",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "SPEAK.Shared.DTO_s.ChatDto.ChatBotRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "SPEAK.Web.Controllers.ChatMediaController",
+    "Method": "UploadMedia",
+    "RelativePath": "api/ChatMedia/upload",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "file",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SPEAK.Presentation.Controllers.ChatMediaController",
+    "Method": "UploadMedia",
+    "RelativePath": "api/ChatMedia/upload",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ContentType",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ContentDisposition",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Headers",
+        "Type": "Microsoft.AspNetCore.Http.IHeaderDictionary",
+        "IsRequired": false
+      },
+      {
+        "Name": "Length",
+        "Type": "System.Int64",
+        "IsRequired": false
+      },
+      {
+        "Name": "Name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "FileName",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []

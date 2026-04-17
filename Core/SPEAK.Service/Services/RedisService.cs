@@ -1,4 +1,4 @@
-﻿using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Configuration;
 using StackExchange.Redis;
 using System;
 using System.Threading.Tasks;
@@ -16,11 +16,12 @@ namespace SPEAK.Service.Services
 
             var options = ConfigurationOptions.Parse(connectionString);
 
-            
             options.AbortOnConnectFail = false;
             options.ConnectRetry = 5;
             options.ConnectTimeout = 10000;
             options.SyncTimeout = 10000;
+            options.Ssl = true;
+            options.SslProtocols = System.Security.Authentication.SslProtocols.Tls12;
 
             var redis = ConnectionMultiplexer.Connect(options);
             

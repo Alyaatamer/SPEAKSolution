@@ -210,10 +210,6 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
-            "AutoMapper": {
-              "target": "Package",
-              "version": "[15.1.0, )"
-            },
             "CloudinaryDotNet": {
               "target": "Package",
               "version": "[1.28.0, )"

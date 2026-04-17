@@ -29,12 +29,15 @@ namespace SPEAK.Service.Services
         private const string NoiseCancellationUrl = "http://localhost:8000/enhance"; 
         private const string SegmentationUrl = "https://possessively-nonsidereal-rachal.ngrok-free.dev/segment";
 
-        public VoiceProcessingService(IAudioMerger audioMerger, HttpClient httpClient, UserManager<ApplicationUser> userManager, IDiagnosticRepository diagnosticRepository)
+        private readonly IAuthenticationServices _authServices;
+
+        public VoiceProcessingService(IAudioMerger audioMerger, HttpClient httpClient, UserManager<ApplicationUser> userManager, IDiagnosticRepository diagnosticRepository, IAuthenticationServices authServices)
         {
             _audioMerger = audioMerger;
             _httpClient = httpClient;
             _userManager = userManager;
             _diagnosticRepository = diagnosticRepository;
+            _authServices = authServices;
             // Set timeout for long running AI operations
             _httpClient.Timeout = TimeSpan.FromMinutes(5);
         }
@@ -129,7 +132,9 @@ namespace SPEAK.Service.Services
         {
             var user = await _userManager.FindByIdAsync(userId);
             if (user == null) throw new Exception("User not found");
-            int age = user.ChildAge; // Assuming usage of ChildAge property we added
+            
+            var userDto = await _authServices.GetCurrentUserAsync(user.Email);
+            int age = userDto.ChildAge ?? 0;
 
              // 1. Setup Paths
             var uploadFolder = Path.Combine(contentRootPath, UploadFolderName);

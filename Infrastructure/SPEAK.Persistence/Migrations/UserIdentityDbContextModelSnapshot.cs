@@ -197,6 +197,24 @@ namespace SPEAK.Persistence.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<DateTime?>("DeliveredAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("IsDelivered")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsRead")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("MediaUrl")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("MessageType")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime?>("ReadAt")
+                        .HasColumnType("datetime2");
+
                     b.Property<string>("ReceiverId")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -255,6 +273,9 @@ namespace SPEAK.Persistence.Migrations
                     b.Property<int>("ChildAge")
                         .HasColumnType("int");
 
+                    b.Property<DateTime?>("ChildBirthDate")
+                        .HasColumnType("datetime2");
+
                     b.Property<string>("ConcurrencyStamp")
                         .IsConcurrencyToken()
                         .HasColumnType("nvarchar(max)");
@@ -274,6 +295,9 @@ namespace SPEAK.Persistence.Migrations
                         .HasColumnType("bit");
 
                     b.Property<bool>("IsDisabled")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsProfileComplete")
                         .HasColumnType("bit");
 
                     b.Property<bool>("LockoutEnabled")
@@ -362,8 +386,11 @@ namespace SPEAK.Persistence.Migrations
                     b.Property<string>("Id")
                         .HasColumnType("nvarchar(450)");
 
-                    b.Property<int>("ChildAge")
+                    b.Property<int>("AvatarId")
                         .HasColumnType("int");
+
+                    b.Property<DateTime?>("ChildBirthDate")
+                        .HasColumnType("datetime2");
 
                     b.Property<int>("ChildGender")
                         .HasColumnType("int");

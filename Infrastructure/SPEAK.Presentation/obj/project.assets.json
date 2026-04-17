@@ -3199,11 +3199,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Graduation Project\\SPEAKSolution\\Infrastructure\\SPEAK.Presentation\\SPEAK.Presentation.csproj",
+      "projectUniqueName": "f:\\Graduation Project\\SPEAKSolution\\Infrastructure\\SPEAK.Presentation\\SPEAK.Presentation.csproj",
       "projectName": "SPEAK.Presentation",
-      "projectPath": "F:\\Graduation Project\\SPEAKSolution\\Infrastructure\\SPEAK.Presentation\\SPEAK.Presentation.csproj",
+      "projectPath": "f:\\Graduation Project\\SPEAKSolution\\Infrastructure\\SPEAK.Presentation\\SPEAK.Presentation.csproj",
       "packagesPath": "C:\\Users\\alyaa\\.nuget\\packages\\",
-      "outputPath": "F:\\Graduation Project\\SPEAKSolution\\Infrastructure\\SPEAK.Presentation\\obj\\",
+      "outputPath": "f:\\Graduation Project\\SPEAKSolution\\Infrastructure\\SPEAK.Presentation\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

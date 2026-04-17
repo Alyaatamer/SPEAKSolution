@@ -969,7 +969,6 @@ F:\Graduation Project\SPEAKSolution\SPEAK.Web\bin\Debug\net9.0\SPEAK.Web.deps.js
 F:\Graduation Project\SPEAKSolution\SPEAK.Web\bin\Debug\net9.0\SPEAK.Web.runtimeconfig.json
 F:\Graduation Project\SPEAKSolution\SPEAK.Web\bin\Debug\net9.0\SPEAK.Web.dll
 F:\Graduation Project\SPEAKSolution\SPEAK.Web\bin\Debug\net9.0\SPEAK.Web.pdb
-F:\Graduation Project\SPEAKSolution\SPEAK.Web\bin\Debug\net9.0\AutoMapper.dll
 F:\Graduation Project\SPEAKSolution\SPEAK.Web\bin\Debug\net9.0\Azure.Core.dll
 F:\Graduation Project\SPEAKSolution\SPEAK.Web\bin\Debug\net9.0\Azure.Identity.dll
 F:\Graduation Project\SPEAKSolution\SPEAK.Web\bin\Debug\net9.0\BouncyCastle.Cryptography.dll
@@ -1158,4 +1157,3 @@ F:\Graduation Project\SPEAKSolution\SPEAK.Web\obj\Debug\net9.0\ref\SPEAK.Web.dll
 F:\Graduation Project\SPEAKSolution\SPEAK.Web\obj\Debug\net9.0\compressed\uzgqhlkpsm-0qvsl92vkd.gz
 F:\Graduation Project\SPEAKSolution\SPEAK.Web\obj\Debug\net9.0\SPEAK.Web.sourcelink.json
 F:\Graduation Project\SPEAKSolution\SPEAK.Web\obj\Debug\net9.0\SPEAK.Web.MvcApplicationPartsAssemblyInfo.cs
-F:\Graduation Project\SPEAKSolution\SPEAK.Web\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt

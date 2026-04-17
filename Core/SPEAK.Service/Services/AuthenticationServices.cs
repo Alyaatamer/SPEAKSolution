@@ -1,4 +1,4 @@
-﻿using SPEAK.Domain.Exceptions;
+using SPEAK.Domain.Exceptions;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Configuration;
 using SPEAK.Abstraction.IRepositories;
@@ -64,13 +64,37 @@ namespace SPEAK.Service.Services
                     throw new ForbiddenException("Your account is pending review. Please wait for admin approval.");
             }
 
+            int? avatarId = null;
+            string? childName = null;
+            DateTime? childBirthDate = null;
+            int? childAge = null;
+            int? childGender = null;
+
+            if (roles.Contains("Parent"))
+            {
+                var parentProfile = await _doctorRepository.GetParentProfileByUserIdAsync(user.Id);
+                if (parentProfile != null)
+                {
+                    avatarId = parentProfile.AvatarId;
+                    childName = parentProfile.ChildName;
+                    childBirthDate = parentProfile.ChildBirthDate;
+                    childAge = CalculateAge(parentProfile.ChildBirthDate);
+                    childGender = (int)parentProfile.ChildGender;
+                }
+            }
+
             return new UserDto
             {
                 Email = user.Email ?? "",
                 DisplayName = user.DisplayName ?? "",
                 Token = await CreateTokenAsync(user),
                 Role = role,
-                DoctorStatus = doctorStatus
+                DoctorStatus = doctorStatus,   // null for non-doctors → omitted
+                AvatarId = avatarId,           // null for non-parents → omitted
+                ChildName = childName,          // null for non-parents → omitted
+                ChildBirthDate = childBirthDate,// null for non-parents → omitted
+                ChildAge = childAge,            // null for non-parents → omitted
+                ChildGender = childGender       // null for non-parents → omitted
             };
         }
 
@@ -101,18 +125,73 @@ namespace SPEAK.Service.Services
             return user != null;
         }
 
+        public async Task<UserDto> UpdateParentProfileAsync(string email, UpdateProfileDto dto)
+        {
+            var user = await _userManager.FindByEmailAsync(email ?? "")
+                ?? throw new UserNotFoundException(email ?? "");
+
+            var parentProfile = await _doctorRepository.GetParentProfileByUserIdAsync(user.Id);
+            if (parentProfile == null)
+            {
+                parentProfile = new ParentProfile { UserId = user.Id };
+                await _doctorRepository.AddParentProfileAsync(parentProfile);
+            }
+
+            parentProfile.AvatarId = dto.AvatarId;
+            if (!string.IsNullOrEmpty(dto.ChildName)) parentProfile.ChildName = dto.ChildName;
+            if (dto.ChildBirthDate.HasValue) parentProfile.ChildBirthDate = dto.ChildBirthDate;
+            parentProfile.ChildGender = (Gender)dto.ChildGender;
+
+            await _doctorRepository.UpdateParentProfileAsync(parentProfile);
+
+            return await GetCurrentUserAsync(email);
+        }
+
         public async Task<UserDto> GetCurrentUserAsync(string email)
         {
             var user = await _userManager.FindByEmailAsync(email ?? "")
                 ?? throw new UserNotFoundException(email ?? "");
 
             var roles = await _userManager.GetRolesAsync(user);
+            var role = roles.FirstOrDefault() ?? "Parent";
+
+            int? avatarId = null;
+            string? childName = null;
+            DateTime? childBirthDate = null;
+            int? childAge = null;
+            int? childGender = null;
+            string? doctorStatus = null;
+
+            if (role == "Parent")
+            {
+                var parentProfile = await _doctorRepository.GetParentProfileByUserIdAsync(user.Id);
+                if (parentProfile != null)
+                {
+                    avatarId = parentProfile.AvatarId;
+                    childName = parentProfile.ChildName;
+                    childBirthDate = parentProfile.ChildBirthDate;
+                    childAge = CalculateAge(parentProfile.ChildBirthDate);
+                    childGender = (int)parentProfile.ChildGender;
+                }
+            }
+            else if (role == "Doctor")
+            {
+                var doctorProfile = await _doctorRepository.GetDoctorProfileByUserIdAsync(user.Id);
+                doctorStatus = doctorProfile?.Status.ToString();
+            }
+
             return new UserDto
             {
                 Email = user.Email ?? "",
                 DisplayName = user.DisplayName ?? "",
                 Token = await CreateTokenAsync(user),
-                Role = roles.FirstOrDefault() ?? "Parent"
+                Role = role,
+                DoctorStatus = doctorStatus,
+                AvatarId = avatarId,
+                ChildName = childName,
+                ChildBirthDate = childBirthDate,
+                ChildAge = childAge,
+                ChildGender = childGender
             };
         }
 
@@ -161,7 +240,7 @@ namespace SPEAK.Service.Services
                 Email = registrationData?.Email ?? "",
                 UserName = registrationData?.Email ?? "",
                 PhoneNumber = registrationData?.PhoneNumber ?? "",
-                ChildAge = registrationData?.ChildAge ?? 0,
+                ChildBirthDate = registrationData?.ChildBirthDate,
                 EmailConfirmed = true
             };
 
@@ -176,7 +255,7 @@ namespace SPEAK.Service.Services
             {
                 UserId = user.Id,
                 ChildName = registrationData?.ChildName,
-                ChildAge = registrationData?.ChildAge ?? 0,
+                ChildBirthDate = registrationData?.ChildBirthDate,
                 ChildGender = registrationData?.ChildGender ?? Gender.Male
             };
             await _doctorRepository.AddParentProfileAsync(parentProfile);
@@ -189,7 +268,12 @@ namespace SPEAK.Service.Services
                 Email = user.Email ?? "",
                 DisplayName = user.DisplayName ?? "",
                 Token = await CreateTokenAsync(user),
-                Role = "Parent"
+                Role = "Parent",
+                AvatarId = (int?)parentProfile.AvatarId,
+                ChildName = parentProfile.ChildName,
+                ChildBirthDate = parentProfile.ChildBirthDate,
+                ChildAge = CalculateAge(parentProfile.ChildBirthDate),
+                ChildGender = (int?)parentProfile.ChildGender
             };
         }
 
@@ -282,29 +366,118 @@ namespace SPEAK.Service.Services
                         Email = email,
                         UserName = email,
                         DisplayName = name ?? email,
-                        EmailConfirmed = true
+                        EmailConfirmed = true,
+                        IsProfileComplete = false // Parent جديد محتاج يدخل بيانات الطفل
                     };
 
-                    var result = await _userManager.CreateAsync(user);
+                    // Generate a strong random password
+                    var randomPassword = $"Speak@{Guid.NewGuid().ToString().Substring(0, 8).ToUpper()}!";
+
+                    var result = await _userManager.CreateAsync(user, randomPassword);
                     if (!result.Succeeded)
                         throw new BadRequestException(result.Errors.Select(e => e.Description).ToList());
 
                     await _userManager.AddToRoleAsync(user, "Parent");
+
+                    // Send the generated password to the user's email
+                    var body = $@"
+                        <div style='font-family:Arial;text-align:center;'>
+                            <h2>Welcome to SPEAK!</h2>
+                            <p>You have successfully registered using Google.</p>
+                            <p>Here is your auto-generated password if you ever want to log in using your email directly:</p>
+                            <h3 style='color:#007bff;letter-spacing:2px;'>{randomPassword}</h3>
+                            <p>You can change this password later if you want.</p>
+                        </div>";
+
+                    await _emailService.SendAsync(new SPEAK.Domain.Models.Helpers.EmailMessage
+                    {
+                        To = email,
+                        Subject = "Your SPEAK Account Password",
+                        Content = body,
+                        IsHtml = true
+                    });
                 }
 
                 var roles = await _userManager.GetRolesAsync(user);
+                var role = roles.FirstOrDefault() ?? "Parent";
+
+                int? avatarId = null;
+                string? childName = null;
+                DateTime? childBirthDate = null;
+                int? childAge = null;
+                int? childGender = null;
+
+                bool isComplete = user.IsProfileComplete;
+
+                if (role == "Parent")
+                {
+                    var parentProfile = await _doctorRepository.GetParentProfileByUserIdAsync(user.Id);
+                    if (parentProfile != null)
+                    {
+                        avatarId = (int?)parentProfile.AvatarId;
+                        childName = parentProfile.ChildName;
+                        childBirthDate = parentProfile.ChildBirthDate;
+                        childAge = CalculateAge(parentProfile.ChildBirthDate);
+                        childGender = (int?)parentProfile.ChildGender;
+                        isComplete = true;
+                    }
+                }
+
                 return new UserDto
                 {
                     Email = user.Email ?? "",
                     DisplayName = user.DisplayName ?? "",
                     Token = await CreateTokenAsync(user),
-                    Role = roles.FirstOrDefault() ?? "Parent"
+                    Role = role,
+                    AvatarId = avatarId,
+                    ChildName = childName,
+                    ChildBirthDate = childBirthDate,
+                    ChildAge = childAge,
+                    ChildGender = childGender,
+                    IsProfileComplete = isComplete
                 };
             }
             catch (Exception ex)
             {
                 throw new BadRequestException(new[] { $"Google login failed: {ex.Message}" });
             }
+        }
+
+        public async Task<UserDto> CompleteGoogleProfileAsync(ClaimsPrincipal userPrincipal, ChildProfileDto dto)
+        {
+            var email = userPrincipal.FindFirst(ClaimTypes.Email)?.Value ?? dto.Email;
+            var user = await _userManager.FindByEmailAsync(email ?? "")
+                ?? throw new UserNotFoundException(email ?? "");
+
+            if (user.IsProfileComplete)
+                throw new BadRequestException(new[] { "Profile is already complete." });
+
+            var parentProfile = new ParentProfile
+            {
+                UserId = user.Id,
+                ChildName = dto.ChildName,
+                ChildBirthDate = dto.ChildBirthDate,
+                ChildGender = dto.ChildGender
+            };
+
+            await _doctorRepository.AddParentProfileAsync(parentProfile);
+
+            user.IsProfileComplete = true;
+            await _userManager.UpdateAsync(user);
+
+            var roles = await _userManager.GetRolesAsync(user);
+            return new UserDto
+            {
+                Email = user.Email ?? "",
+                DisplayName = user.DisplayName ?? "",
+                Token = await CreateTokenAsync(user),
+                Role = roles.FirstOrDefault() ?? "Parent",
+                IsProfileComplete = true,
+                ChildName = dto.ChildName,
+                ChildBirthDate = dto.ChildBirthDate,
+                ChildAge = CalculateAge(dto.ChildBirthDate),
+                ChildGender = (int?)dto.ChildGender
+            };
         }
 
         public async Task SendForgetPasswordOtpAsync(string email)
@@ -370,6 +543,25 @@ namespace SPEAK.Service.Services
                 Content = "<h2>Password Updated Successfully</h2><p>Your password was changed.</p>",
                 IsHtml = true
             });
+        }
+
+        public async Task ChangePasswordAsync(string email, ChangePasswordDto dto)
+        {
+            var user = await _userManager.FindByEmailAsync(email ?? "")
+                ?? throw new UserNotFoundException(email ?? "");
+
+            var result = await _userManager.ChangePasswordAsync(user, dto.CurrentPassword ?? "", dto.NewPassword ?? "");
+            if (!result.Succeeded)
+                throw new BadRequestException(result.Errors.Select(e => e.Description).ToList());
+        }
+
+        private int CalculateAge(DateTime? birthDate)
+        {
+            if (!birthDate.HasValue) return 0;
+            var today = DateTime.Today;
+            var age = today.Year - birthDate.Value.Year;
+            if (birthDate.Value.Date > today.AddYears(-age)) age--;
+            return age;
         }
 
         private async Task<string> CreateTokenAsync(ApplicationUser user)

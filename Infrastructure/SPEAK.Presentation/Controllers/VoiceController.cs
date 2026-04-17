@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using SPEAK.Abstraction.IServices;
@@ -20,6 +20,7 @@ public class VoiceController : ControllerBase
     }
     [AllowAnonymous]
     [HttpPost("upload")]
+    [ApiExplorerSettings(IgnoreApi = true)]
     public async Task<IActionResult> UploadVoice(IFormFile file)
     {
         if (file == null || file.Length == 0)
