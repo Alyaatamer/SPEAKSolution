@@ -6,8 +6,6 @@ namespace SPEAK.Domain.Models.Identity
     public class ApplicationUser : IdentityUser
     {
         public string DisplayName { get; set; } = null!;
-        public int ChildAge { get; set; } // kept for backward compatibility with db columns if needed
-        public DateTime? ChildBirthDate { get; set; }
 
         // Soft Delete
         public bool IsDeleted { get; set; } = false;

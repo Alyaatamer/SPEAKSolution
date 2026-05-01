@@ -25,6 +25,18 @@ namespace SPEAK.Web
             builder.Services.AddControllers()
                 .AddApplicationPart(typeof(SPEAK.Presentation.Controllers.AuthenticationController).Assembly);
 
+            // Configure CORS to allow any origin (Necessary for Flutter Web / Edge)
+            builder.Services.AddCors(options =>
+            {
+                options.AddDefaultPolicy(policy =>
+                {
+                    policy.AllowAnyHeader()
+                          .AllowAnyMethod()
+                          .AllowCredentials()
+                          .SetIsOriginAllowed(_ => true); 
+                });
+            });
+
             // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen(c =>
@@ -162,6 +174,8 @@ namespace SPEAK.Web
 
             // Exception Handling Middleware
             app.UseMiddleware<CutomExceptionMiddleware>();
+
+            app.UseCors();
 
             app.UseAuthentication();
             app.UseAuthorization();

@@ -585,7 +585,6 @@ F:\Graduation Project\SPEAKSolution\SPEAK.Web\obj\Release\net9.0\staticwebassets
 F:\Graduation Project\SPEAKSolution\SPEAK.Web\obj\Release\net9.0\staticwebassets\msbuild.buildMultiTargeting.SPEAK.Web.props
 F:\Graduation Project\SPEAKSolution\SPEAK.Web\obj\Release\net9.0\staticwebassets\msbuild.buildTransitive.SPEAK.Web.props
 F:\Graduation Project\SPEAKSolution\SPEAK.Web\obj\Release\net9.0\staticwebassets.pack.json
-F:\Graduation Project\SPEAKSolution\SPEAK.Web\obj\Release\net9.0\staticwebassets.upToDateCheck.txt
 F:\Graduation Project\SPEAKSolution\SPEAK.Web\obj\Release\net9.0\SPEAK.Web.csproj.Up2Date
 F:\Graduation Project\SPEAKSolution\SPEAK.Web\obj\Release\net9.0\SPEAK.Web.dll
 F:\Graduation Project\SPEAKSolution\SPEAK.Web\obj\Release\net9.0\refint\SPEAK.Web.dll

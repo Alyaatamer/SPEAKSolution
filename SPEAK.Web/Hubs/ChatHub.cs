@@ -73,5 +73,51 @@ namespace SPEAK.Web.Hubs
             await _chatRepository.MarkMessagesAsDeliveredAsync(senderId, receiverId);
             await Clients.User(senderId).SendAsync("MessagesDelivered", receiverId);
         }
+        // --- WebRTC Signaling Methods ---
+
+        public async Task CallUser(string receiverId, string sdpOffer, bool isVideo)
+        {
+            var senderId = Context.User?.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+            if (senderId == null) return;
+
+            // Notify the receiver about the incoming call
+            // We pass senderId so the receiver knows who is calling
+            await Clients.User(receiverId).SendAsync("IncomingCall", senderId, sdpOffer, isVideo);
+        }
+
+        public async Task AnswerCall(string callerId, string sdpAnswer)
+        {
+            var receiverId = Context.User?.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+            if (receiverId == null) return;
+
+            // Notify the caller that the call was answered, and pass the SDP Answer
+            // We pass receiverId to let the caller know who answered
+            await Clients.User(callerId).SendAsync("CallAnswered", receiverId, sdpAnswer);
+        }
+
+        public async Task SendIceCandidate(string targetUserId, string candidate, string sdpMid, int sdpMLineIndex)
+        {
+            var senderId = Context.User?.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+            if (senderId == null) return;
+
+            // Pass the ICE candidate to the target user
+            await Clients.User(targetUserId).SendAsync("ReceiveIceCandidate", senderId, candidate, sdpMid, sdpMLineIndex);
+        }
+
+        public async Task EndCall(string targetUserId)
+        {
+            var senderId = Context.User?.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+            if (senderId == null) return;
+
+            await Clients.User(targetUserId).SendAsync("CallEnded", senderId);
+        }
+
+        public async Task RejectCall(string callerId)
+        {
+            var receiverId = Context.User?.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+            if (receiverId == null) return;
+
+            await Clients.User(callerId).SendAsync("CallRejected", receiverId);
+        }
     }
 }

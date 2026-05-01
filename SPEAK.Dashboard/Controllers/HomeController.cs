@@ -25,13 +25,14 @@ namespace SPEAK.Dashboard.Controllers
             var recentLogs = await _adminService.GetAdminLogsAsync();
 
             var allUsers = _userManager.Users.ToList();
+            var parentUsers = await _userManager.GetUsersInRoleAsync("Parent");
 
             var vm = new DashboardViewModel
             {
                 TotalUsers      = allUsers.Count,
                 ApprovedDoctors = allDoctors.Count(d => d.DoctorStatus == "Approved"),
                 PendingDoctors  = allDoctors.Count(d => d.DoctorStatus == "Pending"),
-                TotalChildren   = 0,  
+                TotalChildren   = parentUsers.Count,  
 
                 RecentDoctors = allDoctors
                     .OrderByDescending(d => d.ApprovedAt)

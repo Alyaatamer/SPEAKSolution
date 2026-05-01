@@ -240,7 +240,6 @@ namespace SPEAK.Service.Services
                 Email = registrationData?.Email ?? "",
                 UserName = registrationData?.Email ?? "",
                 PhoneNumber = registrationData?.PhoneNumber ?? "",
-                ChildBirthDate = registrationData?.ChildBirthDate,
                 EmailConfirmed = true
             };
 

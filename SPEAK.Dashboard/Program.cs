@@ -56,10 +56,10 @@ var app = builder.Build();
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
-    app.UseHsts();
+    // app.UseHsts(); // Disabled for free hosting SSL compatibility
 }
 
-app.UseHttpsRedirection();
+// app.UseHttpsRedirection(); // Disabled to allow direct HTTP access
 app.UseStaticFiles();
 
 app.UseRouting();

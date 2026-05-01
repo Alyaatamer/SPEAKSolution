@@ -270,12 +270,6 @@ namespace SPEAK.Persistence.Migrations
                     b.Property<int>("AccessFailedCount")
                         .HasColumnType("int");
 
-                    b.Property<int>("ChildAge")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime?>("ChildBirthDate")
-                        .HasColumnType("datetime2");
-
                     b.Property<string>("ConcurrencyStamp")
                         .IsConcurrencyToken()
                         .HasColumnType("nvarchar(max)");
