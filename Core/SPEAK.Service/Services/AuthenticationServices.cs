@@ -585,7 +585,7 @@ namespace SPEAK.Service.Services
                 issuer: _configuration.GetSection("JWTOptions")["Issuer"] ?? "SPEAK.API",
                 audience: _configuration.GetSection("JWTOptions")["Audience"] ?? "SPEAK.Users",
                 claims: claims,
-                expires: DateTime.Now.AddDays(2),
+                expires: DateTime.Now.AddDays(30),
                 signingCredentials: creds
             );
 
