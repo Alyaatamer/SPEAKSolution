@@ -43,6 +43,7 @@ F:\Graduation Project\SPEAKSolution\SPEAK.Web\obj\Release\net9.0\PubTmp\Out\Micr
 F:\Graduation Project\SPEAKSolution\SPEAK.Web\obj\Release\net9.0\PubTmp\Out\Microsoft.SqlServer.Server.dll
 F:\Graduation Project\SPEAKSolution\SPEAK.Web\obj\Release\net9.0\PubTmp\Out\Microsoft.Win32.SystemEvents.dll
 F:\Graduation Project\SPEAKSolution\SPEAK.Web\obj\Release\net9.0\PubTmp\Out\MimeKit.dll
+F:\Graduation Project\SPEAKSolution\SPEAK.Web\obj\Release\net9.0\PubTmp\Out\NAudio.Core.dll
 F:\Graduation Project\SPEAKSolution\SPEAK.Web\obj\Release\net9.0\PubTmp\Out\Newtonsoft.Json.dll
 F:\Graduation Project\SPEAKSolution\SPEAK.Web\obj\Release\net9.0\PubTmp\Out\Pipelines.Sockets.Unofficial.dll
 F:\Graduation Project\SPEAKSolution\SPEAK.Web\obj\Release\net9.0\PubTmp\Out\StackExchange.Redis.dll

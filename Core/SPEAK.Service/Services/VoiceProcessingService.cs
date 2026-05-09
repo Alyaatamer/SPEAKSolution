@@ -26,8 +26,9 @@ namespace SPEAK.Service.Services
         private const string UploadFolderName = "UploadedVoices";
         
         // Configuration/Constants - ideally injected via IConfiguration, but keeping consistent with Controller for now
-        private const string NoiseCancellationUrl = "http://localhost:8000/enhance"; 
-        private const string SegmentationUrl = "https://possessively-nonsidereal-rachal.ngrok-free.dev/segment";
+        private const string MergeUrl = "https://alyaatamer88--arabic-noise-reduction-api-noisereductiona-491610.modal.run/merge"; 
+        private const string NoiseCancellationUrl = "https://alyaatamer88--arabic-noise-reduction-api-noisereductiona-491610.modal.run/enhance"; 
+        private const string SegmentationUrl = "https://alyaatamer88--arabic-word-segmentation-api-segmentationa-b3e898.modal.run/segment";
 
         private readonly IAuthenticationServices _authServices;
 
@@ -81,20 +82,23 @@ namespace SPEAK.Service.Services
                 }
                 filesToMerge.AddRange(savedFiles);
 
-                // Merge to temp file
-                var tempMergedPath = Path.Combine(uploadFolder, $"temp_{Guid.NewGuid()}.wav");
-                await _audioMerger.MergeAudioFilesAsync(filesToMerge, tempMergedPath);
-
-                // Replace existing merged file
-                if (System.IO.File.Exists(mergedFilePath))
+                // 4. Merge completely via Modal's ffmpeg logic
+                byte[] rawMergedBytes;
+                try 
                 {
-                    System.IO.File.Delete(mergedFilePath);
+                     rawMergedBytes = await CallMergeOnlyAsync(filesToMerge);
+                     // Save the completely RAW merged file back to disk
+                     // This is EXACTLY what the original code did (tempMergedPath -> mergedFilePath)
+                     await System.IO.File.WriteAllBytesAsync(mergedFilePath, rawMergedBytes);
                 }
-                System.IO.File.Move(tempMergedPath, mergedFilePath);
+                catch (Exception ex)
+                {
+                    throw new Exception($"Modal Merge failed: {ex.Message}", ex);
+                }
 
-                // 4. Processing Pipeline (Noise Cancellation -> Segmentation)
+                // 5. Processing Pipeline (Noise Cancellation -> Segmentation)
                 
-                // Step 4a: Noise Cancellation
+                // Step 5a: Noise Cancellation (on the RAW merged file)
                 byte[] cleanedFileBytes;
                 try 
                 {
@@ -102,10 +106,6 @@ namespace SPEAK.Service.Services
                 }
                 catch (Exception ex)
                 {
-                    // Fallback or rethrow? Keeping with controller logic (rethrow wrapped or log)
-                    // For now, let's allow it to fail if noise cancellation is critical, or fallback to original.
-                    // Controller implementation seemed to just proceed or fail. 
-                    // Let's assume critical.
                     throw new Exception($"Noise cancellation failed: {ex.Message}", ex);
                 }
 
@@ -277,6 +277,29 @@ namespace SPEAK.Service.Services
             return await response.Content.ReadAsByteArrayAsync();
         }
 
+        private async Task<byte[]> CallMergeOnlyAsync(List<string> filePaths)
+        {
+            using var formData = new MultipartFormDataContent();
+
+            foreach (var filePath in filePaths)
+            {
+                var fileBytes = await System.IO.File.ReadAllBytesAsync(filePath);
+                var fileContent = new ByteArrayContent(fileBytes);
+                fileContent.Headers.ContentType = MediaTypeHeaderValue.Parse("audio/wav");
+                formData.Add(fileContent, "files", Path.GetFileName(filePath));
+            }
+
+            var response = await _httpClient.PostAsync(MergeUrl, formData);
+
+            if (!response.IsSuccessStatusCode)
+            {
+                var error = await response.Content.ReadAsStringAsync();
+                throw new Exception($"Modal Merge Failed: {response.ReasonPhrase} - {error}");
+            }
+
+            return await response.Content.ReadAsByteArrayAsync();
+        }
+
 
 
          private async Task<int> CallSegmentationAsync(byte[] audioBytes)
@@ -323,8 +346,8 @@ namespace SPEAK.Service.Services
         {
             // URL depends on Reader/Non-Reader
             string ssiUrl = request.IsReader 
-                ? "https://germinant-elease-subminimal.ngrok-free.dev/detect-reader" 
-                : "https://germinant-elease-subminimal.ngrok-free.dev/detect-non-reader";
+                ? "https://alyaatamer88--arabic-ssi-part1-api-ssipart1api-serve.modal.run/detect-reader" 
+                : "https://alyaatamer88--arabic-ssi-part1-api-ssipart1api-serve.modal.run/detect-non-reader";
 
             using var formData = new MultipartFormDataContent();
             
@@ -361,7 +384,7 @@ namespace SPEAK.Service.Services
 
         private async Task<string> CallSSIPart2Async(string previousJsonResult, bool isReader)
         {
-            string ssi2Url = "http://localhost:8001/calculate-ssi";
+            string ssi2Url = "https://alyaatamer88--arabic-ssi-part2-api-serve.modal.run/calculate-ssi";
 
             using var formData = new MultipartFormDataContent();
             var fileContent = new ByteArrayContent(Encoding.UTF8.GetBytes(previousJsonResult));

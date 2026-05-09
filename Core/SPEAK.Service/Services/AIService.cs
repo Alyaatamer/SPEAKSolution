@@ -26,7 +26,7 @@ namespace SPEAK.Web.Services
             var aiModelUrl = _configuration["AI:ChatUrl"];
             var payload = JsonSerializer.Serialize(new
             {
-                question = message,
+                message = message,
                 session_id = sessionId ?? Guid.NewGuid().ToString()
             });
             var content = new StringContent(payload, Encoding.UTF8, "application/json");

@@ -59,6 +59,10 @@ namespace SPEAK.Web.Controllers
 
             Response.ContentType = "text/plain; charset=utf-8";
             Response.Headers.Append("X-Accel-Buffering", "no");
+            Response.Headers.Append("Cache-Control", "no-cache");
+            
+            var bufferingFeature = HttpContext.Features.Get<Microsoft.AspNetCore.Http.Features.IHttpResponseBodyFeature>();
+            bufferingFeature?.DisableBuffering();
 
             try
             {
@@ -70,7 +74,6 @@ namespace SPEAK.Web.Controllers
                 {
                     await Response.Body.WriteAsync(buffer, 0, bytesRead);
                     await Response.Body.FlushAsync();
-                    await Task.Delay(50);
                 }
             }
             catch (Exception ex)

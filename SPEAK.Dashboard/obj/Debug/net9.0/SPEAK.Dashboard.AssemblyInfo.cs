@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SPEAK.Dashboard")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2dee41f91f6d464ac4f566961c7e7b08464ef2fa")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6ecf798b7ccaed6b816aab97442f837db07c29c6")]
 [assembly: System.Reflection.AssemblyProductAttribute("SPEAK.Dashboard")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SPEAK.Dashboard")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
