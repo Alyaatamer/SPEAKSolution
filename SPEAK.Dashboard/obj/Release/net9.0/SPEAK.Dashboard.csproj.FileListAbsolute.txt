@@ -166,10 +166,10 @@ F:\Graduation Project\SPEAKSolution\SPEAK.Dashboard\obj\Release\net9.0\staticweb
 F:\Graduation Project\SPEAKSolution\SPEAK.Dashboard\obj\Release\net9.0\staticwebassets\msbuild.buildMultiTargeting.SPEAK.Dashboard.props
 F:\Graduation Project\SPEAKSolution\SPEAK.Dashboard\obj\Release\net9.0\staticwebassets\msbuild.buildTransitive.SPEAK.Dashboard.props
 F:\Graduation Project\SPEAKSolution\SPEAK.Dashboard\obj\Release\net9.0\staticwebassets.pack.json
-F:\Graduation Project\SPEAKSolution\SPEAK.Dashboard\obj\Release\net9.0\staticwebassets.upToDateCheck.txt
 F:\Graduation Project\SPEAKSolution\SPEAK.Dashboard\obj\Release\net9.0\SPEAK.Da.F5973D3E.Up2Date
 F:\Graduation Project\SPEAKSolution\SPEAK.Dashboard\obj\Release\net9.0\SPEAK.Dashboard.dll
 F:\Graduation Project\SPEAKSolution\SPEAK.Dashboard\obj\Release\net9.0\refint\SPEAK.Dashboard.dll
 F:\Graduation Project\SPEAKSolution\SPEAK.Dashboard\obj\Release\net9.0\SPEAK.Dashboard.pdb
 F:\Graduation Project\SPEAKSolution\SPEAK.Dashboard\obj\Release\net9.0\SPEAK.Dashboard.genruntimeconfig.cache
 F:\Graduation Project\SPEAKSolution\SPEAK.Dashboard\obj\Release\net9.0\ref\SPEAK.Dashboard.dll
+F:\Graduation Project\SPEAKSolution\SPEAK.Dashboard\bin\Release\net9.0\NAudio.Core.dll

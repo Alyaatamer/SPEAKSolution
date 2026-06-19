@@ -1,3 +1,4 @@
+using Microsoft.VisualBasic;
 using NAudio.Wave;
 using NAudio.Wave.SampleProviders;
 using SPEAK.Abstraction.IServices;
@@ -18,35 +19,37 @@ namespace SPEAK.Service.Services
             // Run on background thread to keep API responsive
             await Task.Run(() =>
             {
-                var streams = new List<FileStream>();
-                var providers = new List<ISampleProvider>();
-
+                var readers = new List<WaveFileReader>();
                 try
                 {
+                    // Open all WaveFileReaders to read the input WAV files properly
                     foreach (var file in inputFiles)
                     {
-                        var fs = new FileStream(file, FileMode.Open, FileAccess.Read, FileShare.Read);
-                        streams.Add(fs);
-                        
-                        // Treat the input purely as raw 16kHz Mono 16-bit PCM.
-                        // This bypasses any RIFF header validation errors (Not a WAVE file).
-                        // If a header exists, it's just treated as 0.002s of noise, which Modal will clean.
-                        var rawReader = new RawSourceWaveStream(fs, new WaveFormat(16000, 16, 1));
-                        providers.Add(rawReader.ToSampleProvider());
+                        readers.Add(new WaveFileReader(file));
                     }
 
-                    // Safely concatenate the audio data using NAudio's managed logic
-                    var playlist = new ConcatenatingSampleProvider(providers);
+                    // Use the WaveFormat of the first input file to write the merged WAV file
+                    var targetFormat = readers[0].WaveFormat;
 
-                    // Write to output file
-                    WaveFileWriter.CreateWaveFile16(outputFilePath, playlist);
+                    using (var writer = new WaveFileWriter(outputFilePath, targetFormat))
+                    {
+                        var buffer = new byte[4096];
+                        foreach (var reader in readers)
+                        {
+                            int bytesRead;
+                            while ((bytesRead = reader.Read(buffer, 0, buffer.Length)) > 0)
+                            {
+                                writer.Write(buffer, 0, bytesRead);
+                            }
+                        }
+                    }
                 }
                 finally
                 {
-                    // Clean up resources to release file locks
-                    foreach (var stream in streams)
+                    // Clean up and release file locks
+                    foreach (var reader in readers)
                     {
-                        stream?.Dispose();
+                        reader?.Dispose();
                     }
                 }
             });

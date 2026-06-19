@@ -60,20 +60,21 @@ namespace SPEAK.Web.Controllers
             Response.ContentType = "text/plain; charset=utf-8";
             Response.Headers.Append("X-Accel-Buffering", "no");
             Response.Headers.Append("Cache-Control", "no-cache");
-            
-            var bufferingFeature = HttpContext.Features.Get<Microsoft.AspNetCore.Http.Features.IHttpResponseBodyFeature>();
-            bufferingFeature?.DisableBuffering();
+            Response.Headers.Append("Connection", "keep-alive");
+
+            var bodyFeature = HttpContext.Features.Get<Microsoft.AspNetCore.Http.Features.IHttpResponseBodyFeature>();
+            bodyFeature?.DisableBuffering();
 
             try
             {
                 await using var stream = await _aiService.GetResponseStreamAsync(request.Message, request.SessionId);
-                byte[] buffer = new byte[256];
+                var buffer = new byte[1]; // Read byte by byte to enforce flushing!
                 int bytesRead;
 
-                while ((bytesRead = await stream.ReadAsync(buffer, 0, buffer.Length)) > 0)
+                while ((bytesRead = await stream.ReadAsync(buffer, 0, buffer.Length, HttpContext.RequestAborted)) > 0)
                 {
-                    await Response.Body.WriteAsync(buffer, 0, bytesRead);
-                    await Response.Body.FlushAsync();
+                    await Response.Body.WriteAsync(buffer, 0, bytesRead, HttpContext.RequestAborted);
+                    await Response.Body.FlushAsync(HttpContext.RequestAborted);
                 }
             }
             catch (Exception ex)
@@ -84,6 +85,67 @@ namespace SPEAK.Web.Controllers
                     Response.StatusCode = 500;
                     await Response.WriteAsync($"Server error: {ex.Message}");
                 }
+            }
+        }
+
+        [HttpPost("test-stream")]
+        [AllowAnonymous]
+        public async Task TestStream()
+        {
+            Response.ContentType = "text/plain; charset=utf-8";
+            Response.Headers.Append("X-Accel-Buffering", "no");
+            Response.Headers.Append("Cache-Control", "no-cache");
+            Response.Headers.Append("Connection", "keep-alive");
+
+            var bodyFeature = HttpContext.Features.Get<Microsoft.AspNetCore.Http.Features.IHttpResponseBodyFeature>();
+            bodyFeature?.DisableBuffering();
+
+            string[] words = { "Hello", " this", " is", " a", " streaming", " test", " message", " from", " the", " server!" };
+            foreach (var word in words)
+            {
+                var bytes = System.Text.Encoding.UTF8.GetBytes(word);
+                await Response.Body.WriteAsync(bytes, 0, bytes.Length);
+                await Response.Body.FlushAsync();
+                await Task.Delay(500); // 500ms delay between words
+            }
+        }
+
+
+        [HttpPost("voice-to-voice")]
+        public async Task<IActionResult> VoiceToVoice(IFormFile audio)
+        {
+            if (audio == null || audio.Length == 0)
+                return BadRequest(new { error = "Audio file is required." });
+
+            try
+            {
+                var stream = await _aiService.GetVoiceToVoiceResponseAsync(audio.OpenReadStream(), audio.FileName);
+                return File(stream, "audio/mpeg");
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "VoiceToVoice error: {Message}", ex.Message);
+                return StatusCode(500, new { error = ex.Message });
+            }
+        }
+
+        [HttpPost("voice-to-text")]
+        public async Task<IActionResult> VoiceToText(IFormFile audio)
+        {
+            if (audio == null || audio.Length == 0)
+                return BadRequest(new { error = "Audio file is required." });
+
+            try
+            {
+                var aiResponseJson = await _aiService.GetVoiceToTextResponseAsync(audio.OpenReadStream(), audio.FileName);
+                
+                // Python API only returns the transcribed plain text for STT
+                return Ok(new { userText = aiResponseJson });
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "VoiceToText error: {Message}", ex.Message);
+                return StatusCode(500, new { error = ex.Message });
             }
         }
     }

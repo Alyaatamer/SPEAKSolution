@@ -15,5 +15,8 @@ namespace SPEAK.Shared.DTO_s.IdentityDto
         [JsonPropertyName("idToken")]
         [Required]
         public string IdToken { get; set; } = null!;
+
+        [JsonPropertyName("role")]
+        public string? Role { get; set; }
     }
 }

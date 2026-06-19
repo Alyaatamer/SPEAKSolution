@@ -1157,4 +1157,4 @@ F:\Graduation Project\SPEAKSolution\SPEAK.Web\obj\Debug\net9.0\ref\SPEAK.Web.dll
 F:\Graduation Project\SPEAKSolution\SPEAK.Web\obj\Debug\net9.0\compressed\uzgqhlkpsm-0qvsl92vkd.gz
 F:\Graduation Project\SPEAKSolution\SPEAK.Web\obj\Debug\net9.0\SPEAK.Web.sourcelink.json
 F:\Graduation Project\SPEAKSolution\SPEAK.Web\obj\Debug\net9.0\SPEAK.Web.MvcApplicationPartsAssemblyInfo.cs
-F:\Graduation Project\SPEAKSolution\SPEAK.Web\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
+F:\Graduation Project\SPEAKSolution\SPEAK.Web\bin\Debug\net9.0\NAudio.Core.dll

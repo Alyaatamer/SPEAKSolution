@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Threading.Tasks;
 using SPEAK.Shared.DTO_s;
+using SPEAK.Shared.ErrorModels;
 
 namespace SPEAK.Presentation.Controllers
 {
@@ -23,22 +24,43 @@ namespace SPEAK.Presentation.Controllers
             _env = env;
         }
 
+        private string GetWebRootPath()
+        {
+            return string.IsNullOrEmpty(_env.WebRootPath)
+                ? Path.Combine(_env.ContentRootPath, "wwwroot")
+                : _env.WebRootPath;
+        }
+
+        private string? GetUserId() =>
+            User.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier)?.Value;
+
+        // ─────────────────────────────────────────────────────────────────────
+        //  POST api/MergeVoices/merge-voices
+        //  Merges uploaded recordings with any existing merged WAV, calls
+        //  /segment, and returns the resulting word count so Flutter can
+        //  decide whether to proceed to physical concomitants or ask for more.
+        // ─────────────────────────────────────────────────────────────────────
         [HttpPost("merge-voices")]
         [ApiExplorerSettings(IgnoreApi = true)]
-        public async Task<IActionResult> MergeVoices([FromForm] List<IFormFile> files, [FromForm] string type = "general")
+        public async Task<IActionResult> MergeVoices(
+            [FromForm] List<IFormFile> files,
+            [FromForm] string type = "general")
         {
             if (files == null || files.Count == 0)
-            {
                 return BadRequest("No files uploaded.");
-            }
+
+            var userId = GetUserId();
+            if (string.IsNullOrEmpty(userId))
+                return Unauthorized("User ID not found in token.");
 
             try
             {
-                var result = await _voiceProcessingService.ProcessVoiceSessionAsync(files, type, _env.ContentRootPath);
+                var result = await _voiceProcessingService.ProcessVoiceSessionAsync(
+                    userId, files, type, GetWebRootPath());
 
                 return Ok(new
                 {
-                    WordCount = result.WordCount,
+                    WordCount  = result.WordCount,
                     MergedFile = Path.GetFileName(result.MergedFilePath)
                 });
             }
@@ -48,12 +70,21 @@ namespace SPEAK.Presentation.Controllers
             }
         }
 
+        // ─────────────────────────────────────────────────────────────────────
+        //  POST api/MergeVoices/cleanup-merged
+        //  Deletes the merged WAV and its ZIP for the given task type once the
+        //  SSI calculation is complete.
+        // ─────────────────────────────────────────────────────────────────────
         [HttpPost("cleanup-merged")]
         public async Task<IActionResult> CleanupMerged([FromForm] string type = "general")
         {
+            var userId = GetUserId();
+            if (string.IsNullOrEmpty(userId))
+                return Unauthorized("User ID not found in token.");
+
             try
             {
-                await _voiceProcessingService.CleanupMergedFileAsync(type, _env.ContentRootPath);
+                await _voiceProcessingService.CleanupMergedFileAsync(userId, type, GetWebRootPath());
                 return Ok(new { message = "Merged file cleaned up successfully." });
             }
             catch (Exception ex)
@@ -62,47 +93,57 @@ namespace SPEAK.Presentation.Controllers
             }
         }
 
+        // ─────────────────────────────────────────────────────────────────────
+        //  POST api/MergeVoices/calculate-ssi
+        //  Sends the stored ZIP(s) to /analyze and returns the SSI result JSON.
+        // ─────────────────────────────────────────────────────────────────────
         [HttpPost("calculate-ssi")]
         public async Task<IActionResult> CalculateSSI([FromBody] SSIDetectionRequestDto request)
         {
+            var userId = GetUserId();
+            if (string.IsNullOrEmpty(userId))
+                return Unauthorized("User ID not found in token.");
+
             try
             {
-                 // Extract User ID from Claims
-                var userId = User.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier)?.Value;
-                if (string.IsNullOrEmpty(userId))
-                {
-                    return Unauthorized("User ID not found in token.");
-                }
+                var resultJson = await _voiceProcessingService.CalculateSSIAsync(
+                    userId, request, GetWebRootPath());
 
-                var resultJson = await _voiceProcessingService.CalculateSSIAsync(userId, request, _env.ContentRootPath);
-                
-                // Return the raw JSON string as JSON content
                 return Content(resultJson, "application/json");
             }
-             catch (Exception ex)
+            catch (WordCountException ex)
+            {
+                return BadRequest(new
+                {
+                    status     = "error",
+                    word_count = ex.WordCount,
+                    message_en = ex.MessageEn,
+                    message_ar = ex.MessageAr
+                });
+            }
+            catch (Exception ex)
             {
                 return StatusCode(500, $"SSI Calculation failed: {ex.Message}");
             }
         }
 
+        // ─────────────────────────────────────────────────────────────────────
+        //  GET api/MergeVoices/latest-diagnosis
+        // ─────────────────────────────────────────────────────────────────────
         [HttpGet("latest-diagnosis")]
         public async Task<IActionResult> GetLatestDiagnosis()
         {
+            var userId = GetUserId();
+            if (string.IsNullOrEmpty(userId))
+                return Unauthorized("User ID not found in token.");
+
             try
             {
-                var userId = User.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier)?.Value;
-                if (string.IsNullOrEmpty(userId))
-                {
-                    return Unauthorized("User ID not found in token.");
-                }
-                
                 var record = await _voiceProcessingService.GetLatestDiagnosisAsync(userId);
 
                 if (record == null)
                     return Ok(null);
 
-                // Parse the FullResultJson and merge it with the record metadata
-                // so Flutter can access all AI fields (most_frequent, arabic_severity, etc.) directly
                 try
                 {
                     using var doc = System.Text.Json.JsonDocument.Parse(record.FullResultJson);
@@ -115,12 +156,8 @@ namespace SPEAK.Presentation.Controllers
                         ["createdAt"]      = record.CreatedAt,
                     };
 
-                    // Merge every top-level key from the full AI result JSON
                     foreach (var prop in doc.RootElement.EnumerateObject())
-                    {
-                        // Use JsonElement so all nested structures are preserved
                         merged[prop.Name] = prop.Value.Clone();
-                    }
 
                     return new ContentResult
                     {
@@ -131,7 +168,6 @@ namespace SPEAK.Presentation.Controllers
                 }
                 catch
                 {
-                    // If parsing fails, fall back to returning the raw record
                     return Ok(record);
                 }
             }

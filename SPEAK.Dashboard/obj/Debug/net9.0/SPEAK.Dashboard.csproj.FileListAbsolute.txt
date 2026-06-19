@@ -172,4 +172,4 @@ F:\Graduation Project\SPEAKSolution\SPEAK.Dashboard\obj\Debug\net9.0\refint\SPEA
 F:\Graduation Project\SPEAKSolution\SPEAK.Dashboard\obj\Debug\net9.0\SPEAK.Dashboard.pdb
 F:\Graduation Project\SPEAKSolution\SPEAK.Dashboard\obj\Debug\net9.0\SPEAK.Dashboard.genruntimeconfig.cache
 F:\Graduation Project\SPEAKSolution\SPEAK.Dashboard\obj\Debug\net9.0\ref\SPEAK.Dashboard.dll
-F:\Graduation Project\SPEAKSolution\SPEAK.Dashboard\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
+F:\Graduation Project\SPEAKSolution\SPEAK.Dashboard\bin\Debug\net9.0\NAudio.Core.dll

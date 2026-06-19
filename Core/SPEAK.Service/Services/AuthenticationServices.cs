@@ -360,6 +360,9 @@ namespace SPEAK.Service.Services
 
                 if (user == null)
                 {
+                    if (dto.Role?.ToLower() == "doctor")
+                        throw new BadRequestException(new[] { "Doctor account not found. Please register through the Doctor portal first." });
+
                     user = new ApplicationUser
                     {
                         Email = email,
@@ -420,6 +423,10 @@ namespace SPEAK.Service.Services
                         childGender = (int?)parentProfile.ChildGender;
                         isComplete = true;
                     }
+                }
+                else
+                {
+                    isComplete = true;
                 }
 
                 return new UserDto
@@ -585,7 +592,7 @@ namespace SPEAK.Service.Services
                 issuer: _configuration.GetSection("JWTOptions")["Issuer"] ?? "SPEAK.API",
                 audience: _configuration.GetSection("JWTOptions")["Audience"] ?? "SPEAK.Users",
                 claims: claims,
-                expires: DateTime.Now.AddDays(30),
+                expires: DateTime.Now.AddDays(365),
                 signingCredentials: creds
             );
 

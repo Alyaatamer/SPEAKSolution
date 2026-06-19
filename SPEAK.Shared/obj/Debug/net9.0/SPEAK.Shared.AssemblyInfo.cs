@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SPEAK.Shared")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6ecf798b7ccaed6b816aab97442f837db07c29c6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+173568f21d759306499b27a76eb6b0cff37e9314")]
 [assembly: System.Reflection.AssemblyProductAttribute("SPEAK.Shared")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SPEAK.Shared")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

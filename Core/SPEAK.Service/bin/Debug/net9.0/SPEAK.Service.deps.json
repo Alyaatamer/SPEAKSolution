@@ -11,6 +11,7 @@
           "CloudinaryDotNet": "1.28.0",
           "MailKit": "4.14.1",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "9.0.10",
+          "NAudio.Core": "2.3.0",
           "SPEAK.Abstraction": "1.0.0",
           "SPEAK.Domain": "1.0.0",
           "StackExchange.Redis": "2.10.1"
@@ -534,6 +535,14 @@
           "lib/net8.0/MimeKit.dll": {
             "assemblyVersion": "4.14.0.0",
             "fileVersion": "4.14.0.0"
+          }
+        }
+      },
+      "NAudio.Core/2.3.0": {
+        "runtime": {
+          "lib/netstandard2.0/NAudio.Core.dll": {
+            "assemblyVersion": "2.3.0.0",
+            "fileVersion": "2.3.0.0"
           }
         }
       },
@@ -1499,6 +1508,13 @@
       "sha512": "sha512-g0LtsMC8DCTkc030C3UgVqbltOJmV5cz4AX8ASowz2ZA+lxopXSYtC1XXYmenxy606aWFLwi5Xy4cC/zyYjbjQ==",
       "path": "mimekit/4.14.0",
       "hashPath": "mimekit.4.14.0.nupkg.sha512"
+    },
+    "NAudio.Core/2.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-jMd7r6dB6tAtXhOYL58ntPqwERNm1/Rhw5MKOIYvsnXzuX+PTGsa2VMam6n0npZYSwlSidKa4GAm4bFcXFUlcg==",
+      "path": "naudio.core/2.3.0",
+      "hashPath": "naudio.core.2.3.0.nupkg.sha512"
     },
     "Newtonsoft.Json/13.0.3": {
       "type": "package",

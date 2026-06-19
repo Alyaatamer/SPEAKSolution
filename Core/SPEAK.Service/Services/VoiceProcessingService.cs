@@ -7,13 +7,17 @@ using System.IO.Compression;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Text.Json;
+using System.Text.Json.Nodes;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity;
 using SPEAK.Domain.Models.Identity;
 using System.Text;
 using SPEAK.Shared.DTO_s;
+using SPEAK.Shared.ErrorModels;
 using SPEAK.Abstraction.IRepositories;
 using SPEAK.Domain.Models;
+using Microsoft.Extensions.Configuration;
+using System.Linq;
 
 namespace SPEAK.Service.Services
 {
@@ -23,386 +27,401 @@ namespace SPEAK.Service.Services
         private readonly HttpClient _httpClient;
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly IDiagnosticRepository _diagnosticRepository;
-        private const string UploadFolderName = "UploadedVoices";
-        
-        // Configuration/Constants - ideally injected via IConfiguration, but keeping consistent with Controller for now
-        private const string MergeUrl = "https://alyaatamer88--arabic-noise-reduction-api-noisereductiona-491610.modal.run/merge"; 
-        private const string NoiseCancellationUrl = "https://alyaatamer88--arabic-noise-reduction-api-noisereductiona-491610.modal.run/enhance"; 
-        private const string SegmentationUrl = "https://alyaatamer88--arabic-word-segmentation-api-segmentationa-b3e898.modal.run/segment";
+        private const string UploadFolderName = "voices";
+
+        // AI Service URLs - loaded from appsettings.json
+        private readonly string _segmentUrl;
+        private readonly string _analyzeUrl;
 
         private readonly IAuthenticationServices _authServices;
 
-        public VoiceProcessingService(IAudioMerger audioMerger, HttpClient httpClient, UserManager<ApplicationUser> userManager, IDiagnosticRepository diagnosticRepository, IAuthenticationServices authServices)
+        public VoiceProcessingService(
+            IAudioMerger audioMerger,
+            HttpClient httpClient,
+            UserManager<ApplicationUser> userManager,
+            IDiagnosticRepository diagnosticRepository,
+            IAuthenticationServices authServices,
+            IConfiguration configuration)
         {
             _audioMerger = audioMerger;
             _httpClient = httpClient;
             _userManager = userManager;
             _diagnosticRepository = diagnosticRepository;
             _authServices = authServices;
-            // Set timeout for long running AI operations
-            _httpClient.Timeout = TimeSpan.FromMinutes(5);
+
+            // Load AI service URLs from appsettings.json
+            _segmentUrl  = configuration["AI:SegmentUrl"]  ?? throw new InvalidOperationException("AI:SegmentUrl is not configured in appsettings.json");
+            _analyzeUrl  = configuration["AI:AnalyzeUrl"]  ?? throw new InvalidOperationException("AI:AnalyzeUrl is not configured in appsettings.json");
+
+            // Set timeout for long-running AI operations
+            _httpClient.Timeout = TimeSpan.FromMinutes(10);
         }
 
-        public async Task<(int WordCount, string MergedFilePath)> ProcessVoiceSessionAsync(List<IFormFile> files, string type, string contentRootPath)
+        // ─────────────────────────────────────────────────────────────────────
+        //  Step 1 – Merge local WAV files → call /segment → derive word count
+        // ─────────────────────────────────────────────────────────────────────
+        public async Task<(int WordCount, string MergedFilePath)> ProcessVoiceSessionAsync(
+            string userId,
+            List<IFormFile> files,
+            string type,
+            string webRootPath)
         {
-             // 1. Setup Paths
-            var uploadFolder = Path.Combine(contentRootPath, UploadFolderName);
-            if (!Directory.Exists(uploadFolder))
-            {
-                Directory.CreateDirectory(uploadFolder);
-            }
+            // 1. Setup user-isolated folder
+            var uploadFolder = Path.Combine(webRootPath, UploadFolderName, userId);
+            Directory.CreateDirectory(uploadFolder);
 
-            // Determine filename based on type
+            // Determine merged WAV filename by task type
             string mergedFileName = type switch
             {
-                "images" => "merged_images.wav",
+                "images"  => "merged_images.wav",
                 "reading" => "merged_reading.wav",
-                _ => "merged.wav"
+                _         => "merged.wav"
             };
             var mergedFilePath = Path.Combine(uploadFolder, mergedFileName);
 
-            // 2. Save New Files
+            // ZIP file to be saved for later /analyze call
+            string zipFileName = type switch
+            {
+                "reading" => "reading_zip.zip",
+                _         => "speaking_zip.zip"
+            };
+            var zipFilePath = Path.Combine(uploadFolder, zipFileName);
+
+            // 2. Save newly uploaded recordings to disk
             var savedFiles = new List<string>();
-            try 
+            try
             {
                 foreach (var file in files)
                 {
                     var filePath = Path.Combine(uploadFolder, file.FileName);
-                    using var memoryStream = new MemoryStream();
-                    await file.CopyToAsync(memoryStream);
-                    await System.IO.File.WriteAllBytesAsync(filePath, memoryStream.ToArray());
+                    using var ms = new MemoryStream();
+                    await file.CopyToAsync(ms);
+                    await File.WriteAllBytesAsync(filePath, ms.ToArray());
                     savedFiles.Add(filePath);
                 }
 
-                // 3. Accumulation & Safe Merge
+                // 3. Accumulate: prepend any existing merged WAV so recordings build up
                 var filesToMerge = new List<string>();
-                if (System.IO.File.Exists(mergedFilePath))
-                {
+                if (File.Exists(mergedFilePath))
                     filesToMerge.Add(mergedFilePath);
-                }
                 filesToMerge.AddRange(savedFiles);
 
-                // 4. Merge completely via Modal's ffmpeg logic
-                byte[] rawMergedBytes;
-                try 
-                {
-                     rawMergedBytes = await CallMergeOnlyAsync(filesToMerge);
-                     // Save the completely RAW merged file back to disk
-                     // This is EXACTLY what the original code did (tempMergedPath -> mergedFilePath)
-                     await System.IO.File.WriteAllBytesAsync(mergedFilePath, rawMergedBytes);
-                }
-                catch (Exception ex)
-                {
-                    throw new Exception($"Modal Merge failed: {ex.Message}", ex);
-                }
+                // 4. Local merge with NAudio
+                var tempMergedPath = Path.Combine(uploadFolder, $"temp_{Guid.NewGuid():N}.wav");
+                await _audioMerger.MergeAudioFilesAsync(filesToMerge, tempMergedPath);
 
-                // 5. Processing Pipeline (Noise Cancellation -> Segmentation)
-                
-                // Step 5a: Noise Cancellation (on the RAW merged file)
-                byte[] cleanedFileBytes;
-                try 
-                {
-                     cleanedFileBytes = await CallNoiseCancellationAsync(mergedFilePath);
-                }
-                catch (Exception ex)
-                {
-                    throw new Exception($"Noise cancellation failed: {ex.Message}", ex);
-                }
+                if (File.Exists(mergedFilePath))
+                    File.Delete(mergedFilePath);
+                File.Move(tempMergedPath, mergedFilePath);
 
-                // Step 4b: Segmentation
-                int wordCount = await CallSegmentationAsync(cleanedFileBytes);
+                // 5. Send merged WAV to /segment → get back a ZIP of word_X.wav files
+                //    If the AI returned 400 (< 100 words), ZipBytes is null and WordCountFromError has the count.
+                var (zipBytes, wordCountFromError) = await CallSegmentAsync(mergedFilePath);
+
+                // 6. If AI said < 100 words, return that count — Flutter shows retry message
+                if (zipBytes == null)
+                    return (wordCountFromError ?? 0, mergedFilePath);
+
+                // 7. Count word files inside the ZIP to determine word count
+                int wordCount = CountWordsInZip(zipBytes);
+
+                // 8. Always save the ZIP (even if < 100) so /analyze can pick it up later
+                //    when the user retries and accumulates more recordings.
+                await File.WriteAllBytesAsync(zipFilePath, zipBytes);
 
                 return (wordCount, mergedFilePath);
-
             }
             finally
             {
-                // 5. Cleanup Input Files (New recordings only)
-                foreach (var file in savedFiles)
-                {
-                    if (System.IO.File.Exists(file))
-                    {
-                        System.IO.File.Delete(file);
-                    }
-                }
+                // 8. Delete the raw individual recordings; merged WAV and ZIP stay
+                foreach (var f in savedFiles)
+                    if (File.Exists(f)) File.Delete(f);
             }
         }
 
-        public async Task<string> CalculateSSIAsync(string userId, SSIDetectionRequestDto request, string contentRootPath)
+        // ─────────────────────────────────────────────────────────────────────
+        //  Step 2 – Send saved ZIP(s) to /analyze → return SSI JSON
+        // ─────────────────────────────────────────────────────────────────────
+        public async Task<string> CalculateSSIAsync(string userId, SSIDetectionRequestDto request, string webRootPath)
         {
             var user = await _userManager.FindByIdAsync(userId);
             if (user == null) throw new Exception("User not found");
-            
+
             var userDto = await _authServices.GetCurrentUserAsync(user.Email);
             int age = userDto.ChildAge ?? 0;
 
-             // 1. Setup Paths
-            var uploadFolder = Path.Combine(contentRootPath, UploadFolderName);
-            // Default to 'merged.wav' for SSI as it combines everything? 
-            // Or should it be specific? The user said "ssi part 1... takes folders... returned from segmentation"
-            // And "merged.wav" is the culmination of the session.
-            // Let's use "merged.wav" unless specified otherwise.
-            // Actually, if we have "merged_reading.wav" and "merged_images.wav", which one?
-            // "Part 1... takes the 2 folders output from segmentation"
-            // Wait, my segmentation currently returns a COUNT.
-            // CallSegmentationAndGetZipAsync returns the ZIP containing the folders.
-            
-            // We should use the MAIN merged file.
-            // If the user did both, we might want to combine them?
-            // For now, let's assume "merged.wav" is the master file or the latest one.
-            // If the user Flow is: Images -> Reading -> merged.wav?
-            // Or separate?
-            // The logic in ProcessVoiceSession merges into: "merged_images.wav", "merged_reading.wav", or "merged.wav".
-            // If I am calculating SSI for the child, I probably want ALL their speech.
-            // Let's assume for now we pick "merged.wav" if it exists, or fallbacks.
-            // Actually, code in ProcessVoiceSessionAsync handles "type".
-            // If I am at the end, I might have multiple files.
-            // BUT, usually "merged.wav" is the generic one.
-            // Let's check if "merged.wav" exists.
-            
-            string mergedFilePath = Path.Combine(uploadFolder, "merged.wav");
-            // If main doesn't exist, try others?
-            if (!System.IO.File.Exists(mergedFilePath))
+            var uploadFolder = Path.Combine(webRootPath, UploadFolderName, userId);
+
+            // Locate speaking ZIP (general or images task)
+            string speakingZipPath = Path.Combine(uploadFolder, "speaking_zip.zip");
+            if (!File.Exists(speakingZipPath))
+                throw new Exception("No speaking audio ZIP found. Please complete the recording step first.");
+
+            // Locate reading ZIP (only when isReader = true)
+            string? readingZipPath = null;
+            if (request.IsReader)
             {
-                 // Try individual
-                 string reading = Path.Combine(uploadFolder, "merged_reading.wav");
-                 if (System.IO.File.Exists(reading)) mergedFilePath = reading;
-                 else 
-                 {
-                     string images = Path.Combine(uploadFolder, "merged_images.wav");
-                     if (System.IO.File.Exists(images)) mergedFilePath = images;
-                     else throw new Exception("No audio recordings found to analyze.");
-                 }
+                string rp = Path.Combine(uploadFolder, "reading_zip.zip");
+                if (File.Exists(rp)) readingZipPath = rp;
             }
 
-            // 2. Noise Cancellation
-            byte[] cleanedFileBytes = await CallNoiseCancellationAsync(mergedFilePath);
+            // Call /analyze and get SSI result
+            string finalJson = await CallAnalyzeAsync(speakingZipPath, readingZipPath, age, request);
 
-            // 3. Segmentation (Get Zip)
-            byte[] zipBytes = await CallSegmentationAndGetZipAsync(cleanedFileBytes);
-
-            // 4. SSI Part 1
-            string ssi1Json = await CallSSIPart1Async(zipBytes, age, request);
-
-            // 5. SSI Part 2
-            string finalJson = await CallSSIPart2Async(ssi1Json, request.IsReader);
-
-            // Save to DB
-            try 
+            // Persist to database
+            try
             {
-                using (JsonDocument doc = JsonDocument.Parse(finalJson))
+                using var doc = JsonDocument.Parse(finalJson);
+                var root = doc.RootElement;
+
+                string severity = "Unknown";
+                string labelCountsParams = "{}";
+
+                if (root.TryGetProperty("severity", out var severityEl))
                 {
-                    var root = doc.RootElement;
-                    string severity = "Unknown";
-                    string labelCountsParams = "{}";
-
-                    // Handle different JSON structures for Severity
-                    if (root.TryGetProperty("severity", out JsonElement severityElement))
-                    {
-                        if (severityElement.ValueKind == JsonValueKind.String)
-                        {
-                            severity = severityElement.GetString();
-                        }
-                        else if (severityElement.ValueKind == JsonValueKind.Object && severityElement.TryGetProperty("level", out JsonElement levelElement))
-                        {
-                             severity = levelElement.GetString();
-                        }
-                    }
-
-                    // Handle different JSON structures for Label Counts
-                    if (root.TryGetProperty("label_counts", out JsonElement labelCountsElement))
-                    {
-                        labelCountsParams = labelCountsElement.GetRawText();
-                    }
-                    else if (root.TryGetProperty("summary", out JsonElement summaryElement) && summaryElement.TryGetProperty("label_counts", out JsonElement summaryLabelCounts))
-                    {
-                        labelCountsParams = summaryLabelCounts.GetRawText();
-                    }
-
-                    var record = new DiagnosticRecord
-                    {
-                        UserId = userId,
-                        Severity = severity ?? "Unknown",
-                        LabelCountsJson = labelCountsParams,
-                        FullResultJson = finalJson,
-                        CreatedAt = DateTime.UtcNow
-                    };
-
-                    await _diagnosticRepository.AddDiagnosticRecordAsync(record);
+                    severity = severityEl.ValueKind == JsonValueKind.String
+                        ? severityEl.GetString() ?? "Unknown"
+                        : severityEl.TryGetProperty("level", out var lvl) ? lvl.GetString() ?? "Unknown" : "Unknown";
                 }
+
+                if (root.TryGetProperty("label_counts", out var lcEl))
+                    labelCountsParams = lcEl.GetRawText();
+                else if (root.TryGetProperty("summary", out var sumEl) &&
+                         sumEl.TryGetProperty("label_counts", out var sumLc))
+                    labelCountsParams = sumLc.GetRawText();
+
+                var record = new DiagnosticRecord
+                {
+                    UserId       = userId,
+                    Severity     = severity,
+                    LabelCountsJson = labelCountsParams,
+                    FullResultJson  = finalJson,
+                    CreatedAt    = DateTime.UtcNow
+                };
+                await _diagnosticRepository.AddDiagnosticRecordAsync(record);
             }
             catch (Exception ex)
             {
-               // Log error (Console for now)
-               Console.WriteLine($"Error saving diagnostic record: {ex.Message}");
+                Console.WriteLine($"Error saving diagnostic record: {ex.Message}");
             }
 
             return finalJson;
         }
 
-        public async Task CleanupMergedFileAsync(string type, string contentRootPath)
+        // ─────────────────────────────────────────────────────────────────────
+        //  Cleanup – removes merged WAV *and* the saved ZIP for that task type
+        // ─────────────────────────────────────────────────────────────────────
+        public async Task CleanupMergedFileAsync(string userId, string type, string webRootPath)
         {
-             var uploadFolder = Path.Combine(contentRootPath, UploadFolderName);
-             string mergedFileName = type switch
+            try
             {
-                "images" => "merged_images.wav",
-                "reading" => "merged_reading.wav",
-                _ => "merged.wav"
-            };
-            var mergedFilePath = Path.Combine(uploadFolder, mergedFileName);
+                var uploadFolder = Path.Combine(webRootPath, UploadFolderName, userId);
 
-            if (System.IO.File.Exists(mergedFilePath))
-            {
-                await Task.Run(() => System.IO.File.Delete(mergedFilePath));
+                string mergedFileName = type switch
+                {
+                    "images"  => "merged_images.wav",
+                    "reading" => "merged_reading.wav",
+                    _         => "merged.wav"
+                };
+                string zipFileName = type switch
+                {
+                    "reading" => "reading_zip.zip",
+                    _         => "speaking_zip.zip"
+                };
+
+                string mergedPath = Path.Combine(uploadFolder, mergedFileName);
+                string zipPath    = Path.Combine(uploadFolder, zipFileName);
+
+                if (File.Exists(mergedPath)) File.Delete(mergedPath);
+                if (File.Exists(zipPath))    File.Delete(zipPath);
             }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error in CleanupMergedFileAsync: {ex.Message}");
+            }
+            await Task.CompletedTask;
         }
 
-        private async Task<byte[]> CallNoiseCancellationAsync(string filePath)
+        public async Task<DiagnosticRecord?> GetLatestDiagnosisAsync(string userId)
         {
-            using var fileContent = new ByteArrayContent(await System.IO.File.ReadAllBytesAsync(filePath));
-            fileContent.Headers.ContentType = MediaTypeHeaderValue.Parse("audio/wav"); // Changed from multipart/form-data to audio/wav for the part
+            return await _diagnosticRepository.GetLatestDiagnosticRecordAsync(userId);
+        }
 
+        // ─────────────────────────────────────────────────────────────────────
+        //  Private Helpers
+        // ─────────────────────────────────────────────────────────────────────
+
+        /// <summary>
+        /// POST merged WAV to /segment.
+        /// The API returns a JSON-encoded base64 string (application/json → "UEsD...").
+        /// We read the string, strip the surrounding JSON quotes, then base64-decode
+        /// to get the real ZIP bytes.
+        /// </summary>
+        private async Task<(byte[]? ZipBytes, int? WordCountFromError)> CallSegmentAsync(string mergedWavPath)
+        {
             using var formData = new MultipartFormDataContent();
-            // Previous Controller used "merged_input.wav"
-            formData.Add(fileContent, "file", "merged_input.wav"); 
+            var fileBytes   = await File.ReadAllBytesAsync(mergedWavPath);
+            var fileContent = new ByteArrayContent(fileBytes);
+            fileContent.Headers.ContentType = MediaTypeHeaderValue.Parse("audio/wav");
+            formData.Add(fileContent, "file", Path.GetFileName(mergedWavPath));
 
-            var response = await _httpClient.PostAsync(NoiseCancellationUrl, formData);
-            
+            var response = await _httpClient.PostAsync(_segmentUrl, formData);
+
             if (!response.IsSuccessStatusCode)
             {
-                 var error = await response.Content.ReadAsStringAsync();
-                 throw new Exception($"Noise Cancellation Failed: {response.ReasonPhrase} - {error}");
+                var errorBody = await response.Content.ReadAsStringAsync();
+
+                // The AI may return 400 (word count < 100) either directly or
+                // wrapped inside a 500 ("Pipeline failed: 400: {...}").
+                // We check both status codes and use regex to extract word_count
+                // from any position in the response body.
+                bool isWordCountError =
+                    response.StatusCode == System.Net.HttpStatusCode.BadRequest ||
+                    response.StatusCode == System.Net.HttpStatusCode.InternalServerError;
+
+                if (isWordCountError)
+                {
+                    // Strategy 1: detail is a JSON object → { "detail": { "word_count": N } }
+                    try
+                    {
+                        using var doc = JsonDocument.Parse(errorBody);
+                        var root = doc.RootElement;
+                        if (root.TryGetProperty("detail", out var detail) &&
+                            detail.ValueKind == JsonValueKind.Object &&
+                            detail.TryGetProperty("word_count", out var wc))
+                        {
+                            return (null, wc.GetInt32());
+                        }
+                    }
+                    catch { /* not valid JSON or wrong shape */ }
+
+                    // Strategy 2: word_count is embedded in a string (Python dict format)
+                    // e.g. "Pipeline failed: 400: {'word_count': 5, ...}"
+                    var regexMatch = System.Text.RegularExpressions.Regex.Match(
+                        errorBody, @"['""]?word_count['""]?\s*:\s*(\d+)");
+                    if (regexMatch.Success && int.TryParse(regexMatch.Groups[1].Value, out var wordCountFromRegex))
+                    {
+                        return (null, wordCountFromRegex);
+                    }
+                }
+
+                throw new Exception($"Segment API failed ({response.StatusCode}): {errorBody}");
             }
 
-            return await response.Content.ReadAsByteArrayAsync();
+            // /segment returns a binary ZIP (application/zip) via FileResponse.
+            // Read raw bytes directly.
+            var zipBytes = await response.Content.ReadAsByteArrayAsync();
+            return (zipBytes, null);
         }
 
-        private async Task<byte[]> CallMergeOnlyAsync(List<string> filePaths)
+        /// <summary>
+        /// Counts the number of .wav entries in a ZIP to determine word count.
+        /// </summary>
+        private static int CountWordsInZip(byte[] zipBytes)
+        {
+            using var ms      = new MemoryStream(zipBytes);
+            using var archive = new ZipArchive(ms, ZipArchiveMode.Read);
+            return archive.Entries.Count(e =>
+                e.Name.EndsWith(".wav", StringComparison.OrdinalIgnoreCase));
+        }
+
+        /// <summary>
+        /// POST speaking ZIP (and optionally reading ZIP) + physical params to /analyze.
+        /// </summary>
+        private async Task<string> CallAnalyzeAsync(
+            string speakingZipPath,
+            string? readingZipPath,
+            int age,
+            SSIDetectionRequestDto request)
         {
             using var formData = new MultipartFormDataContent();
 
-            foreach (var filePath in filePaths)
+            // Speaking ZIP (always required)
+            var speakingBytes = await File.ReadAllBytesAsync(speakingZipPath);
+            var speakingContent = new ByteArrayContent(speakingBytes);
+            speakingContent.Headers.ContentType = MediaTypeHeaderValue.Parse("application/zip");
+            formData.Add(speakingContent, "speaking_zip", "speaking_zip.zip");
+
+            // Core parameters
+            formData.Add(new StringContent(age.ToString()), "age");
+            // can_read is a boolean field; send "true" / "false" (FastAPI accepts both)
+            formData.Add(new StringContent(request.IsReader ? "true" : "false"), "can_read");
+
+            // Reading ZIP (optional, only when can_read = true)
+            if (request.IsReader && readingZipPath != null)
             {
-                var fileBytes = await System.IO.File.ReadAllBytesAsync(filePath);
-                var fileContent = new ByteArrayContent(fileBytes);
-                fileContent.Headers.ContentType = MediaTypeHeaderValue.Parse("audio/wav");
-                formData.Add(fileContent, "files", Path.GetFileName(filePath));
+                var readingBytes   = await File.ReadAllBytesAsync(readingZipPath);
+                var readingContent = new ByteArrayContent(readingBytes);
+                readingContent.Headers.ContentType = MediaTypeHeaderValue.Parse("application/zip");
+                formData.Add(readingContent, "reading_zip", "reading_zip.zip");
             }
 
-            var response = await _httpClient.PostAsync(MergeUrl, formData);
+            // Physical concomitants
+            formData.Add(new StringContent(request.DistractingSounds.ToString()), "distracting_sounds");
+            formData.Add(new StringContent(request.FacialGrimaces.ToString()),    "facial_grimaces");
+            formData.Add(new StringContent(request.HeadMovements.ToString()),     "head_movements");
+            formData.Add(new StringContent(request.Extremities.ToString()),       "extremities");
+
+            var response = await _httpClient.PostAsync(_analyzeUrl, formData);
 
             if (!response.IsSuccessStatusCode)
             {
                 var error = await response.Content.ReadAsStringAsync();
-                throw new Exception($"Modal Merge Failed: {response.ReasonPhrase} - {error}");
+                // Check for word-count error from the AI pipeline
+                if (TryExtractWordCountError(error, out var wordCount, out var messageEn, out var messageAr))
+                    throw new WordCountException(messageEn, messageAr, wordCount);
+
+                throw new Exception($"Analyze API failed ({response.StatusCode}): {error}");
             }
 
-            return await response.Content.ReadAsByteArrayAsync();
+            return await response.Content.ReadAsStringAsync();
         }
 
-
-
-         private async Task<int> CallSegmentationAsync(byte[] audioBytes)
+        /// <summary>
+        /// Tries to parse word-count error details from a pipeline 400 response body.
+        /// </summary>
+        private static bool TryExtractWordCountError(
+            string error,
+            out int wordCount,
+            out string messageEn,
+            out string messageAr)
         {
-            using var fileContent = new ByteArrayContent(audioBytes);
-            fileContent.Headers.ContentType = MediaTypeHeaderValue.Parse("audio/wav"); 
-            using var formData = new MultipartFormDataContent();
-            formData.Add(fileContent, "file", "cleaned.wav");
-            var response = await _httpClient.PostAsync(SegmentationUrl, formData);
-            if (!response.IsSuccessStatusCode)
+            wordCount = 0;
+            messageEn = string.Empty;
+            messageAr = string.Empty;
+
+            try
             {
-                 var error = await response.Content.ReadAsStringAsync();
-                 throw new Exception($"Segmentation Failed: {response.ReasonPhrase} - {error}");
-            }
-            using var zipStream = await response.Content.ReadAsStreamAsync();
-            using var archive = new ZipArchive(zipStream, ZipArchiveMode.Read);
-            int count = 0;
-            foreach (var entry in archive.Entries)
-            {
-                if (entry.FullName.EndsWith(".wav", StringComparison.OrdinalIgnoreCase) && !string.IsNullOrEmpty(entry.Name))
+                using var doc = JsonDocument.Parse(error);
+                if (doc.RootElement.TryGetProperty("detail", out var detailProp))
                 {
-                    count++;
+                    var detail = detailProp.GetString();
+                    if (detail != null && detail.Contains("word_count"))
+                    {
+                        int firstBrace = detail.IndexOf('{');
+                        int lastBrace  = detail.LastIndexOf('}');
+                        if (firstBrace >= 0 && lastBrace > firstBrace)
+                        {
+                            var dictStr = detail.Substring(firstBrace, lastBrace - firstBrace + 1);
+                            var jsonStr = dictStr.Replace('\'', '"');
+                            using var innerDoc = JsonDocument.Parse(jsonStr);
+                            var innerRoot = innerDoc.RootElement;
+                            if (innerRoot.TryGetProperty("status", out var status) && status.GetString() == "error")
+                            {
+                                wordCount = innerRoot.TryGetProperty("word_count", out var wc) ? wc.GetInt32() : 0;
+                                messageEn = innerRoot.TryGetProperty("message_en", out var me) ? me.GetString() ?? string.Empty : string.Empty;
+                                messageAr = innerRoot.TryGetProperty("message_ar", out var ma) ? ma.GetString() ?? string.Empty : string.Empty;
+                                return true;
+                            }
+                        }
+                    }
                 }
             }
-            return count;
-        }
-
-         private async Task<byte[]> CallSegmentationAndGetZipAsync(byte[] audioBytes)
-        {
-            using var fileContent = new ByteArrayContent(audioBytes);
-            fileContent.Headers.ContentType = MediaTypeHeaderValue.Parse("audio/wav"); 
-            using var formData = new MultipartFormDataContent();
-            formData.Add(fileContent, "file", "cleaned.wav");
-            var response = await _httpClient.PostAsync(SegmentationUrl, formData);
-            if (!response.IsSuccessStatusCode)
+            catch
             {
-                 var error = await response.Content.ReadAsStringAsync();
-                 throw new Exception($"Segmentation Failed: {response.ReasonPhrase} - {error}");
+                // Parsing failed – fall through
             }
-            return await response.Content.ReadAsByteArrayAsync();
-        }
-
-        private async Task<string> CallSSIPart1Async(byte[] zipBytes, int age, SSIDetectionRequestDto request)
-        {
-            // URL depends on Reader/Non-Reader
-            string ssiUrl = request.IsReader 
-                ? "https://alyaatamer88--arabic-ssi-part1-api-ssipart1api-serve.modal.run/detect-reader" 
-                : "https://alyaatamer88--arabic-ssi-part1-api-ssipart1api-serve.modal.run/detect-non-reader";
-
-            using var formData = new MultipartFormDataContent();
-            
-            // Add Zip file
-            var speakingContent = new ByteArrayContent(zipBytes);
-            speakingContent.Headers.ContentType = MediaTypeHeaderValue.Parse("application/zip");
-            formData.Add(speakingContent, "speaking_folder", "speaking.zip");
-            
-            if (request.IsReader)
-            {
-                var readingContent = new ByteArrayContent(zipBytes);
-                readingContent.Headers.ContentType = MediaTypeHeaderValue.Parse("application/zip");
-                formData.Add(readingContent, "reading_folder", "reading.zip");
-            }
-
-            // Add other fields
-            formData.Add(new StringContent(age.ToString()), "age");
-            formData.Add(new StringContent("0.8"), "threshold"); // Detection threshold fixed at 0.6
-            
-            // Optional fields (sending 0 or valid value)
-            if (request.DistractingSounds > 0) formData.Add(new StringContent(request.DistractingSounds.ToString()), "distracting_sounds");
-            if (request.FacialGrimaces > 0) formData.Add(new StringContent(request.FacialGrimaces.ToString()), "facial_grimaces");
-            if (request.HeadMovements > 0) formData.Add(new StringContent(request.HeadMovements.ToString()), "head_movements");
-            if (request.Extremities > 0) formData.Add(new StringContent(request.Extremities.ToString()), "extremities");
-
-            var response = await _httpClient.PostAsync(ssiUrl, formData);
-            if (!response.IsSuccessStatusCode)
-            {
-                 var error = await response.Content.ReadAsStringAsync();
-                 throw new Exception($"SSI Part 1 Failed: {response.ReasonPhrase} - {error}");
-            }
-            return await response.Content.ReadAsStringAsync();
-        }
-
-        private async Task<string> CallSSIPart2Async(string previousJsonResult, bool isReader)
-        {
-            string ssi2Url = "https://alyaatamer88--arabic-ssi-part2-api-serve.modal.run/calculate-ssi";
-
-            using var formData = new MultipartFormDataContent();
-            var fileContent = new ByteArrayContent(Encoding.UTF8.GetBytes(previousJsonResult));
-            fileContent.Headers.ContentType = MediaTypeHeaderValue.Parse("application/json");
-            formData.Add(fileContent, "file", "data.json");
-
-            var response = await _httpClient.PostAsync(ssi2Url, formData);
-            
-             if (!response.IsSuccessStatusCode)
-            {
-                 var error = await response.Content.ReadAsStringAsync();
-                 throw new Exception($"SSI Part 2 Failed: {response.ReasonPhrase} - {error}");
-            }
-            return await response.Content.ReadAsStringAsync();
-        }
-        public async Task<DiagnosticRecord?> GetLatestDiagnosisAsync(string userId)
-        {
-            return await _diagnosticRepository.GetLatestDiagnosticRecordAsync(userId);
+            return false;
         }
     }
 }
