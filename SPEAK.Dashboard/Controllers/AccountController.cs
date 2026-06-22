@@ -18,7 +18,7 @@ namespace SPEAK.Dashboard.Controllers
             _userManager   = userManager;
         }
 
-        // GET: /Account/Login
+
         [HttpGet]
         public IActionResult Login()
         {
@@ -28,7 +28,7 @@ namespace SPEAK.Dashboard.Controllers
             return View(new LoginViewModel());
         }
 
-        // POST: /Account/Login
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Login(LoginViewModel model)
@@ -36,7 +36,7 @@ namespace SPEAK.Dashboard.Controllers
             if (!ModelState.IsValid)
                 return View(model);
 
-            // Try to find the user
+
             var user = await _userManager.FindByEmailAsync(model.Email);
             if (user == null)
             {
@@ -44,7 +44,7 @@ namespace SPEAK.Dashboard.Controllers
                 return View(model);
             }
 
-            // Check the role — only Admins allowed
+            // Only Admins are allowed to login to the dashboard
             var roles = await _userManager.GetRolesAsync(user);
             if (!roles.Contains("Admin"))
             {
@@ -52,7 +52,7 @@ namespace SPEAK.Dashboard.Controllers
                 return View(model);
             }
 
-            // Sign in using Identity (sets the cookie automatically)
+
             var result = await _signInManager.PasswordSignInAsync(
                 user,
                 model.Password,
@@ -66,7 +66,7 @@ namespace SPEAK.Dashboard.Controllers
             return View(model);
         }
 
-        // POST: /Account/Logout
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Logout()

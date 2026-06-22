@@ -20,13 +20,13 @@ namespace SPEAK.Dashboard.Controllers
             _userManager  = userManager;
         }
 
-        // GET: /UserManagement
+
         public async Task<IActionResult> Index()
         {
-            // Get all users from Identity
+
             var allUsers = _userManager.Users.ToList();
 
-            // Build the list with their roles
+
             var items = new List<UserManagementItemViewModel>();
 
             foreach (var user in allUsers)
@@ -46,7 +46,7 @@ namespace SPEAK.Dashboard.Controllers
             return View(new UserManagementViewModel { Users = items });
         }
 
-        // POST: /UserManagement/Disable
+
         [HttpPost]
         public async Task<IActionResult> Disable(string userId)
         {
@@ -55,7 +55,7 @@ namespace SPEAK.Dashboard.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-        // POST: /UserManagement/Enable
+
         [HttpPost]
         public async Task<IActionResult> Enable(string userId)
         {

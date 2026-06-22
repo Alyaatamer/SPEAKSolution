@@ -156,5 +156,14 @@ namespace SPEAK.Presentation.Controllers
             await servicesManger.AuthenticationServices.ChangePasswordAsync(email, dto);
             return Ok(new { message = "Password changed successfully." });
         }
+
+        [Authorize]
+        [HttpPost("logout")]
+        public IActionResult Logout()
+        {
+            // In a stateless JWT authentication system, logout is primarily handled on the client side
+            // by deleting the token. The server can optionally invalidate the token using a blacklist.
+            return Ok(new { message = "Logged out successfully. Please remove the token from the client." });
+        }
     }
 }
