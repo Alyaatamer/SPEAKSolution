@@ -1,293 +1,164 @@
-<h1>
-  <img src=".github/assets/logo.png" width="52" style="border-radius: 50%; vertical-align: middle; margin-right: 10px;"/>
-  SPEAK Backend Platform
-</h1>
+<h1>SPEAK: Stuttering Diagnosis and Treatment Platform (Backend)</h1>
 
 [![.NET 9.0](https://img.shields.io/badge/.NET_9.0-5C2D91?style=for-the-badge&logo=.net&logoColor=white)](https://dotnet.microsoft.com/)
 [![Entity Framework Core](https://img.shields.io/badge/EF_Core-512BD4?style=for-the-badge&logo=.net&logoColor=white)](https://docs.microsoft.com/en-us/ef/core/)
 [![SQL Server](https://img.shields.io/badge/SQL_Server-CC292B?style=for-the-badge&logo=microsoft-sql-server&logoColor=white)](https://www.microsoft.com/sql-server)
 [![SignalR](https://img.shields.io/badge/SignalR-0078D4?style=for-the-badge&logo=microsoft&logoColor=white)](https://dotnet.microsoft.com/apps/aspnet/signalr)
 [![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)](https://redis.io/)
+[![JWT Auth](https://img.shields.io/badge/JWT_Auth-orange?style=for-the-badge)]()
+[![Clean Architecture](https://img.shields.io/badge/Clean_Architecture-success?style=for-the-badge)]()
+[![Google OAuth](https://img.shields.io/badge/Google_OAuth-4285F4?style=for-the-badge&logo=google&logoColor=white)]()
 
-> A highly scalable REST API functioning as the core orchestration engine for the **SPEAK ecosystem**.
-> The platform connects parents and phoniatricians (speech-language physicians), enabling the monitoring, diagnosis, and tracking of speech disorders such as stuttering through advanced audio processing and real-time communication.
+> <img align="right" src=".github/assets/App.png" alt="SPEAK Mobile App Interface" width="45%"/>
+> 
+> **SPEAK is an innovative healthcare platform dedicated to assisting children who stutter by providing a comprehensive ecosystem for diagnosis, treatment, and continuous tracking.**
+> 
+> This repository houses the robust, high-performance REST API acting as the central nervous system for the platform. It seamlessly links parents with phoniatricians (speech-language physicians), facilitating real-time communication and sophisticated AI-driven audio processing to calculate Stuttering Severity Instrument (SSI) scores.
 
----
-
-## 🌐 Live Deployment & Ecosystem Integrations
-
-The API is fully deployed and actively hosted in a production environment via **MonsterASP.NET**. It serves as the central hub of the SPEAK ecosystem, seamlessly integrating with two major external components:
-
-1. **Cross-Platform Mobile Application**: The primary client interface for parents and doctors, communicating directly with this live server via REST endpoints and SignalR real-time sockets.
-2. **AI Processing Engine**: A dedicated artificial intelligence microservice that securely receives the orchestrated audio streams from this backend to perform advanced stuttering analysis and return the SSI evaluation.
-
-> **Live Swagger UI:** [http://speakapp.runasp.net/swagger/index.html](http://speakapp.runasp.net/swagger/index.html) — Browse and test all available API endpoints interactively.
+<br clear="all"/>
 
 ---
 
-## 🏗️ System Architecture
+## 🚀 Deployment & Ecosystem
 
-The project is structured around the **Onion Architecture** (Clean Architecture) paradigm. This strictly isolates the core domain model and business rules from external infrastructure, databases, and UI concerns, ensuring long-term maintainability and separation of concerns.
+The SPEAK backend is fully operational and hosted live on **MonsterASP.NET**. It acts as the core orchestrator, integrating heavily with two main client-facing systems:
 
+- 📱 **Mobile Client App:** The main interface used by both parents and physicians. It communicates with this server via REST for standard operations and SignalR for real-time interactions.
+- 🧠 **AI Analytics Microservice:** A specialized AI engine that receives audio data from our backend, performs deep stuttering analysis, and returns the **Stuttering Severity Instrument (SSI)** score.
 
-### Layer Breakdown
-
-- **Domain Layer (`Core/SPEAK.Domain`)** — The innermost layer. Pure C# business entities (`ApplicationUser`, `DiagnosticRecord`, `Message`) with zero external framework dependencies.
-- **Abstraction Layer (`Core/SPEAK.Abstraction`)** — Defines all service & repository interfaces: `IAuthenticationServices`, `IDoctorRepository`, `IVoiceProcessingService`, etc.
-- **Service Layer (`Core/SPEAK.Service`)** — Implements the business logic: coordinates audio processing, orchestrates diagnostic SSI calculations, and handles email flows via MailKit.
-- **Infrastructure Layer (`Infrastructure/SPEAK.Persistence`)** — Entity Framework Core `DbContext`, entity configurations, migrations, and repository implementations.
-- **Presentation Layer (`SPEAK.Web` & `SPEAK.Dashboard`)** — `SPEAK.Web` exposes all RESTful endpoints and the SignalR `ChatHub`. `SPEAK.Dashboard` is the MVC admin panel.
+> **Explore the API:** [http://speakapp.runasp.net/swagger/index.html](http://speakapp.runasp.net/swagger/index.html) — Interactive Swagger UI to test endpoints.
 
 ---
 
-## 🛠️ Technical Stack & Libraries
+## 🧩 Architecture Overview
 
-| Category | Technology | Purpose |
-|----------|------------|---------|
-| **Core Framework** | `.NET 9.0` | High-performance foundational API framework |
-| **Database & ORM** | `SQL Server` & `EF Core 9` | Relational data persistence and schema migrations |
-| **Authentication** | `ASP.NET Core Identity` & `JWT` | Stateless user authentication and RBAC |
-| **Real-Time Chat** | `SignalR` & `WebRTC` | Low-latency bidirectional messaging and video calls |
-| **Audio Processing** | `NAudio.Core` | Parsing, segmenting, and merging chunked `.wav` files |
-| **Email Services** | `MailKit` | Reliable delivery of OTPs and verification emails |
-| **Caching** | `StackExchange.Redis` | Distributed caching and SignalR scale-out backplane |
-| **API Docs** | `Swashbuckle` | Interactive Swagger / OpenAPI endpoint documentation |
+We implemented a strict **Clean Architecture (Onion)** pattern to ensure separation of concerns. This design guarantees that our core business rules remain completely isolated from databases, UI, or external frameworks.
 
----
+### Structural Layers
 
-## 🔄 Core Capabilities
-
-### 1. Identity & Access Management
-
-A stateless **JWT-based** authentication system secured via `ASP.NET Core Identity`. The system enforces **Role-Based Access Control (RBAC)** with distinct, isolated permissions for `Patient`, `Doctor`, and `Admin` roles.
-
-- **Google OAuth:** Patients and doctors can sign in via Google. New Google users are issued a temporary profile-completion token before full JWT issuance.
-- **Doctor Registration:** Doctors upload Syndicate Card and National ID images during a dedicated registration flow, which are then reviewed by admins through the dashboard.
+1. **Domain Layer** (`Core/SPEAK.Domain`) — The heart of the system containing pure C# entities (`ApplicationUser`, `DiagnosticRecord`, `Message`). No external dependencies.
+2. **Abstraction Layer** (`Core/SPEAK.Abstraction`) — Interfaces defining repository and service contracts (`IAuthenticationServices`, `IDoctorRepository`).
+3. **Service Layer** (`Core/SPEAK.Service`) — Business logic implementation. Handles audio processing orchestration, diagnostic flows, and email notifications.
+4. **Infrastructure Layer** (`Infrastructure/SPEAK.Persistence`) — Data access layer utilizing **Entity Framework Core** (`DbContext`, migrations, repositories).
+5. **Presentation Layer** (`SPEAK.Web` & `SPEAK.Dashboard`) — The presentation endpoints. `SPEAK.Web` houses the REST API and SignalR hubs, while `SPEAK.Dashboard` provides an MVC-based admin panel.
 
 ---
 
-### 2. Clinical Audio & Diagnostics Pipeline
+## 💻 Technology Stack
 
-The backbone of the platform. The API orchestrates the full lifecycle of a voice recording session to produce a clinical SSI score.
+- **Framework:** `.NET 9.0`
+- **Database:** `SQL Server` via `EF Core 9`
+- **Auth:** `ASP.NET Core Identity` paired with stateless `JWT` tokens
+- **Real-Time & Calls:** `SignalR` alongside `WebRTC`
+- **Audio Manipulation:** `NAudio.Core` (for handling `.wav` chunking and merging)
+- **Email Delivery:** `MailKit`
+- **Caching Engine:** `StackExchange.Redis`
+- **Documentation:** `Swashbuckle` (Swagger)
+
+---
+
+## ⚡ Key Features
+
+### 🔐 Identity & Security
+A fully stateless **JWT auth flow** backed by `ASP.NET Core Identity`, enforcing strict **Role-Based Access Control (RBAC)** across `Patient`, `Doctor`, and `Admin` tiers.
+- Supports traditional Email/Password with **OTP verification**.
+- Integrated **Google OAuth** for quick onboarding.
+- Specialized doctor registration requiring uploads of official credentials (Syndicate Card & National ID) for manual admin review.
+
+### 🎙️ Audio Diagnostics Pipeline
+The primary flow for analyzing patient speech. The server handles the entire lifecycle of a recording session to generate a clinical SSI score.
 
 ```mermaid
 flowchart TD
-    A([Client Records Voice]) --> B[POST /api/voice/upload]
-    B --> C{All chunks uploaded?}
+    A([Patient Records Session]) --> B[Upload Audio Chunks]
+    B --> C{Chunks Complete?}
     C -->|No| A
-    C -->|Yes| D[POST /api/mergevoices/merge-voices]
-    D --> E[NAudio merges chunks into single WAV]
-    E --> F[POST /api/mergevoices/calculate-ssi]
-    F --> G[AI Engine analyzes audio]
-    G --> H[SSI Score returned & stored]
-    H --> I[GET /api/mergevoices/latest-diagnosis]
-    I --> J([Doctor & Patient view results])
-    H --> K[POST /api/mergevoices/cleanup-merged]
-    K --> L([Temp files deleted from server])
+    C -->|Yes| D[Merge via NAudio]
+    D --> E[Transmit to AI Engine]
+    E --> F[Receive SSI Evaluation]
+    F --> G[Store Diagnostic Result]
+    G --> H([Results Available to Doctor & Patient])
+    G --> I[Clean Up Temp Files]
 ```
 
----
+### 💬 Real-Time Communications
+Powered by SignalR, our `ChatHub` manages instant messaging with **read/delivery receipts**, media sharing, and handles the complex signaling required for peer-to-peer **WebRTC audio/video calls**.
 
-### 3. Real-Time Chat & WebRTC Video Calls
+### 🛡️ Administrative Dashboard
+An **MVC panel** providing platform admins the tools to review doctor credentials, approve/reject registrations, toggle user account status, and monitor system activity logs.
 
-The `ChatHub` (SignalR) is the engine behind all real-time interactions. It supports **text messaging with delivery/read receipts**, **media file sharing**, and **full WebRTC video/audio calling** with ICE candidate negotiation.
-
-**Connection URL:** `wss://speakapp.runasp.net/chatHub`
-
----
-
-### 4. Doctor Verification & Admin Dashboard
-
-A dedicated **MVC Admin Dashboard** (`SPEAK.Dashboard`) provides platform administrators with a web interface to:
-- Review uploaded doctor credentials (Syndicate Card, National ID).
-- Approve or reject doctor registrations.
-- Enable or disable user accounts.
-- View system-level audit logs.
+### 🤖 AI Assistant
+A built-in proxy controller communicating with our AI service to offer standard chat, streaming responses via **Server-Sent Events (SSE)**, **voice-to-text**, and **voice-to-voice** capabilities.
 
 ---
 
-### 5. AI Chatbot Integration
+## 📚 RESTful API Endpoints
 
-An integrated chatbot controller that proxies requests to the AI microservice. It supports standard request/response chat, **streaming responses (SSE)**, **voice-to-text**, and **voice-to-voice** interactions.
+**Base URI:** `http://speakapp.runasp.net/api`
+*(Include `Authorization: Bearer <token>` for protected routes)*
 
----
+### Auth Endpoints (`/api/authentication`)
+- **`POST`** `/login` - Issue JWT token.
+- **`POST`** `/register` - Register patient.
+- **`POST`** `/register-doctor` - Register physician (requires image uploads).
+- **`POST`** `/verify-registration-otp` - Verify email.
+- **`POST`** `/forget-password` / `/verify-otp` / `/reset-password` - Password recovery flow.
+- **`POST`** `/login-google` / `/complete-google-profile` - OAuth flow.
+- **`GET`** `/profile` / **`PUT`** `/profile` - Manage account info.
+- **`PUT`** `/change-password` / **`POST`** `/logout` - Session management.
 
-## 🔌 API Reference
+### Diagnostics & Audio (`/api/voice` & `/api/mergevoices`)
+- **`POST`** `/voice/upload` - Receive `.wav` chunks.
+- **`POST`** `/mergevoices/merge-voices` - Combine chunks.
+- **`POST`** `/mergevoices/calculate-ssi` - Trigger AI analysis.
+- **`GET`** `/mergevoices/latest-diagnosis` - Fetch results.
+- **`POST`** `/mergevoices/cleanup-merged` - Remove temporary files.
 
-**Base URL:** `http://speakapp.runasp.net/api`
-**SignalR Hub:** `wss://speakapp.runasp.net/chatHub`
+### Messaging (`/api/chat` & `/api/chatmedia`)
+- **`GET`** `/chat/doctors` - List available physicians.
+- **`GET`** `/chat/conversations` - Active threads.
+- **`GET`** `/chat/history/{userId}` - Direct message history.
+- **`POST`** `/chatmedia/upload` - Share images/videos in chat.
 
-> All protected endpoints require: `Authorization: Bearer {jwt_token}`
+### Chatbot (`/api/chatbot`)
+- **`POST`** `/chat` & `/chat-stream` - Text-based AI interaction.
+- **`POST`** `/voice-to-text` & `/voice-to-voice` - Audio-based AI interaction.
 
----
-
-### Authentication (`/api/authentication`)
-
-| Method | Endpoint | Description | Auth |
-|--------|----------|-------------|------|
-| `POST` | `/login` | Login with email & password, returns JWT | No |
-| `POST` | `/register` | Register a new patient account | No |
-| `POST` | `/verify-registration-otp` | Verify email OTP after registration | No |
-| `POST` | `/resend-registration-otp` | Resend registration OTP email | No |
-| `GET` | `/checkEmail` | Check if an email is already in use | No |
-| `POST` | `/forget-password` | Initiate password reset, sends OTP | No |
-| `POST` | `/verify-otp` | Verify password reset OTP | No |
-| `POST` | `/reset-password` | Set new password after OTP verification | No |
-| `POST` | `/login-google` | Authenticate via Google OAuth token | No |
-| `POST` | `/complete-google-profile` | Complete profile for new Google OAuth users | No |
-| `POST` | `/register-doctor` | Register a new doctor with credential uploads | No |
-| `GET` | `/profile` | Retrieve current authenticated user's profile | Yes |
-| `PUT` | `/profile` | Update current user's profile information | Yes |
-| `PUT` | `/change-password` | Change authenticated user's password | Yes |
-| `POST` | `/logout` | Logout and invalidate the current session | Yes |
-
----
-
-### Voice & Diagnostics
-
-#### Voice Upload (`/api/voice`)
-| Method | Endpoint | Description | Auth |
-|--------|----------|-------------|------|
-| `POST` | `/upload` | Upload a single WAV audio chunk | Yes |
-
-#### Merge & Diagnostics (`/api/mergevoices`)
-| Method | Endpoint | Description | Auth |
-|--------|----------|-------------|------|
-| `POST` | `/merge-voices` | Merge all uploaded voice chunks into one file | Yes |
-| `POST` | `/calculate-ssi` | Send merged audio to AI Engine and store SSI result | Yes |
-| `GET` | `/latest-diagnosis` | Retrieve the most recent diagnostic SSI result | Yes |
-| `POST` | `/cleanup-merged` | Delete temporary merged audio files from storage | Yes |
+### Administrator (`/api/admin`)
+- **`GET`** `/pending-doctors` / **`GET`** `/all-doctors` - View physician statuses.
+- **`POST`** `/approve-doctor` / **`POST`** `/reject-doctor` - Manage approvals.
+- **`POST`** `/disable-user/{userId}` / **`POST`** `/enable-user/{userId}` - Account toggles.
 
 ---
 
-### Real-Time Chat (`/api/chat`)
-| Method | Endpoint | Description | Auth |
-|--------|----------|-------------|------|
-| `GET` | `/doctors` | Get list of doctors available to chat with | Yes |
-| `GET` | `/history/{otherUserId}` | Retrieve full message history with a specific user | Yes |
-| `GET` | `/conversations` | Get all recent conversation threads | Yes |
+## 📡 Real-Time Sockets (SignalR)
 
-#### Chat Media (`/api/chatmedia`)
-| Method | Endpoint | Description | Auth |
-|--------|----------|-------------|------|
-| `POST` | `/upload` | Upload a media file (image/video) for chat sharing | Yes |
+**Endpoint:** `wss://speakapp.runasp.net/chatHub?access_token=<token>`
 
----
+**Methods Invoked by Client:**
+- `SendMessage(dto)` - Send text/media.
+- `MarkAsRead(senderId)` / `MarkAsDelivered(senderId)` - Message status updates.
+- `CallUser`, `AnswerCall`, `SendIceCandidate`, `EndCall`, `RejectCall` - WebRTC signaling.
 
-### AI Chatbot (`/api/chatbot`)
-| Method | Endpoint | Description | Auth |
-|--------|----------|-------------|------|
-| `POST` | `/chat` | Send a text message to the AI assistant | Yes |
-| `POST` | `/chat-stream` | Streaming AI response via SSE | Yes |
-| `POST` | `/voice-to-text` | Convert a voice recording to text via AI | Yes |
-| `POST` | `/voice-to-voice` | Send voice, receive voice response from AI | Yes |
+**Events Listened by Client:**
+- `ReceiveMessage`
+- `MessagesRead` / `MessagesDelivered`
+- `IncomingCall` / `CallAnswered` / `ReceiveIceCandidate` / `CallEnded` / `CallRejected`
 
 ---
 
-### Admin (`/api/admin`)
-> All endpoints require `Admin` role.
+## ⚙️ Development Setup
 
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| `GET` | `/pending-doctors` | List all doctors awaiting verification |
-| `GET` | `/all-doctors` | List all registered doctors |
-| `POST` | `/approve-doctor` | Approve a doctor's registration |
-| `POST` | `/reject-doctor` | Reject a doctor's registration |
-| `POST` | `/disable-user/{userId}` | Disable a user account |
-| `POST` | `/enable-user/{userId}` | Re-enable a disabled user account |
-| `GET` | `/logs` | View system audit logs |
+**Requirements:** .NET 9 SDK, SQL Server, Redis.
 
----
-
-## 💬 SignalR Hub Reference
-
-**Hub URL:** `wss://speakapp.runasp.net/chatHub`
-**Authentication:** Pass JWT via `access_token` query parameter or `Authorization` header.
-
-### Client → Server (Invoke)
-
-| Method | Parameters | Description |
-|--------|-----------|-------------|
-| `SendMessage` | `SendMessageDto` | Send a chat message to another user |
-| `MarkAsRead` | `senderId: string` | Mark messages from a sender as read |
-| `MarkAsDelivered` | `senderId: string` | Mark messages from a sender as delivered |
-| `CallUser` | `receiverId, sdpOffer, isVideo` | Initiate a WebRTC call |
-| `AnswerCall` | `callerId, sdpAnswer` | Accept an incoming WebRTC call |
-| `SendIceCandidate` | `targetUserId, candidate, sdpMid, sdpMLineIndex` | Exchange ICE candidates for WebRTC negotiation |
-| `EndCall` | `targetUserId: string` | Terminate an active call |
-| `RejectCall` | `callerId: string` | Reject an incoming call |
-
-### Server → Client (Listen)
-
-| Event | Payload | Description |
-|-------|---------|-------------|
-| `ReceiveMessage` | `MessageDto` | A new message was received |
-| `MessagesRead` | `readByUserId: string` | Your messages were marked as read |
-| `MessagesDelivered` | `deliveredToUserId: string` | Your messages were delivered |
-| `IncomingCall` | `callerId, sdpOffer, isVideo` | Another user is calling you |
-| `CallAnswered` | `receiverId, sdpAnswer` | Your call was answered |
-| `ReceiveIceCandidate` | `senderId, candidate, sdpMid, sdpMLineIndex` | ICE candidate for WebRTC negotiation |
-| `CallEnded` | `userId: string` | The active call was terminated |
-| `CallRejected` | `userId: string` | Your call was rejected |
-
----
-
-## ⚙️ Local Setup
-
-### Prerequisites
-- **.NET 9 SDK**
-- **SQL Server** (Developer Edition or Docker)
-- **Redis** (for caching and SignalR scale-out)
-
-### Configuration
-
-Update `appsettings.json` in `SPEAK.Web` and `SPEAK.Dashboard`:
-
-```json
-{
-  "ConnectionStrings": {
-    "DefaultConnection": "Server=.;Database=SpeakDb;Trusted_Connection=True;"
-  },
-  "JwtSettings": {
-    "Key": "your-super-secret-key-min-32-chars",
-    "Issuer": "SPEAKApi",
-    "Audience": "SPEAKClient",
-    "DurationInMinutes": 1440
-  }
-}
-```
-
-### Apply Database Migrations
-
-```bash
-cd SPEAK.Web
-dotnet ef database update --project ../Infrastructure/SPEAK.Persistence
-```
-
-### Run the Application
-
-```bash
-# API
-cd SPEAK.Web && dotnet run
-
-# Admin Dashboard
-cd SPEAK.Dashboard && dotnet run
-```
-
-**Swagger UI:** `https://localhost:{port}/swagger`
-
----
-
-## 🔐 Authentication
-
-All protected API endpoints require a valid JWT in the `Authorization` header:
-
-```
-Authorization: Bearer {your_jwt_token}
-```
-
-For the SignalR hub, pass the token via query string:
-
-```
-wss://speakapp.runasp.net/chatHub?access_token={your_jwt_token}
-```
+1. **Configure Settings:** Update `ConnectionStrings` and `JwtSettings` in `appsettings.json`.
+2. **Apply Migrations:**
+   ```bash
+   cd SPEAK.Web
+   dotnet ef database update --project ../Infrastructure/SPEAK.Persistence
+   ```
+3. **Launch:**
+   ```bash
+   cd SPEAK.Web && dotnet run
+   ```
+   *Access Swagger at `https://localhost:<port>/swagger`*
