@@ -1,4 +1,4 @@
-<h1>SPEAK: Stuttering Diagnosis and Treatment Platform (Backend)</h1>
+<h1>SPEAK : Stuttering Diagnosis and Treatment Platform (Backend)</h1>
 
 [![.NET 9.0](https://img.shields.io/badge/.NET_9.0-5C2D91?style=for-the-badge&logo=.net&logoColor=white)](https://dotnet.microsoft.com/)
 [![Entity Framework Core](https://img.shields.io/badge/EF_Core-512BD4?style=for-the-badge&logo=.net&logoColor=white)](https://docs.microsoft.com/en-us/ef/core/)
